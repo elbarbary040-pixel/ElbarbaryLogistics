@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}إضافة تاجر{% endblock %}
+
+{% block header_action %}{% url 'merchants:list' %}{% endblock %}
+
+{% block content %}
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+            <h4 class="mb-1">إضافة تاجر</h4>
+            <div class="text-muted small">الاسم هو أهم حقل</div>
+        </div>
+        <a class="btn btn-outline-secondary" href="{% url 'merchants:list' %}">
+            <i class="fa-solid fa-arrow-right"></i>
+            رجوع
+        </a>
+    </div>
+
+    <div class="card card-shadow">
+        <div class="card-body">
+            <form method="post" novalidate>
+                {% csrf_token %}
+
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">اسم التاجر</label>
+                        {{ form.name }}
+                        <div class="text-danger small">{{ form.name.errors }}</div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">رقم التاجر</label>
+                        {{ form.phone }}
+                        <div class="text-danger small">{{ form.phone.errors }}</div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">العنوان</label>
+                        {{ form.address }}
+                        <div class="text-danger small">{{ form.address.errors }}</div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">اسم البراند</label>
+                        {{ form.brand_name }}
+                        <div class="text-danger small">{{ form.brand_name.errors }}</div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            {{ form.is_active }}
+                            <label class="form-check-label">نشط</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-4">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        حفظ
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+

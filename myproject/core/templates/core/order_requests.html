@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}طلبات الشحن{% endblock %}
+{% block header_action %}{% url 'core:order_requests' %}{% endblock %}
+{% block content %}
+<h4 class="mb-3">طلبات الشحن من التجار</h4>
+<div class="card card-shadow">
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>#</th>
+                    <th>التاجر</th>
+                    <th>العميل</th>
+                    <th>الهاتف</th>
+                    <th>العنوان</th>
+                    <th>المنتج</th>
+                    <th>الشحن</th>
+                    <th>الحالة</th>
+                    <th>إجراء</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in requests %}
+                <tr>
+                    <td>{{ r.id }}</td>
+                    <td>{{ r.merchant.name|default:"—" }}</td>
+                    <td>{{ r.customer_name }}</td>
+                    <td>{{ r.customer_phone|default:"—" }}</td>
+                    <td>{{ r.customer_address|default:"—" }}</td>
+                    <td>{{ r.product_price }}</td>
+                    <td>{{ r.shipping_price }}</td>
+                    <td>{{ r.get_status_display }}</td>
+                    <td>
+                        {% if r.status == 'pending' %}
+                        <form method="post" class="d-flex gap-1">
+                            {% csrf_token %}
+                            <input type="hidden" name="request_id" value="{{ r.id }}">
+                            <select name="delegate_id" class="form-select form-select-sm" required>
+                                <option value="">اختر مندوب</option>
+                                {% for d in delegates %}
+                                <option value="{{ d.id }}">{{ d.name }}</option>
+                                {% endfor %}
+                            </select>
+                            <button class="btn btn-success btn-sm" name="action" value="approve" type="submit">اعتماد</button>
+                            <button class="btn btn-outline-danger btn-sm" name="action" value="reject" type="submit">رفض</button>
+                        </form>
+                        {% else %}
+                        —
+                        {% endif %}
+                    </td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="9" class="text-center text-muted">لا توجد طلبات.</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

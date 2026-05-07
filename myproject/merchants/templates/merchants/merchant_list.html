@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}{% if external_mode %}تجار خارجي{% else %}التجار{% endif %}{% endblock %}
+
+{% block header_action %}{% if external_mode %}{% url 'merchants:external_list' %}{% else %}{% url 'merchants:list' %}{% endif %}{% endblock %}
+
+{% block content %}
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+            <h4 class="mb-1">{% if external_mode %}تجار خارجي{% else %}التجار{% endif %}</h4>
+            <div class="text-muted small">بطاقات ملخص لكل تاجر</div>
+        </div>
+        <a class="btn btn-primary" href="{% if external_mode %}{% url 'merchants:external_add' %}{% else %}{% url 'merchants:add' %}{% endif %}">
+            <i class="fa-solid fa-plus"></i>
+            إضافة تاجر
+        </a>
+    </div>
+
+    <div class="row g-3">
+        {% for merchant in page_obj %}
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card card-shadow h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex align-items-start justify-content-between gap-2">
+                            <div class="flex-grow-1 min-w-0">
+                                <a class="text-decoration-none" href="{% if external_mode %}{% url 'merchants:external_detail' merchant_id=merchant.id %}{% else %}{% url 'merchants:detail' merchant_id=merchant.id %}{% endif %}">
+                                    <div class="fw-bold text-dark">{{ merchant.name }}</div>
+                                    <div class="text-muted small">{{ merchant.phone|default:"—" }}{% if merchant.brand_name %} • {{ merchant.brand_name }}{% endif %}</div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column align-items-end gap-1 flex-shrink-0">
+                                <span class="badge text-bg-light">{{ merchant.total_orders|default:0 }} أوردر</span>
+                                {% if can_manage_staff_records %}
+                                <div class="d-flex flex-wrap gap-1 justify-content-end">
+                                    <a class="btn btn-outline-primary btn-sm" href="{% url 'merchants:edit' merchant_id=merchant.id %}" title="تعديل">تعديل</a>
+                                    <form method="post" action="{% url 'merchants:delete' merchant_id=merchant.id %}" class="d-inline m-0" onsubmit="return confirm('إخفاء هذا التاجر من القوائم؟ حذف منطقي — لا يُمس السجل المحاسبي.');">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">حذف</button>
+                                    </form>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="row g-2 mt-3">
+                            <div class="col-4">
+                                <div class="p-2 rounded-3" style="background: rgba(25,135,84,0.08)">
+                                    <div class="text-muted small">تم التسليم</div>
+                                    <div class="fw-bold text-success">{{ merchant.delivered_orders|default:0 }}</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-2 rounded-3" style="background: rgba(253,126,20,0.10)">
+                                    <div class="text-muted small">في الطريق</div>
+                                    <div class="fw-bold" style="color:#fd7e14">{{ merchant.in_transit_orders|default:0 }}</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-2 rounded-3" style="background: rgba(220,53,69,0.10)">
+                                    <div class="text-muted small">حاسب أنت</div>
+                                    <div class="fw-bold text-danger">{{ merchant.accounted_orders|default:0 }}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-muted small mt-3 mb-2 flex-grow-1">
+                            إجمالي المنتج (تم التسليم): <span class="fw-semibold">{{ merchant.delivered_product_total|default:0 }}</span> ج.م
+                            <br>
+                            إجمالي الشحن (تم التسليم): <span class="fw-semibold">{{ merchant.delivered_shipping_total|default:0 }}</span> ج.م
+                        </div>
+
+                        <div class="mt-auto pt-1">
+                            <a class="btn btn-sm btn-outline-secondary w-100" href="{% if external_mode %}{% url 'merchants:external_detail' merchant_id=merchant.id %}{% else %}{% url 'merchants:detail' merchant_id=merchant.id %}{% endif %}">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12">
+                <div class="card card-shadow">
+                    <div class="card-body text-center text-muted py-5">لا يوجد تجار.</div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mt-3">
+        <div class="text-muted small">
+            صفحة {{ page_obj.number }} من {{ page_obj.paginator.num_pages }} — إجمالي {{ page_obj.paginator.count }} تاجر
+        </div>
+
+        <nav aria-label="pagination">
+            <ul class="pagination pagination-sm mb-0">
+                <li class="page-item {% if not page_obj.has_previous %}disabled{% endif %}">
+                    {% if page_obj.has_previous %}
+                        <a class="page-link" href="?{% if base_qs %}{{ base_qs }}&{% endif %}page={{ page_obj.previous_page_number }}">السابق</a>
+                    {% else %}
+                        <span class="page-link">السابق</span>
+                    {% endif %}
+                </li>
+
+                <li class="page-item disabled">
+                    <span class="page-link">{{ page_obj.number }}</span>
+                </li>
+
+                <li class="page-item {% if not page_obj.has_next %}disabled{% endif %}">
+                    {% if page_obj.has_next %}
+                        <a class="page-link" href="?{% if base_qs %}{{ base_qs }}&{% endif %}page={{ page_obj.next_page_number }}">التالي</a>
+                    {% else %}
+                        <span class="page-link">التالي</span>
+                    {% endif %}
+                </li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}
+

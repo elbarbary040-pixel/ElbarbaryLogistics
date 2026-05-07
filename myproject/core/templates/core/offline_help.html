@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}دليل الوضع بدون شبكة{% endblock %}
+{% block header_action %}{% url 'core:offline_help' %}{% endblock %}
+
+{% block content %}
+<h4 class="mb-3">العمل دون اتصال مستمر (خارطة طريق)</h4>
+<div class="card card-shadow mb-3">
+    <div class="card-body small text-muted">
+        <p>الإصدار الحالي يعتمد على الطلبات المتزامنة مع الخادم؛ لضمان نزاهة المال نفضِّل عدم تخزين عمليات مالية محلية لم تُحقَن بعد.</p>
+        <ul class="mb-0">
+            <li><strong>اليوم:</strong> احتفِظ بمسودة على ورق أو تطبيق ملاحظات أثناء الانقطاع؛ عند عودة الشبكة أنشئ الشحنة من جديد.</li>
+            <li><strong>المستقبل القريب:</strong> يمكننا إضافة «قائمة انتظار تعمل في الخلفية على الجهاز» تُرسل POST تلقائيًا عند ظهور الشبكة بعد جعل التوقيع متوافقًا مع قاعدة بياناتكم.</li>
+            <li><strong>التنبيهات:</strong> عند تفعيل ذلك، سنربط المزامرة بأمثال <code>IndexedDB</code> وService Worker دون المساس بحسابكم الحالي.</li>
+        </ul>
+    </div>
+</div>
+{% if is_admin_level %}
+<a href="{% url 'core:enterprise_hub' %}" class="btn btn-outline-secondary btn-sm">عودة إلى مركز العمليات</a>
+{% else %}
+<a href="{% url 'dashboard' %}" class="btn btn-outline-secondary btn-sm">عودة إلى الرئيسية</a>
+{% endif %}
+{% endblock %}

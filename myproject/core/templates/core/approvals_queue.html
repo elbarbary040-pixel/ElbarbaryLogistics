@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}موافقات حساسة{% endblock %}
+{% block header_action %}{% url 'core:enterprise_approvals' %}{% endblock %}
+
+{% block content %}
+<h4 class="mb-3">قائمة الموافقات الإدارية</h4>
+<p class="text-muted small mb-4">
+    حاليًا تُسجَّل الحالة فقط؛ ربط هذا السجلِّ بتنفيذ حقيقيٍّ في قاعدة البيانات الأساسية يُنفَّذ لاحقًا لضمان عدم خسارة بياناتكم.
+</p>
+
+<div class="table-responsive">
+    <table class="table table-striped align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>النوع</th>
+                <th>الخلاصة</th>
+                <th>الموقف</th>
+                <th>مُقدِّم الطلب</th>
+                <th>قرار</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in rows %}
+            <tr>
+                <td><code class="small">{{ r.action_key }}</code></td>
+                <td>{{ r.summary }}</td>
+                <td><span class="badge text-bg-secondary">{{ r.get_status_display }}</span></td>
+                <td class="small">{% if r.submitted_by %}{{ r.submitted_by.username }}{% else %}—{% endif %}</td>
+                <td>
+                    {% if r.status == "pending" %}
+                    <div class="d-flex flex-wrap gap-1">
+                        <form method="post" action="{% url 'core:enterprise_approval_decide' r.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" name="verdict" value="approve" class="btn btn-sm btn-success">موافقة</button>
+                        </form>
+                        <form method="post" action="{% url 'core:enterprise_approval_decide' r.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" name="verdict" value="reject" class="btn btn-sm btn-outline-danger">رفض</button>
+                        </form>
+                    </div>
+                    {% else %}
+                    <span class="small text-muted">عُدِل السجل مسبقًا</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="5" class="text-center text-muted py-4">
+                    لم نُسجِّل طلبات؛ يمكن استحداث صف من لوحة الإدارة → «موافقة إجراء» لاختبار المنطق.
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<a href="{% url 'core:enterprise_hub' %}" class="btn btn-outline-secondary btn-sm mt-3">عودة لمركز العمليات</a>
+{% endblock %}

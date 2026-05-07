@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}مخزون التجار البسيط{% endblock %}
+{% block header_action %}{% url 'core:enterprise_inventory' %}{% endblock %}
+
+{% block content %}
+<h4 class="mb-3">سجل مخزني بجانب اسم التاجر (إصدار مبكر)</h4>
+
+<div class="row g-3 mb-4">
+    <div class="col-lg-6">
+        <div class="card card-shadow">
+            <div class="card-header small fw-semibold">صنف جديد</div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="add_sku">
+                    <select class="form-select form-select-sm mb-2" name="merchant_id" required>
+                        <option value="">اختيار التاجر</option>
+                        {% for m in merchants %}<option value="{{ m.pk }}">{{ m.name }}</option>{% endfor %}
+                    </select>
+                    <input class="form-control form-control-sm mb-2" name="label" placeholder="اسم عربي واضح" required maxlength="200">
+                    <input class="form-control form-control-sm mb-2" name="sku_code" placeholder="كود SKU اختياري" maxlength="60">
+                    <input type="number" class="form-control form-control-sm mb-2" name="quantity" value="0">
+                    <button class="btn btn-primary btn-sm">حفظ الصنف</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card card-shadow">
+            <div class="card-header small fw-semibold">حركة تعدّل المرصيد</div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="move">
+                    <select class="form-select form-select-sm mb-2" name="item_id" required>
+                        {% for i in items %}
+                        <option value="{{ i.pk }}">{{ i.label }} و {{ i.merchant.name }} الآن مرصدة {{ i.quantity_on_hand }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="number" class="form-control form-control-sm mb-2" name="delta" placeholder="كمية موجبة أو سالبة" required>
+                    <select class="form-select form-select-sm mb-2" name="reason">
+                        {% for v,l in movement_reasons %}
+                        <option value="{{ v }}">{{ l }}</option>
+                        {% endfor %}
+                    </select>
+                    <input class="form-control form-control-sm mb-2" name="note" placeholder="ملخص عربية">
+                    <button class="btn btn-warning btn-sm">تسجيل الحركة</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card card-shadow">
+    <div class="table-responsive">
+        <table class="table table-sm mb-0">
+            <thead><tr><th>التاجر</th><th>الصنف</th><th>SKU</th><th>المرصدة</th><th>آخر تحديث</th></tr></thead>
+            <tbody>
+                {% for i in items %}
+                <tr><td>{{ i.merchant.name }}</td><td>{{ i.label }}</td><td>{{ i.sku_code|default:"—" }}</td><td>{{ i.quantity_on_hand }}</td><td>{{ i.updated_at }}</td></tr>
+                {% empty %}
+                <tr><td colspan="5" class="text-muted text-center py-3">أضِف أول صنف باستخدام البطاقة.</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<a href="{% url 'core:enterprise_hub' %}" class="btn btn-outline-secondary btn-sm mt-3">عودة</a>
+{% endblock %}

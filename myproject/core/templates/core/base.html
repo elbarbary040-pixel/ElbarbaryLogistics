@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}لوحة التحكم{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+</head>
+
+<body>
+
+<header class="app-header">
+    <h3>سيستم الأوردرات</h3>
+</header>
+
+<aside class="app-sidebar">
+    <ul>
+        <li><a href="/dashboard/">الرئيسية</a></li>
+        <li><a href="/orders/">الأوردرات</a></li>
+        <li><a href="/merchants/">التجار</a></li>
+    </ul>
+</aside>
+
+<main class="app-content">
+    <div class="app-content-inner">
+        {% block content %}
+        {% endblock %}
+    </div>
+</main>
+<footer class="app-footer">
+    <button>حفظ</button>
+    <button>إلغاء</button>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}الصلاحيات{% endblock %}
+
+{% block header_action %}{% url 'core:users' %}{% endblock %}
+
+{% block content %}
+    <div class="page-toolbar card card-shadow border-0 mb-3">
+        <div class="card-body py-3 d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-between gap-3">
+            <div>
+                <h4 class="mb-1">إدارة المستخدمين</h4>
+                <div class="text-muted small">إضافة مستخدمين جدد أو تعديل الصلاحيات</div>
+            </div>
+            <div class="d-grid d-sm-flex gap-2 flex-shrink-0">
+                {% if is_admin_level %}
+                <a class="btn btn-primary btn-lg px-4" href="{% url 'core:user_add' %}">
+                    <i class="fa-solid fa-user-plus ms-1"></i>
+                    إضافة مستخدم
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-shadow page-table-card">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>اسم المستخدم</th>
+                            <th>الاسم</th>
+                            <th>دور النظام</th>
+                            <th>النوع</th>
+                            <th>الحالة</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in users %}
+                            {% with u=row.user %}
+                            <tr>
+                                <td class="text-nowrap fw-semibold">{{ u.username }}</td>
+                                <td class="text-nowrap">{{ u.first_name }} {{ u.last_name }}</td>
+                                <td class="text-nowrap small">{{ row.role_label }}</td>
+                                <td class="text-nowrap">
+                                    {% if u.is_superuser %}
+                                        <span class="badge text-bg-danger">سوبر أدمن</span>
+                                    {% elif u.is_staff %}
+                                        <span class="badge text-bg-primary">أدمن</span>
+                                    {% else %}
+                                        <span class="badge text-bg-secondary">مستخدم</span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-nowrap">{% if u.is_active %}<span class="badge text-bg-success">نشط</span>{% else %}<span class="badge text-bg-secondary">موقوف</span>{% endif %}</td>
+                                <td class="text-nowrap text-end">
+                                    {% if is_admin_level %}
+                                    <a class="btn btn-outline-secondary btn-sm" href="{% url 'core:user_edit' user_id=u.id %}">
+                                        <i class="fa-solid fa-pen"></i>
+                                        تعديل
+                                    </a>
+                                    {% endif %}
+                                    {% if can_manage_staff_records and u.is_active and u.id != request.user.id %}
+                                    <form method="post" action="{% url 'core:user_delete' user_id=u.id %}" class="d-inline" onsubmit="return confirm('تعطيل هذا المستخدم؟ يمكن استعادته لاحقاً بتفعيل الحساب.');">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">تعطيل</button>
+                                    </form>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endwith %}
+                        {% empty %}
+                            <tr><td colspan="6" class="text-center text-muted py-4">لا يوجد مستخدمين.</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

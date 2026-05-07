@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}حسابي{% endblock %}
+
+{% block header_action %}{% url 'core:profile' %}{% endblock %}
+
+{% block content %}
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+            <h4 class="mb-1">حسابي</h4>
+            <div class="text-muted small">تعديل الاسم وكلمة المرور</div>
+        </div>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-12 col-lg-6">
+            <div class="card card-shadow">
+                <div class="card-body">
+                    <div class="fw-semibold mb-2">البيانات</div>
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="profile_form" value="1">
+
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label">الاسم الأول</label>
+                                {{ form.first_name }}
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">اسم العائلة</label>
+                                {{ form.last_name }}
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-4">
+                            <button class="btn btn-primary" type="submit">
+                                حفظ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="card card-shadow">
+                <div class="card-body">
+                    <div class="fw-semibold mb-2">تغيير كلمة المرور</div>
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="password_form" value="1">
+
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label">كلمة المرور الحالية</label>
+                                {{ password_form.old_password }}
+                                <div class="text-danger small">{{ password_form.old_password.errors }}</div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">كلمة المرور الجديدة</label>
+                                {{ password_form.new_password1 }}
+                                <div class="text-danger small">{{ password_form.new_password1.errors }}</div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">تأكيد كلمة المرور</label>
+                                {{ password_form.new_password2 }}
+                                <div class="text-danger small">{{ password_form.new_password2.errors }}</div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-4">
+                            <button class="btn btn-warning" type="submit">
+                                تحديث
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
