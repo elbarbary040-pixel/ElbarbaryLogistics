@@ -20,6 +20,12 @@ body {
     font-family: system-ui, "Segoe UI", Tahoma, sans-serif;
 }
 
+/* Layout wrapper */
+.page {
+    display: flex;
+    min-height: 100vh;
+}
+
 /* Container */
 .app-container {
     width: 100%;
@@ -27,23 +33,10 @@ body {
     margin: auto;
 }
 
-/* Header */
-.app-header {
-    position: fixed;
-    top: 0;
-    right: var(--sidebar-width);
-    left: 0;
-    height: var(--header-height);
-    background: #fff;
-    border-bottom: 1px solid #e2e5ec;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 2000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
+/* ========================= */
 /* Sidebar */
+/* ========================= */
+
 .app-sidebar {
     position: fixed;
     top: 0;
@@ -57,6 +50,7 @@ body {
     padding-top: 20px;
 }
 
+/* Sidebar links */
 .app-sidebar ul {
     list-style: none;
     padding: 0;
@@ -80,7 +74,29 @@ body {
     background: #f3f4f6;
 }
 
-/* Main Content */
+/* ========================= */
+/* Header */
+/* ========================= */
+
+.app-header {
+    position: fixed;
+    top: 0;
+    right: var(--sidebar-width);
+    left: 0;
+    height: var(--header-height);
+    background: #fff;
+    border-bottom: 1px solid #e2e5ec;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 2000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* ========================= */
+/* Content */
+/* ========================= */
+
 .app-content {
     margin-top: var(--header-height);
     margin-right: var(--sidebar-width);
@@ -94,7 +110,10 @@ body {
     margin: auto;
 }
 
+/* ========================= */
 /* Footer */
+/* ========================= */
+
 .app-footer {
     position: fixed;
     bottom: 0;
@@ -125,7 +144,10 @@ body {
     background: #1d4ed8;
 }
 
+/* ========================= */
 /* Cards */
+/* ========================= */
+
 .card.card-shadow {
     border: 1px solid rgba(0,0,0,0.06);
     border-radius: 12px;
@@ -171,10 +193,11 @@ body {
         --sidebar-width: 0px;
     }
 
+    /* Sidebar يتحول فوق */
     .app-sidebar {
+        position: relative;
         width: 100%;
         height: auto;
-        position: relative;
         border-left: none;
         border-bottom: 1px solid #e2e5ec;
     }
