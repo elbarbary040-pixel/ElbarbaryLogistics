@@ -1,0 +1,7342 @@
+[
+{
+  "model": "orders.order",
+  "pk": 102,
+  "fields": {
+    "waybill_number": "BRB107670",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 5,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عميل 7",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 2,
+    "created_at": "2026-05-02T21:31:55.830Z",
+    "updated_at": "2026-05-03T23:26:24.330Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 103,
+  "fields": {
+    "waybill_number": "BRB391862",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 5,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1900.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 2,
+    "created_at": "2026-05-02T21:32:45.933Z",
+    "updated_at": "2026-05-03T23:26:48.699Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 104,
+  "fields": {
+    "waybill_number": "BRB231014",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 6,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "450.00",
+    "shipping_price": "120.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 2,
+    "created_at": "2026-05-02T21:38:55.101Z",
+    "updated_at": "2026-05-03T23:27:28.227Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 105,
+  "fields": {
+    "waybill_number": "BRB682234",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 6,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "595.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 2,
+    "created_at": "2026-05-02T21:40:07.265Z",
+    "updated_at": "2026-05-03T23:27:54.131Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 106,
+  "fields": {
+    "waybill_number": "BRB605980",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 7,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عميل 7",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T21:43:24.871Z",
+    "updated_at": "2026-05-04T00:01:56.728Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 107,
+  "fields": {
+    "waybill_number": "BRB720894",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 8,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T21:45:12.937Z",
+    "updated_at": "2026-05-04T00:02:08.030Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 108,
+  "fields": {
+    "waybill_number": "BRB917827",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 8,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عميل 7",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T21:45:39.691Z",
+    "updated_at": "2026-05-04T12:04:45.935Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 109,
+  "fields": {
+    "waybill_number": "BRB576020",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 9,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T21:47:48.018Z",
+    "updated_at": "2026-05-05T22:01:14.966Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 110,
+  "fields": {
+    "waybill_number": "BRB238132",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 10,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T21:54:59.484Z",
+    "updated_at": "2026-05-05T22:01:31.498Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 111,
+  "fields": {
+    "waybill_number": "BRB747563",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "فاطمه مجدي",
+    "customer_phone": "01090159969",
+    "customer_address": "عبدالسلام عارف",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:09:30.142Z",
+    "updated_at": "2026-05-04T02:07:06.195Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 112,
+  "fields": {
+    "waybill_number": "BRB542536",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "كيندا",
+    "customer_phone": "01033888859",
+    "customer_address": "عبدالسلام عارف",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:11:25.586Z",
+    "updated_at": "2026-05-04T02:07:22.745Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 113,
+  "fields": {
+    "waybill_number": "BRB728273",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "هند الانصاري",
+    "customer_phone": "01092166282",
+    "customer_address": "عبدالسلام عارف",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:12:14.947Z",
+    "updated_at": "2026-05-04T02:08:10.937Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 114,
+  "fields": {
+    "waybill_number": "BRB890580",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "سلوي",
+    "customer_phone": "01007473851",
+    "customer_address": "الاتوبيس الجديد",
+    "product_price": "1100.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:13:27.923Z",
+    "updated_at": "2026-05-04T02:09:33.196Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 115,
+  "fields": {
+    "waybill_number": "BRB900718",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "نيفين فوزي",
+    "customer_phone": "01064147709",
+    "customer_address": "عبدالسلام عارف",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "حاسبت كاش وتم التحويل لعبدو",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:14:38.322Z",
+    "updated_at": "2026-05-04T02:09:47.642Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 116,
+  "fields": {
+    "waybill_number": "BRB418019",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "سمر صبحي",
+    "customer_phone": "01067331110",
+    "customer_address": "عبدالسلام عارف",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "حاسبت التوصيل نقدي و سعر المنتح حاسبت كاش وتم التحويل لعبدو",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:15:47.930Z",
+    "updated_at": "2026-05-04T02:10:59.805Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 117,
+  "fields": {
+    "waybill_number": "BRB719284",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "ميرنا البلتاجي",
+    "customer_phone": "01062880914",
+    "customer_address": "شارع الجيش قاعه ريفيرا",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:16:42.627Z",
+    "updated_at": "2026-05-04T02:10:45.071Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 118,
+  "fields": {
+    "waybill_number": "BRB804074",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "ايه منصور",
+    "customer_phone": "01090049949",
+    "customer_address": "ميت حدر",
+    "product_price": "1600.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:17:32.077Z",
+    "updated_at": "2026-05-04T02:10:03.139Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 119,
+  "fields": {
+    "waybill_number": "BRB797149",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "نوران ابراهيم",
+    "customer_phone": "01016321528",
+    "customer_address": "مشعل",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:18:29.734Z",
+    "updated_at": "2026-05-04T02:10:28.782Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 120,
+  "fields": {
+    "waybill_number": "BRB812596",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "فرحه عزيز",
+    "customer_phone": "01030935230",
+    "customer_address": "الجلاء",
+    "product_price": "800.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:20:15.257Z",
+    "updated_at": "2026-05-04T02:10:15.255Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 121,
+  "fields": {
+    "waybill_number": "BRB490885",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "اميرة سمير",
+    "customer_phone": "01064901534",
+    "customer_address": "الجلاء",
+    "product_price": "400.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:21:08.006Z",
+    "updated_at": "2026-05-04T02:09:18.911Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 122,
+  "fields": {
+    "waybill_number": "BRB156349",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 13,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "عيون كريم للنضارات",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "500.00",
+    "shipping_price": "50.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:23:13.958Z",
+    "updated_at": "2026-05-04T02:08:34.936Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 123,
+  "fields": {
+    "waybill_number": "BRB306246",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 14,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "عميل 7",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:41:46.759Z",
+    "updated_at": "2026-05-04T02:09:00.983Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 124,
+  "fields": {
+    "waybill_number": "BRB939886",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "اميرة خورشيد",
+    "customer_phone": "01097951901",
+    "customer_address": "النخلة",
+    "product_price": "150.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T22:51:27.165Z",
+    "updated_at": "2026-05-04T23:15:22.613Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 125,
+  "fields": {
+    "waybill_number": "BRB879254",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "روميساء فادي",
+    "customer_phone": "01023951650",
+    "customer_address": "النخلة",
+    "product_price": "2700.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "حولت كاش",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T22:52:04.806Z",
+    "updated_at": "2026-05-04T23:16:19.112Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 126,
+  "fields": {
+    "waybill_number": "BRB970863",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "ندي الشحات",
+    "customer_phone": "01065466932",
+    "customer_address": "ش النخلة",
+    "product_price": "1350.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T22:52:30.160Z",
+    "updated_at": "2026-05-04T23:19:40.436Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 127,
+  "fields": {
+    "waybill_number": "BRB151224",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 15,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "حجز دكتور",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "700.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-02T22:54:47.570Z",
+    "updated_at": "2026-05-03T02:04:50.318Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 128,
+  "fields": {
+    "waybill_number": "BRB441707",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 16,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "400.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:18:11.108Z",
+    "updated_at": "2026-05-04T23:19:22.695Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 129,
+  "fields": {
+    "waybill_number": "BRB221712",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 16,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "580.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:18:44.917Z",
+    "updated_at": "2026-05-04T23:19:13.265Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 130,
+  "fields": {
+    "waybill_number": "BRB194772",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 16,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "725.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:19:10.980Z",
+    "updated_at": "2026-05-04T23:18:53.879Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 131,
+  "fields": {
+    "waybill_number": "BRB612311",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 16,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "2090.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:20:13.142Z",
+    "updated_at": "2026-05-04T23:18:35.399Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 132,
+  "fields": {
+    "waybill_number": "BRB193301",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 16,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1150.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:20:45.704Z",
+    "updated_at": "2026-05-04T23:18:25.516Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 133,
+  "fields": {
+    "waybill_number": "BRB114729",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 16,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1290.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:21:06.753Z",
+    "updated_at": "2026-05-04T23:18:16.453Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 134,
+  "fields": {
+    "waybill_number": "BRB797680",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 16,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "الملوخية",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "650.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:24:36.350Z",
+    "updated_at": "2026-05-04T23:17:59.371Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 135,
+  "fields": {
+    "waybill_number": "BRB749701",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 17,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:26:09.211Z",
+    "updated_at": "2026-05-04T23:17:48.344Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 136,
+  "fields": {
+    "waybill_number": "BRB880433",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "مريم طارق",
+    "customer_phone": "01080364226",
+    "customer_address": "مصر للطيران",
+    "product_price": "1200.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:26:49.389Z",
+    "updated_at": "2026-05-04T23:17:35.854Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 137,
+  "fields": {
+    "waybill_number": "BRB259521",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "علا عماد",
+    "customer_phone": "01012160282",
+    "customer_address": "عبده معروف",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:27:28.870Z",
+    "updated_at": "2026-05-04T23:17:21.273Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 138,
+  "fields": {
+    "waybill_number": "BRB283870",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "اسراء احمد",
+    "customer_phone": "01017428014",
+    "customer_address": "طلخا",
+    "product_price": "1200.00",
+    "shipping_price": "45.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:27:46.499Z",
+    "updated_at": "2026-05-04T23:17:01.941Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 139,
+  "fields": {
+    "waybill_number": "BRB582210",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 18,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:28:26.799Z",
+    "updated_at": "2026-05-04T23:16:40.908Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 140,
+  "fields": {
+    "waybill_number": "BRB598947",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 19,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:29:09.580Z",
+    "updated_at": "2026-05-04T23:20:10.674Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 141,
+  "fields": {
+    "waybill_number": "BRB654197",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 20,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "من عبدو لمبارك",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:30:35.870Z",
+    "updated_at": "2026-05-04T23:21:04.778Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 142,
+  "fields": {
+    "waybill_number": "BRB219356",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 21,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "0",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:31:10.880Z",
+    "updated_at": "2026-05-04T23:21:13.873Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 143,
+  "fields": {
+    "waybill_number": "BRB355048",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 14,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:32:41.684Z",
+    "updated_at": "2026-05-04T23:22:12.349Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 144,
+  "fields": {
+    "waybill_number": "BRB826110",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 22,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:33:10.369Z",
+    "updated_at": "2026-05-04T23:21:46.257Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 145,
+  "fields": {
+    "waybill_number": "BRB127320",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 23,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "ايداع نقدي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "9900.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "ايداع وتم اخد 100 من عمر",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:34:40.950Z",
+    "updated_at": "2026-05-04T23:21:31.565Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 146,
+  "fields": {
+    "waybill_number": "BRB955445",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 23,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "بنزين",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "-100.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:35:13.093Z",
+    "updated_at": "2026-05-04T23:19:59.573Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 147,
+  "fields": {
+    "waybill_number": "BRB637878",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 1,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "اكل الحضانه",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-02T23:47:46.904Z",
+    "updated_at": "2026-05-04T23:20:28.406Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 148,
+  "fields": {
+    "waybill_number": "BRB501907",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "رحاب هيثم",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "400.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:40:28.175Z",
+    "updated_at": "2026-05-03T00:40:37.589Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 149,
+  "fields": {
+    "waybill_number": "BRB403553",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "اميره فاروق",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1200.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:41:20.301Z",
+    "updated_at": "2026-05-03T00:41:20.301Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 150,
+  "fields": {
+    "waybill_number": "BRB897960",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "هدير محمد",
+    "customer_phone": "",
+    "customer_address": "ساميه الجمل",
+    "product_price": "150.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:42:18.264Z",
+    "updated_at": "2026-05-03T00:42:18.264Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 151,
+  "fields": {
+    "waybill_number": "BRB708400",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "هدير محمد",
+    "customer_phone": "",
+    "customer_address": "الترعه",
+    "product_price": "250.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:42:53.647Z",
+    "updated_at": "2026-05-03T00:42:53.647Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 152,
+  "fields": {
+    "waybill_number": "BRB261154",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 24,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "وسام مصنع مارسيليا",
+    "customer_phone": "",
+    "customer_address": "موقف الزرقا",
+    "product_price": "0.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:45:34.845Z",
+    "updated_at": "2026-05-03T00:45:34.845Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 153,
+  "fields": {
+    "waybill_number": "BRB996291",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "احمد جبر كيك بوب",
+    "customer_phone": "",
+    "customer_address": "كفاله كيك بوب",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:47:30.171Z",
+    "updated_at": "2026-05-03T00:47:30.171Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 154,
+  "fields": {
+    "waybill_number": "BRB316346",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "ريم ساميه الجمل",
+    "customer_phone": "",
+    "customer_address": "كفاله ريم ساميه الجمل",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:48:08.448Z",
+    "updated_at": "2026-05-03T00:48:08.448Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 155,
+  "fields": {
+    "waybill_number": "BRB981519",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "عصاره الاسيوطي",
+    "customer_phone": "",
+    "customer_address": "كفاله عصاره الاسيوطي  ش الترعه",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:48:49.261Z",
+    "updated_at": "2026-05-03T00:48:49.261Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 156,
+  "fields": {
+    "waybill_number": "BRB209285",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 25,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "ناديه مزي",
+    "customer_phone": "",
+    "customer_address": "خطاب",
+    "product_price": "1700.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "من ناديه رمزي ل فيلا غيث",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:51:20.033Z",
+    "updated_at": "2026-05-03T00:51:20.033Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 157,
+  "fields": {
+    "waybill_number": "BRB831639",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 9,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "شاهندا",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:53:26.053Z",
+    "updated_at": "2026-05-03T00:53:26.053Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 158,
+  "fields": {
+    "waybill_number": "BRB983421",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "اديداس",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1310.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:54:26.231Z",
+    "updated_at": "2026-05-03T00:54:26.231Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 159,
+  "fields": {
+    "waybill_number": "BRB387143",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "شروق دياب",
+    "customer_phone": "",
+    "customer_address": "الورد",
+    "product_price": "1800.00",
+    "shipping_price": "70.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T00:57:40.512Z",
+    "updated_at": "2026-05-03T00:57:40.512Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 160,
+  "fields": {
+    "waybill_number": "BRB189451",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "ريم",
+    "customer_phone": "",
+    "customer_address": "احمد ماهر",
+    "product_price": "1500.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T01:05:25.989Z",
+    "updated_at": "2026-05-03T01:51:45.264Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 161,
+  "fields": {
+    "waybill_number": "BRB165498",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 25,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "سندوب",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:47:05.208Z",
+    "updated_at": "2026-05-04T12:05:31.453Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 162,
+  "fields": {
+    "waybill_number": "BRB202253",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 25,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "المطافي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:47:36.754Z",
+    "updated_at": "2026-05-03T19:47:36.754Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 163,
+  "fields": {
+    "waybill_number": "BRB194982",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "هبه الباز",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1400.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:49:08.246Z",
+    "updated_at": "2026-05-03T19:49:08.246Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 164,
+  "fields": {
+    "waybill_number": "BRB275775",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "هانم اسماعيل",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:49:54.074Z",
+    "updated_at": "2026-05-03T19:49:54.074Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 165,
+  "fields": {
+    "waybill_number": "BRB127867",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "هاجر عباس",
+    "customer_phone": "",
+    "customer_address": "العبور",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:51:08.852Z",
+    "updated_at": "2026-05-03T19:51:08.852Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 166,
+  "fields": {
+    "waybill_number": "BRB127667",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "وعد حسام",
+    "customer_phone": "",
+    "customer_address": "الدراسات",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:51:51.691Z",
+    "updated_at": "2026-05-03T19:51:51.691Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 167,
+  "fields": {
+    "waybill_number": "BRB848050",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "سناء",
+    "customer_phone": "",
+    "customer_address": "العباسي",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:52:22.179Z",
+    "updated_at": "2026-05-03T19:52:22.179Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 168,
+  "fields": {
+    "waybill_number": "BRB965033",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 23,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "اخدنا منه 500",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "500.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:52:57.207Z",
+    "updated_at": "2026-05-03T19:52:57.207Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 169,
+  "fields": {
+    "waybill_number": "BRB384654",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 26,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T19:54:35.548Z",
+    "updated_at": "2026-05-03T19:54:35.548Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 170,
+  "fields": {
+    "waybill_number": "BRB899651",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "بنك مصر كفاله",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:18:04.189Z",
+    "updated_at": "2026-05-03T23:18:04.189Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 171,
+  "fields": {
+    "waybill_number": "BRB764908",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "ظرف c&b",
+    "customer_phone": "",
+    "customer_address": "الجلاء",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:18:49.933Z",
+    "updated_at": "2026-05-03T23:18:49.933Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 172,
+  "fields": {
+    "waybill_number": "BRB732529",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "لابريل",
+    "customer_phone": "",
+    "customer_address": "حي الجامعه",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:19:22.603Z",
+    "updated_at": "2026-05-03T23:19:22.603Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 173,
+  "fields": {
+    "waybill_number": "BRB166470",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 16,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "م",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "205.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:20:40.858Z",
+    "updated_at": "2026-05-03T23:20:40.858Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 174,
+  "fields": {
+    "waybill_number": "BRB609495",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 27,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "ايه شوقي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "-3485.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "طلخا 50 والمشايه 40",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:24:17.995Z",
+    "updated_at": "2026-05-03T23:25:37.569Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 175,
+  "fields": {
+    "waybill_number": "BRB990227",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 27,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "ظ",
+    "customer_phone": "",
+    "customer_address": "تم التحويل انستا",
+    "product_price": "4730.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:25:20.818Z",
+    "updated_at": "2026-05-03T23:25:32.281Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 176,
+  "fields": {
+    "waybill_number": "BRB556218",
+    "external_waybill": null,
+    "order_date": "2026-05-02",
+    "merchant": 28,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 4,
+    "created_at": "2026-05-03T23:27:34.067Z",
+    "updated_at": "2026-05-04T23:15:34.365Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 177,
+  "fields": {
+    "waybill_number": "BRB760186",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "نيرفانا",
+    "customer_phone": "",
+    "customer_address": "طلخا",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-03T23:34:05.267Z",
+    "updated_at": "2026-05-03T23:34:16.893Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 178,
+  "fields": {
+    "waybill_number": "BRB680782",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اسماء عبدالرحمن",
+    "customer_phone": "",
+    "customer_address": "سندوب",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-03T23:34:48.015Z",
+    "updated_at": "2026-05-03T23:34:48.015Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 179,
+  "fields": {
+    "waybill_number": "BRB533688",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "سالي حسام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1100.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:35:26.996Z",
+    "updated_at": "2026-05-03T23:35:26.996Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 180,
+  "fields": {
+    "waybill_number": "BRB724380",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "سميه نصر",
+    "customer_phone": "",
+    "customer_address": "الجلاء",
+    "product_price": "150.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-03T23:35:41.568Z",
+    "updated_at": "2026-05-03T23:38:31.896Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 181,
+  "fields": {
+    "waybill_number": "BRB680775",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "هايدي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "2400.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 2,
+    "created_at": "2026-05-03T23:36:26.603Z",
+    "updated_at": "2026-05-03T23:39:02.327Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 182,
+  "fields": {
+    "waybill_number": "BRB705387",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 7,
+    "branch": null,
+    "customer_name": "راندا المنسي",
+    "customer_phone": "",
+    "customer_address": "جديله",
+    "product_price": "150.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:42:01.332Z",
+    "updated_at": "2026-05-05T22:05:50.022Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 183,
+  "fields": {
+    "waybill_number": "BRB562622",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 29,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "70.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-03T23:52:32.218Z",
+    "updated_at": "2026-05-03T23:52:38.860Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 184,
+  "fields": {
+    "waybill_number": "BRB355707",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 30,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "رفعت علام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T01:50:13.718Z",
+    "updated_at": "2026-05-04T01:50:21.146Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 185,
+  "fields": {
+    "waybill_number": "BRB251458",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 31,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "الورق",
+    "customer_phone": "",
+    "customer_address": "الموقف الجديد",
+    "product_price": "0.00",
+    "shipping_price": "60.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T01:51:14.622Z",
+    "updated_at": "2026-05-04T01:52:36.691Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 186,
+  "fields": {
+    "waybill_number": "BRB607801",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 33,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T01:51:47.179Z",
+    "updated_at": "2026-05-04T01:52:31.031Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 187,
+  "fields": {
+    "waybill_number": "BRB630421",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 5,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "2500.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T01:52:23.510Z",
+    "updated_at": "2026-05-04T01:52:23.510Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 188,
+  "fields": {
+    "waybill_number": "BRB832185",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 25,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "الزيت من مبارك لحي الجامعه",
+    "product_price": "285.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T01:53:52.029Z",
+    "updated_at": "2026-05-04T01:53:52.029Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 189,
+  "fields": {
+    "waybill_number": "BRB917772",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 35,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "ميت حدر",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T01:56:20.857Z",
+    "updated_at": "2026-05-04T01:56:26.138Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 190,
+  "fields": {
+    "waybill_number": "BRB971678",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 34,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "مجمع المحاكم",
+    "product_price": "1100.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T01:57:07.281Z",
+    "updated_at": "2026-05-04T01:57:07.281Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 191,
+  "fields": {
+    "waybill_number": "BRB264853",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 29,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T02:00:15.449Z",
+    "updated_at": "2026-05-04T02:00:15.449Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 192,
+  "fields": {
+    "waybill_number": "BRB346535",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 20,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T02:01:16.675Z",
+    "updated_at": "2026-05-04T02:01:16.675Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 193,
+  "fields": {
+    "waybill_number": "BRB651424",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 36,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "85.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T02:02:26.289Z",
+    "updated_at": "2026-05-04T02:02:31.871Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 194,
+  "fields": {
+    "waybill_number": "BRB893854",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 5,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "م",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "250.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T02:03:20.113Z",
+    "updated_at": "2026-05-04T02:03:27.244Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 195,
+  "fields": {
+    "waybill_number": "BRB546623",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 37,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T02:04:33.269Z",
+    "updated_at": "2026-05-04T02:04:37.922Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 196,
+  "fields": {
+    "waybill_number": "BRB846736",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 23,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "للونش",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1200.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T02:05:14.371Z",
+    "updated_at": "2026-05-04T02:05:14.371Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 197,
+  "fields": {
+    "waybill_number": "BRB167376",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "شحن كارت الكهربا",
+    "customer_phone": "عبده يوسف له 410",
+    "customer_address": "المخزن",
+    "product_price": "410.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-04T02:06:48.126Z",
+    "updated_at": "2026-05-04T02:06:48.126Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 198,
+  "fields": {
+    "waybill_number": "BRB767424",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 20,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "دوا المؤسسه",
+    "product_price": "30.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T20:47:02.744Z",
+    "updated_at": "2026-05-04T20:47:02.744Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 199,
+  "fields": {
+    "waybill_number": "BRB126237",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 38,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "عميل 4",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T20:50:19.025Z",
+    "updated_at": "2026-05-04T21:25:40.186Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 200,
+  "fields": {
+    "waybill_number": "BRB220873",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 39,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T20:51:03.028Z",
+    "updated_at": "2026-05-04T20:51:03.028Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 201,
+  "fields": {
+    "waybill_number": "BRB851392",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 28,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T20:51:52.414Z",
+    "updated_at": "2026-05-04T20:51:52.414Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 202,
+  "fields": {
+    "waybill_number": "BRB603909",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "هاله كمال",
+    "customer_phone": "",
+    "customer_address": "طلخا",
+    "product_price": "750.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T20:52:53.077Z",
+    "updated_at": "2026-05-04T20:52:53.077Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 203,
+  "fields": {
+    "waybill_number": "BRB328523",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 40,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "300.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T20:53:31.262Z",
+    "updated_at": "2026-05-04T20:53:31.262Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 204,
+  "fields": {
+    "waybill_number": "BRB176902",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 12,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "امنيه احمد",
+    "customer_phone": "",
+    "customer_address": "ميت حدر",
+    "product_price": "300.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T20:53:42.424Z",
+    "updated_at": "2026-05-04T20:53:42.424Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 205,
+  "fields": {
+    "waybill_number": "BRB545491",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 28,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T20:54:04.359Z",
+    "updated_at": "2026-05-04T20:54:04.359Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 206,
+  "fields": {
+    "waybill_number": "BRB321075",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 1,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "مني عيسي 3 في واتس واحد",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T20:55:35.195Z",
+    "updated_at": "2026-05-04T20:55:35.195Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 207,
+  "fields": {
+    "waybill_number": "BRB830663",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 13,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "شروق دياب",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T20:56:41.190Z",
+    "updated_at": "2026-05-04T20:56:41.190Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 208,
+  "fields": {
+    "waybill_number": "BRB933798",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "ايه السيد",
+    "customer_phone": "",
+    "customer_address": "الاتوبيس الجديد",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T20:58:24.634Z",
+    "updated_at": "2026-05-04T20:58:24.634Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 209,
+  "fields": {
+    "waybill_number": "BRB813538",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 1,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "ام حنان",
+    "customer_phone": "",
+    "customer_address": "رز ام حنان",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T20:58:37.194Z",
+    "updated_at": "2026-05-04T20:58:37.194Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 210,
+  "fields": {
+    "waybill_number": "BRB800086",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 1,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "كفاله حنان",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T20:59:16.691Z",
+    "updated_at": "2026-05-04T20:59:16.691Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 211,
+  "fields": {
+    "waybill_number": "BRB875908",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "يمني",
+    "customer_phone": "",
+    "customer_address": "ش 10",
+    "product_price": "1200.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T21:00:29.043Z",
+    "updated_at": "2026-05-04T21:00:29.043Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 212,
+  "fields": {
+    "waybill_number": "BRB778688",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 1,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "رز ندي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "50.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T21:01:02.169Z",
+    "updated_at": "2026-05-04T23:19:02.178Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 213,
+  "fields": {
+    "waybill_number": "BRB791625",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "ندي محمد",
+    "customer_phone": "",
+    "customer_address": "قناة السويس",
+    "product_price": "2400.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "تم التعديل من بيري احمد",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T21:03:03.412Z",
+    "updated_at": "2026-05-04T21:03:03.412Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 214,
+  "fields": {
+    "waybill_number": "BRB367967",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 12,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "فيكي طارق",
+    "customer_phone": "",
+    "customer_address": "مدينه مبارك",
+    "product_price": "1100.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T21:04:20.238Z",
+    "updated_at": "2026-05-04T21:04:20.238Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 215,
+  "fields": {
+    "waybill_number": "BRB917055",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 32,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T21:05:12.114Z",
+    "updated_at": "2026-05-04T21:05:12.114Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 216,
+  "fields": {
+    "waybill_number": "BRB742703",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 20,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "الورق راي جاي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "80.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T21:05:47.348Z",
+    "updated_at": "2026-05-04T21:05:56.328Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 217,
+  "fields": {
+    "waybill_number": "BRB423429",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 41,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "مندوبين",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "250.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T21:10:30.748Z",
+    "updated_at": "2026-05-04T21:10:30.748Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 218,
+  "fields": {
+    "waybill_number": "BRB986835",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 9,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "0.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T22:02:55.973Z",
+    "updated_at": "2026-05-04T22:02:55.973Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 219,
+  "fields": {
+    "waybill_number": "BRB763122",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 42,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T22:03:57.254Z",
+    "updated_at": "2026-05-04T22:03:57.254Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 220,
+  "fields": {
+    "waybill_number": "BRB869566",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 5,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "عبدالرحمن حاسبها",
+    "product_price": "2155.00",
+    "shipping_price": "45.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T22:05:09.011Z",
+    "updated_at": "2026-05-04T22:05:09.011Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 221,
+  "fields": {
+    "waybill_number": "BRB769241",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 28,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "100.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T22:05:44.808Z",
+    "updated_at": "2026-05-04T22:07:37.266Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 222,
+  "fields": {
+    "waybill_number": "BRB586673",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 43,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "عليه 70 موقف بورسعيد",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T22:07:16.348Z",
+    "updated_at": "2026-05-04T22:07:16.348Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 223,
+  "fields": {
+    "waybill_number": "BRB605555",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 36,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "120.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T22:08:27.110Z",
+    "updated_at": "2026-05-04T22:10:20.967Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 224,
+  "fields": {
+    "waybill_number": "BRB101640",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 44,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "00",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 4,
+    "created_by": 4,
+    "updated_by": 4,
+    "created_at": "2026-05-04T22:09:49.767Z",
+    "updated_at": "2026-05-04T22:10:11.768Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 225,
+  "fields": {
+    "waybill_number": "BRB585922",
+    "external_waybill": null,
+    "order_date": "2026-05-04",
+    "merchant": 45,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "الغلاية من فتح الله",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "215.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 2,
+    "created_by": 2,
+    "updated_by": 2,
+    "created_at": "2026-05-04T22:55:41.452Z",
+    "updated_at": "2026-05-04T22:55:41.452Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 226,
+  "fields": {
+    "waybill_number": "BRB951920",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 20,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "المول",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "45.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:33:33.889Z",
+    "updated_at": "2026-05-05T19:33:33.889Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 227,
+  "fields": {
+    "waybill_number": "BRB691544",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 46,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "مجمع المحاكم",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:34:40.377Z",
+    "updated_at": "2026-05-05T19:34:40.377Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 228,
+  "fields": {
+    "waybill_number": "BRB322123",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 20,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "مجمع المحاكم",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:36:27.452Z",
+    "updated_at": "2026-05-05T19:36:27.452Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 229,
+  "fields": {
+    "waybill_number": "BRB408974",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 35,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "من الاتوبيس",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "140.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:37:50.341Z",
+    "updated_at": "2026-05-05T19:37:50.341Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 230,
+  "fields": {
+    "waybill_number": "BRB707669",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 35,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "للدراسات",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1600.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:38:34.124Z",
+    "updated_at": "2026-05-05T19:38:34.124Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 231,
+  "fields": {
+    "waybill_number": "BRB402213",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 47,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "للموقف الجديد",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "60.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:44:12.216Z",
+    "updated_at": "2026-05-05T19:44:12.216Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 232,
+  "fields": {
+    "waybill_number": "BRB645054",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 5,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "من منتصر",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:50:49.538Z",
+    "updated_at": "2026-05-05T19:51:29.293Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 233,
+  "fields": {
+    "waybill_number": "BRB654416",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 5,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "للعيسوي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:51:47.749Z",
+    "updated_at": "2026-05-05T19:51:47.749Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 234,
+  "fields": {
+    "waybill_number": "BRB375611",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 5,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "عبدو حول حسابه",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "130.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:53:04.803Z",
+    "updated_at": "2026-05-05T19:53:04.803Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 235,
+  "fields": {
+    "waybill_number": "BRB604311",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 48,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "من خطاب للمدير",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:54:09.794Z",
+    "updated_at": "2026-05-05T19:54:09.794Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 236,
+  "fields": {
+    "waybill_number": "BRB692925",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 20,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "حي الجامعه لمست الدولي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:54:43.155Z",
+    "updated_at": "2026-05-05T19:54:43.155Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 237,
+  "fields": {
+    "waybill_number": "BRB411082",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 33,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "للشونه",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:54:59.305Z",
+    "updated_at": "2026-05-05T19:54:59.305Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 238,
+  "fields": {
+    "waybill_number": "BRB318204",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 49,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "للامام محمد عبده",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:56:07.980Z",
+    "updated_at": "2026-05-05T19:56:07.980Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 239,
+  "fields": {
+    "waybill_number": "BRB440087",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 20,
+    "delegate": 2,
+    "branch": null,
+    "customer_name": "طلخا",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T19:56:30.106Z",
+    "updated_at": "2026-05-05T19:56:30.106Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 240,
+  "fields": {
+    "waybill_number": "BRB926730",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 43,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "البراق",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:08:41.047Z",
+    "updated_at": "2026-05-05T21:08:41.047Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 241,
+  "fields": {
+    "waybill_number": "BRB883181",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 50,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "المشاية",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:09:24.152Z",
+    "updated_at": "2026-05-05T21:11:07.462Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 242,
+  "fields": {
+    "waybill_number": "BRB480115",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 51,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "المحلة",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "50.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:10:52.950Z",
+    "updated_at": "2026-05-05T21:10:52.950Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 243,
+  "fields": {
+    "waybill_number": "BRB584555",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 52,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "من المحافظة للجلاء",
+    "customer_phone": "مفتاح",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:13:09.291Z",
+    "updated_at": "2026-05-05T21:13:09.291Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 244,
+  "fields": {
+    "waybill_number": "BRB476969",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 53,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "حي الجامعه",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:14:14.552Z",
+    "updated_at": "2026-05-05T21:14:14.552Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 245,
+  "fields": {
+    "waybill_number": "BRB648928",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 54,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "مست الدولي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:15:40.500Z",
+    "updated_at": "2026-05-05T21:15:40.500Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 246,
+  "fields": {
+    "waybill_number": "BRB305419",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 55,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "عيش لبراميزا",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:17:03.307Z",
+    "updated_at": "2026-05-05T21:17:03.307Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 247,
+  "fields": {
+    "waybill_number": "BRB643249",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 20,
+    "delegate": 8,
+    "branch": null,
+    "customer_name": "السيد سليم لاداب",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:18:00.304Z",
+    "updated_at": "2026-05-05T21:18:00.304Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 248,
+  "fields": {
+    "waybill_number": "BRB482866",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 36,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:22:00.676Z",
+    "updated_at": "2026-05-05T21:22:00.676Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 249,
+  "fields": {
+    "waybill_number": "BRB584751",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 4,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:22:40.577Z",
+    "updated_at": "2026-05-05T21:22:40.577Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 250,
+  "fields": {
+    "waybill_number": "BRB683346",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 56,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:23:13.902Z",
+    "updated_at": "2026-05-05T21:23:13.902Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 251,
+  "fields": {
+    "waybill_number": "BRB303669",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 6,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "حي الجامعه",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "280.00",
+    "shipping_price": "120.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:26:45.775Z",
+    "updated_at": "2026-05-05T21:26:45.775Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 252,
+  "fields": {
+    "waybill_number": "BRB222215",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 6,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "الاديب",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "335.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:27:13.575Z",
+    "updated_at": "2026-05-05T21:27:13.575Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 253,
+  "fields": {
+    "waybill_number": "BRB677572",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 6,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "خطاب",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "185.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:27:49.429Z",
+    "updated_at": "2026-05-05T21:27:49.429Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 254,
+  "fields": {
+    "waybill_number": "BRB260885",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 6,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "ميت حدر",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "50.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:28:06.028Z",
+    "updated_at": "2026-05-05T21:28:06.028Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 255,
+  "fields": {
+    "waybill_number": "BRB228087",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 6,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "الهدي والنور",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "270.00",
+    "shipping_price": "50.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:29:12.191Z",
+    "updated_at": "2026-05-05T21:29:12.191Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 256,
+  "fields": {
+    "waybill_number": "BRB139798",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 20,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "جديله لحي الجامعه",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:30:23.066Z",
+    "updated_at": "2026-05-05T21:30:23.066Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 257,
+  "fields": {
+    "waybill_number": "BRB548518",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 23,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "بن الحاج",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "230.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:30:42.345Z",
+    "updated_at": "2026-05-05T21:30:42.345Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 258,
+  "fields": {
+    "waybill_number": "BRB794259",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 43,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "الموقف الجديد",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "60.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:31:13.040Z",
+    "updated_at": "2026-05-05T21:31:13.040Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 259,
+  "fields": {
+    "waybill_number": "BRB361958",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 57,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:32:30.947Z",
+    "updated_at": "2026-05-05T21:32:30.947Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 260,
+  "fields": {
+    "waybill_number": "BRB373565",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 57,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:32:37.993Z",
+    "updated_at": "2026-05-05T21:32:45.109Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 261,
+  "fields": {
+    "waybill_number": "BRB906546",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 58,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:34:10.413Z",
+    "updated_at": "2026-05-05T21:34:10.413Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 262,
+  "fields": {
+    "waybill_number": "BRB903329",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 59,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "915.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:35:18.815Z",
+    "updated_at": "2026-05-05T21:35:18.815Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 263,
+  "fields": {
+    "waybill_number": "BRB609575",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 61,
+    "delegate": 4,
+    "branch": null,
+    "customer_name": "محمد الساعي لموقف السنبلاوين",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:37:12.071Z",
+    "updated_at": "2026-05-05T21:37:12.071Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 264,
+  "fields": {
+    "waybill_number": "BRB444643",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 43,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "البراق",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:49:00.035Z",
+    "updated_at": "2026-05-05T21:49:00.035Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 265,
+  "fields": {
+    "waybill_number": "BRB888633",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 62,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "ش 10",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:49:46.226Z",
+    "updated_at": "2026-05-05T21:49:46.226Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 266,
+  "fields": {
+    "waybill_number": "BRB824474",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 62,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عزبة الشال",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:50:01.576Z",
+    "updated_at": "2026-05-05T21:50:01.576Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 267,
+  "fields": {
+    "waybill_number": "BRB641210",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:51:46.080Z",
+    "updated_at": "2026-05-05T21:51:46.080Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 268,
+  "fields": {
+    "waybill_number": "BRB769256",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:51:54.594Z",
+    "updated_at": "2026-05-05T21:51:54.594Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 269,
+  "fields": {
+    "waybill_number": "BRB690779",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:52:01.684Z",
+    "updated_at": "2026-05-05T21:52:01.684Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 270,
+  "fields": {
+    "waybill_number": "BRB972053",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:52:13.479Z",
+    "updated_at": "2026-05-05T21:52:13.479Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 271,
+  "fields": {
+    "waybill_number": "BRB677503",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:52:19.343Z",
+    "updated_at": "2026-05-05T21:52:19.343Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 272,
+  "fields": {
+    "waybill_number": "BRB296277",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:52:28.666Z",
+    "updated_at": "2026-05-05T21:52:28.666Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 273,
+  "fields": {
+    "waybill_number": "BRB574002",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:52:34.277Z",
+    "updated_at": "2026-05-05T21:52:34.277Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 274,
+  "fields": {
+    "waybill_number": "BRB831403",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:52:38.892Z",
+    "updated_at": "2026-05-05T21:52:38.892Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 275,
+  "fields": {
+    "waybill_number": "BRB215890",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 1,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "اطعام",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:52:43.918Z",
+    "updated_at": "2026-05-05T21:53:36.118Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 276,
+  "fields": {
+    "waybill_number": "BRB917423",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 63,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "للمشاية",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:52:49.622Z",
+    "updated_at": "2026-05-05T21:55:43.122Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 279,
+  "fields": {
+    "waybill_number": "BRB246818",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "فيككككك",
+    "customer_phone": "",
+    "customer_address": "الجلاء",
+    "product_price": "150.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:57:43.349Z",
+    "updated_at": "2026-05-05T22:13:41.602Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 280,
+  "fields": {
+    "waybill_number": "BRB419806",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 12,
+    "delegate": 1,
+    "branch": null,
+    "customer_name": "فيكككك",
+    "customer_phone": "",
+    "customer_address": "الترعة",
+    "product_price": "110.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:58:08.856Z",
+    "updated_at": "2026-05-05T22:12:08.200Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 281,
+  "fields": {
+    "waybill_number": "BRB244420",
+    "external_waybill": null,
+    "order_date": "2026-05-03",
+    "merchant": 23,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "عبدو خدهم",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "2700.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T21:58:34.129Z",
+    "updated_at": "2026-05-05T21:58:34.129Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 282,
+  "fields": {
+    "waybill_number": "BRB430310",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 12,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "ميادة الشامي",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:18:41.978Z",
+    "updated_at": "2026-05-05T22:19:04.835Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 283,
+  "fields": {
+    "waybill_number": "BRB812609",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 62,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "ام طارق",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:19:32.958Z",
+    "updated_at": "2026-05-05T22:19:32.958Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 284,
+  "fields": {
+    "waybill_number": "BRB290698",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 62,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "تيته سوسو",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:19:45.377Z",
+    "updated_at": "2026-05-05T22:19:45.377Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 285,
+  "fields": {
+    "waybill_number": "BRB545260",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 28,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "الاستاد",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:20:03.668Z",
+    "updated_at": "2026-05-05T22:20:03.668Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 286,
+  "fields": {
+    "waybill_number": "BRB991038",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 33,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "قناة السويس",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:20:23.991Z",
+    "updated_at": "2026-05-05T22:20:23.991Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 287,
+  "fields": {
+    "waybill_number": "BRB423172",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 64,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:21:06.270Z",
+    "updated_at": "2026-05-05T22:21:06.270Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 288,
+  "fields": {
+    "waybill_number": "BRB281332",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 64,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "30.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:21:16.154Z",
+    "updated_at": "2026-05-05T22:21:16.154Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 289,
+  "fields": {
+    "waybill_number": "BRB344274",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 16,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "45.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:21:34.699Z",
+    "updated_at": "2026-05-05T22:21:34.699Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 290,
+  "fields": {
+    "waybill_number": "BRB987330",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 16,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "45.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:21:43.596Z",
+    "updated_at": "2026-05-05T22:21:43.596Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 291,
+  "fields": {
+    "waybill_number": "BRB678019",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 16,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "45.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:22:38.878Z",
+    "updated_at": "2026-05-05T22:22:38.878Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 292,
+  "fields": {
+    "waybill_number": "BRB687850",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 16,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "760.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:23:43.632Z",
+    "updated_at": "2026-05-05T22:23:43.632Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 293,
+  "fields": {
+    "waybill_number": "BRB611694",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 25,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:24:04.929Z",
+    "updated_at": "2026-05-05T22:24:04.929Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 294,
+  "fields": {
+    "waybill_number": "BRB519235",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 64,
+    "delegate": 5,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "300.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:24:31.637Z",
+    "updated_at": "2026-05-05T22:24:31.637Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 295,
+  "fields": {
+    "waybill_number": "BRB535838",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 32,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:35:24.513Z",
+    "updated_at": "2026-05-05T22:35:24.513Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 296,
+  "fields": {
+    "waybill_number": "BRB184312",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 63,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "40.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:35:39.426Z",
+    "updated_at": "2026-05-05T22:35:39.426Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 297,
+  "fields": {
+    "waybill_number": "BRB733537",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 7,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "0",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "1300.00",
+    "shipping_price": "30.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:36:06.341Z",
+    "updated_at": "2026-05-05T22:36:06.341Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 298,
+  "fields": {
+    "waybill_number": "BRB608726",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 9,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "تبع مريم",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "0.00",
+    "shipping_price": "35.00",
+    "status": "delivered",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:36:39.354Z",
+    "updated_at": "2026-05-05T22:36:39.354Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 299,
+  "fields": {
+    "waybill_number": "BRB778475",
+    "external_waybill": null,
+    "order_date": "2026-05-05",
+    "merchant": 23,
+    "delegate": 6,
+    "branch": null,
+    "customer_name": "بنزين",
+    "customer_phone": "",
+    "customer_address": "",
+    "product_price": "100.00",
+    "shipping_price": "0.00",
+    "status": "accounted",
+    "notes": "",
+    "owned_by": 1,
+    "created_by": 1,
+    "updated_by": 1,
+    "created_at": "2026-05-05T22:37:04.517Z",
+    "updated_at": "2026-05-05T22:37:04.517Z",
+    "deleted_at": null,
+    "deleted_by": null
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 2,
+  "fields": {
+    "order": 99,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-04-25T23:30:55.307Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 3,
+  "fields": {
+    "order": 101,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-04-29T01:31:27.657Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 7,
+  "fields": {
+    "order": 102,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:31:55.843Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 8,
+  "fields": {
+    "order": 103,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:32:45.945Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 9,
+  "fields": {
+    "order": 104,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:39:12.505Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 10,
+  "fields": {
+    "order": 105,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:40:18.021Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 11,
+  "fields": {
+    "order": 106,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:43:24.883Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 12,
+  "fields": {
+    "order": 108,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:45:39.697Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 13,
+  "fields": {
+    "order": 107,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:45:48.365Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 14,
+  "fields": {
+    "order": 109,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:47:48.025Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 15,
+  "fields": {
+    "order": 110,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T21:54:59.495Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 16,
+  "fields": {
+    "order": 111,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:09:30.153Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 17,
+  "fields": {
+    "order": 112,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:11:25.601Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 18,
+  "fields": {
+    "order": 113,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:12:14.958Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 19,
+  "fields": {
+    "order": 114,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:13:27.933Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 20,
+  "fields": {
+    "order": 115,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:14:38.334Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 21,
+  "fields": {
+    "order": 116,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:15:47.942Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 22,
+  "fields": {
+    "order": 117,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:16:42.642Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 23,
+  "fields": {
+    "order": 118,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:17:32.082Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 24,
+  "fields": {
+    "order": 119,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:18:29.742Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 25,
+  "fields": {
+    "order": 120,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:20:15.269Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 26,
+  "fields": {
+    "order": 121,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:21:08.013Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 27,
+  "fields": {
+    "order": 122,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-02T22:23:13.970Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 29,
+  "fields": {
+    "order": 123,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:41:46.770Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 30,
+  "fields": {
+    "order": 124,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:51:27.174Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 31,
+  "fields": {
+    "order": 125,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:52:04.819Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 32,
+  "fields": {
+    "order": 126,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:52:30.171Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 33,
+  "fields": {
+    "order": 127,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T22:54:47.582Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 34,
+  "fields": {
+    "order": 128,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:18:11.116Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 35,
+  "fields": {
+    "order": 129,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:18:44.924Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 36,
+  "fields": {
+    "order": 130,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:19:10.986Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 37,
+  "fields": {
+    "order": 131,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:20:13.149Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 38,
+  "fields": {
+    "order": 132,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:20:45.710Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 39,
+  "fields": {
+    "order": 133,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:21:06.760Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 40,
+  "fields": {
+    "order": 134,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-02T23:24:36.357Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 41,
+  "fields": {
+    "order": 135,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:26:09.217Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 42,
+  "fields": {
+    "order": 136,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:26:49.396Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 43,
+  "fields": {
+    "order": 137,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-02T23:27:28.878Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 44,
+  "fields": {
+    "order": 138,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:27:46.506Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 45,
+  "fields": {
+    "order": 139,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:28:26.805Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 46,
+  "fields": {
+    "order": 140,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:29:24.594Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 47,
+  "fields": {
+    "order": 141,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-02T23:30:35.876Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 48,
+  "fields": {
+    "order": 142,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:31:10.886Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 49,
+  "fields": {
+    "order": 144,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:33:10.375Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 50,
+  "fields": {
+    "order": 143,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-02T23:33:15.723Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 51,
+  "fields": {
+    "order": 145,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-02T23:34:40.957Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 52,
+  "fields": {
+    "order": 146,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-02T23:35:13.100Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 53,
+  "fields": {
+    "order": 127,
+    "old_status": "delivered",
+    "new_status": "accounted",
+    "changed_at": "2026-05-02T23:40:23.293Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 54,
+  "fields": {
+    "order": 147,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-02T23:47:46.910Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 55,
+  "fields": {
+    "order": 148,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T00:40:37.595Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 56,
+  "fields": {
+    "order": 149,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T00:41:20.308Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 57,
+  "fields": {
+    "order": 150,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T00:42:18.271Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 58,
+  "fields": {
+    "order": 151,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T00:42:53.655Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 59,
+  "fields": {
+    "order": 152,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T00:45:34.854Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 60,
+  "fields": {
+    "order": 101,
+    "old_status": "delivered",
+    "new_status": "in_transit",
+    "changed_at": "2026-05-03T00:46:16.434Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 61,
+  "fields": {
+    "order": 153,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T00:47:30.178Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 62,
+  "fields": {
+    "order": 154,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T00:48:08.453Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 63,
+  "fields": {
+    "order": 155,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T00:48:49.267Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 64,
+  "fields": {
+    "order": 156,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T00:51:20.039Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 65,
+  "fields": {
+    "order": 157,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T00:53:26.060Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 66,
+  "fields": {
+    "order": 158,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T00:54:26.239Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 67,
+  "fields": {
+    "order": 159,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T00:57:40.517Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 68,
+  "fields": {
+    "order": 160,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T01:05:25.996Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 69,
+  "fields": {
+    "order": 161,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T19:47:12.025Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 70,
+  "fields": {
+    "order": 162,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T19:47:36.760Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 71,
+  "fields": {
+    "order": 163,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T19:49:08.254Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 72,
+  "fields": {
+    "order": 164,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T19:49:54.081Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 73,
+  "fields": {
+    "order": 165,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T19:51:08.860Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 74,
+  "fields": {
+    "order": 166,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T19:51:51.698Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 75,
+  "fields": {
+    "order": 167,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T19:52:22.185Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 76,
+  "fields": {
+    "order": 168,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T19:52:57.215Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 77,
+  "fields": {
+    "order": 169,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T19:54:35.555Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 78,
+  "fields": {
+    "order": 170,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T23:18:04.200Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 79,
+  "fields": {
+    "order": 171,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T23:18:49.941Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 80,
+  "fields": {
+    "order": 172,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-03T23:19:22.610Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 81,
+  "fields": {
+    "order": 173,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:20:40.867Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 82,
+  "fields": {
+    "order": 174,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:24:24.245Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 83,
+  "fields": {
+    "order": 175,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:25:24.707Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 84,
+  "fields": {
+    "order": 176,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:27:34.073Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 85,
+  "fields": {
+    "order": 177,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:34:05.276Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 86,
+  "fields": {
+    "order": 178,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:34:48.024Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 87,
+  "fields": {
+    "order": 179,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:35:27.006Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 88,
+  "fields": {
+    "order": 180,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:35:41.580Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 89,
+  "fields": {
+    "order": 181,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:36:26.611Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 90,
+  "fields": {
+    "order": 182,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:42:01.341Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 91,
+  "fields": {
+    "order": 183,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-03T23:52:32.226Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 92,
+  "fields": {
+    "order": 184,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T01:50:13.730Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 93,
+  "fields": {
+    "order": 185,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T01:51:14.634Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 94,
+  "fields": {
+    "order": 186,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T01:51:47.190Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 95,
+  "fields": {
+    "order": 187,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T01:52:23.517Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 96,
+  "fields": {
+    "order": 188,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T01:53:52.037Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 97,
+  "fields": {
+    "order": 189,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T01:56:20.869Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 98,
+  "fields": {
+    "order": 190,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T01:57:07.289Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 99,
+  "fields": {
+    "order": 191,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T02:00:15.459Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 100,
+  "fields": {
+    "order": 192,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T02:01:16.683Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 101,
+  "fields": {
+    "order": 193,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T02:02:26.296Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 102,
+  "fields": {
+    "order": 194,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T02:03:20.120Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 103,
+  "fields": {
+    "order": 195,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T02:04:33.275Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 104,
+  "fields": {
+    "order": 196,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T02:05:14.379Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 105,
+  "fields": {
+    "order": 197,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T02:06:48.133Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 106,
+  "fields": {
+    "order": 198,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:47:02.754Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 107,
+  "fields": {
+    "order": 200,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:51:03.036Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 108,
+  "fields": {
+    "order": 201,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:51:52.421Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 109,
+  "fields": {
+    "order": 202,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:52:53.083Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 110,
+  "fields": {
+    "order": 203,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:53:31.270Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 111,
+  "fields": {
+    "order": 204,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:53:42.431Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 112,
+  "fields": {
+    "order": 205,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:54:04.365Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 113,
+  "fields": {
+    "order": 206,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T20:55:35.202Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 114,
+  "fields": {
+    "order": 207,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:56:41.196Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 115,
+  "fields": {
+    "order": 208,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T20:58:24.642Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 116,
+  "fields": {
+    "order": 209,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T20:58:37.200Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 117,
+  "fields": {
+    "order": 210,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T20:59:16.698Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 118,
+  "fields": {
+    "order": 211,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T21:00:29.051Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 119,
+  "fields": {
+    "order": 212,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T21:01:02.175Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 120,
+  "fields": {
+    "order": 213,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T21:03:03.419Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 121,
+  "fields": {
+    "order": 214,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T21:04:20.246Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 122,
+  "fields": {
+    "order": 215,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T21:05:12.123Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 123,
+  "fields": {
+    "order": 216,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T21:05:47.356Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 124,
+  "fields": {
+    "order": 217,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T21:10:30.755Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 125,
+  "fields": {
+    "order": 199,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T21:25:40.194Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 126,
+  "fields": {
+    "order": 218,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T22:02:55.979Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 127,
+  "fields": {
+    "order": 219,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T22:03:57.260Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 128,
+  "fields": {
+    "order": 220,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T22:05:09.018Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 129,
+  "fields": {
+    "order": 221,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T22:05:44.815Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 130,
+  "fields": {
+    "order": 222,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T22:07:16.355Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 131,
+  "fields": {
+    "order": 223,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-04T22:08:27.118Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 132,
+  "fields": {
+    "order": 224,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T22:09:49.775Z",
+    "changed_by": 4
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 133,
+  "fields": {
+    "order": 225,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-04T22:55:41.462Z",
+    "changed_by": 2
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 134,
+  "fields": {
+    "order": 226,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:33:33.901Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 135,
+  "fields": {
+    "order": 227,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:34:40.384Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 136,
+  "fields": {
+    "order": 228,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:36:27.460Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 137,
+  "fields": {
+    "order": 229,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T19:37:50.346Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 138,
+  "fields": {
+    "order": 230,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:38:34.130Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 139,
+  "fields": {
+    "order": 231,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T19:44:12.223Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 140,
+  "fields": {
+    "order": 232,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T19:50:49.547Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 141,
+  "fields": {
+    "order": 232,
+    "old_status": "accounted",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:51:29.301Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 142,
+  "fields": {
+    "order": 233,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:51:47.756Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 143,
+  "fields": {
+    "order": 234,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:53:04.810Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 144,
+  "fields": {
+    "order": 235,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:54:09.802Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 145,
+  "fields": {
+    "order": 236,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:54:43.163Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 146,
+  "fields": {
+    "order": 237,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:54:59.313Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 147,
+  "fields": {
+    "order": 238,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:56:07.987Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 148,
+  "fields": {
+    "order": 239,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T19:56:30.114Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 149,
+  "fields": {
+    "order": 240,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:08:41.055Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 150,
+  "fields": {
+    "order": 241,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:09:24.159Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 151,
+  "fields": {
+    "order": 242,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:10:52.957Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 152,
+  "fields": {
+    "order": 243,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:13:09.299Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 153,
+  "fields": {
+    "order": 244,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:14:14.559Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 154,
+  "fields": {
+    "order": 245,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:15:40.509Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 155,
+  "fields": {
+    "order": 246,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:17:03.315Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 156,
+  "fields": {
+    "order": 247,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:18:00.311Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 157,
+  "fields": {
+    "order": 248,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:22:00.684Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 158,
+  "fields": {
+    "order": 249,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:22:40.586Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 159,
+  "fields": {
+    "order": 250,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:23:13.909Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 160,
+  "fields": {
+    "order": 251,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:26:45.781Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 161,
+  "fields": {
+    "order": 252,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:27:13.582Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 162,
+  "fields": {
+    "order": 253,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:27:49.438Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 163,
+  "fields": {
+    "order": 254,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:28:06.035Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 164,
+  "fields": {
+    "order": 255,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:29:12.199Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 165,
+  "fields": {
+    "order": 256,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:30:23.073Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 166,
+  "fields": {
+    "order": 257,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:30:42.353Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 167,
+  "fields": {
+    "order": 258,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:31:13.049Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 168,
+  "fields": {
+    "order": 259,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:32:30.954Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 169,
+  "fields": {
+    "order": 260,
+    "old_status": "in_transit",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:32:45.116Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 170,
+  "fields": {
+    "order": 261,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:34:10.421Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 171,
+  "fields": {
+    "order": 262,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:35:18.821Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 172,
+  "fields": {
+    "order": 263,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:37:12.079Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 173,
+  "fields": {
+    "order": 264,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:49:00.042Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 174,
+  "fields": {
+    "order": 265,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:49:46.233Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 175,
+  "fields": {
+    "order": 266,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:50:01.582Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 176,
+  "fields": {
+    "order": 267,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:51:46.088Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 177,
+  "fields": {
+    "order": 268,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:51:54.601Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 178,
+  "fields": {
+    "order": 269,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:52:01.693Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 179,
+  "fields": {
+    "order": 270,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:52:13.486Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 180,
+  "fields": {
+    "order": 271,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:52:19.351Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 181,
+  "fields": {
+    "order": 272,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:52:28.676Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 182,
+  "fields": {
+    "order": 273,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:52:34.285Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 183,
+  "fields": {
+    "order": 274,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:52:38.900Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 184,
+  "fields": {
+    "order": 275,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:52:43.924Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 185,
+  "fields": {
+    "order": 276,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:52:49.630Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 186,
+  "fields": {
+    "order": 276,
+    "old_status": "accounted",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:55:43.129Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 187,
+  "fields": {
+    "order": 277,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:56:51.639Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 188,
+  "fields": {
+    "order": 278,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:57:24.142Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 189,
+  "fields": {
+    "order": 279,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:57:43.357Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 190,
+  "fields": {
+    "order": 280,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T21:58:08.865Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 191,
+  "fields": {
+    "order": 281,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T21:58:34.136Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 192,
+  "fields": {
+    "order": 282,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:18:41.986Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 193,
+  "fields": {
+    "order": 283,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T22:19:32.966Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 194,
+  "fields": {
+    "order": 284,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T22:19:45.385Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 195,
+  "fields": {
+    "order": 285,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:20:03.675Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 196,
+  "fields": {
+    "order": 286,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:20:23.999Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 197,
+  "fields": {
+    "order": 287,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:21:06.279Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 198,
+  "fields": {
+    "order": 288,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:21:16.160Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 199,
+  "fields": {
+    "order": 289,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:21:34.707Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 200,
+  "fields": {
+    "order": 290,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:21:43.603Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 201,
+  "fields": {
+    "order": 291,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:22:38.884Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 202,
+  "fields": {
+    "order": 292,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:23:43.639Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 203,
+  "fields": {
+    "order": 293,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:24:04.938Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 204,
+  "fields": {
+    "order": 294,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T22:24:31.645Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 205,
+  "fields": {
+    "order": 295,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:35:24.521Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 206,
+  "fields": {
+    "order": 296,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:35:39.433Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 207,
+  "fields": {
+    "order": 297,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:36:06.348Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 208,
+  "fields": {
+    "order": 298,
+    "old_status": "",
+    "new_status": "delivered",
+    "changed_at": "2026-05-05T22:36:39.361Z",
+    "changed_by": 1
+  }
+},
+{
+  "model": "orders.orderstatushistory",
+  "pk": 209,
+  "fields": {
+    "order": 299,
+    "old_status": "",
+    "new_status": "accounted",
+    "changed_at": "2026-05-05T22:37:04.524Z",
+    "changed_by": 1
+  }
+}
+]

@@ -6,4 +6,3 @@ class OrdersConfig(AppConfig):
 
     def ready(self) -> None:
         import orders.signals  # noqa: F401
-
