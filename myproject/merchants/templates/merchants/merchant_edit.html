@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}تعديل تاجر{% endblock %}
+{% block header_action %}{% url 'merchants:detail' merchant_id=merchant.pk %}{% endblock %}
+
+{% block content %}
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+            <h4 class="mb-1">تعديل تاجر: {{ merchant.name }}</h4>
+            <div class="text-muted small">تعديل البيانات الأساسية أو حساب الدخول المرتبط</div>
+        </div>
+        <a class="btn btn-outline-secondary" href="{% url 'merchants:detail' merchant_id=merchant.pk %}">
+            <i class="fa-solid fa-arrow-right"></i> رجوع
+        </a>
+    </div>
+
+    <div class="card card-shadow mb-3">
+        <div class="card-body">
+            <div class="fw-semibold mb-3">بيانات التاجر</div>
+            <form method="post" novalidate>
+                {% csrf_token %}
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">اسم التاجر</label>
+                        {{ form.name }}
+                        <div class="text-danger small">{{ form.name.errors }}</div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">رقم التاجر</label>
+                        {{ form.phone }}
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">العنوان</label>
+                        {{ form.address }}
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">اسم البراند</label>
+                        {{ form.brand_name }}
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">{{ form.is_active }} <label class="form-check-label">نشط</label></div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mt-4">
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> حفظ التاجر</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% if linked_user and user_form %}
+    <div class="card card-shadow border-primary border-opacity-25">
+        <div class="card-body">
+            <div class="fw-semibold mb-2">حساب الدخول المرتبط</div>
+            <p class="small text-muted">المستخدم: <strong>{{ linked_user.username }}</strong></p>
+            <form method="post" novalidate>
+                {% csrf_token %}
+                <input type="hidden" name="save_linked_user" value="1">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">اسم المستخدم</label>
+                        {{ user_form.username }}
+                        <div class="text-danger small">{{ user_form.username.errors }}</div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">البريد</label>
+                        {{ user_form.email }}
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">الاسم الأول</label>
+                        {{ user_form.first_name }}
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label class="form-label">اسم العائلة</label>
+                        {{ user_form.last_name }}
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">{{ user_form.is_staff }} <label class="form-check-label">Staff</label></div>
+                        <div class="form-check">{{ user_form.is_active }} <label class="form-check-label">نشط</label></div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-outline-primary">حفظ بيانات الدخول</button>
+                </div>
+            </form>
+            <p class="small text-muted mt-3 mb-0">لتغيير كلمة المرور استخدم صفحة «المستخدمين» ← تعديل المستخدم.</p>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}

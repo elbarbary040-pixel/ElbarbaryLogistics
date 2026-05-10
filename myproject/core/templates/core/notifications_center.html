@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}الإشعارات{% endblock %}
+{% block header_action %}{% url 'core:notifications_center' %}{% endblock %}
+
+{% block content %}
+<h4 class="mb-3">صندوق التنبيهات الداخلية</h4>
+<form method="post" class="mb-4">
+    {% csrf_token %}
+    <input type="hidden" name="mark_read" value="1">
+    <div class="card card-shadow">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="fw-semibold">رسائل لم تُفتح بعد</span>
+            <button class="btn btn-sm btn-outline-primary" {% if not unread %}disabled{% endif %}><i class="fa-solid fa-check-double"></i> إخفاء المحدَّد كنُشِرَت اليوم قبل قليل</button>
+        </div>
+        <div class="list-group list-group-flush">
+            {% for n in unread %}
+            <label class="list-group-item">
+                <input class="form-check-input me-2" type="checkbox" name="nids" value="{{ n.pk }}">
+                <span class="fw-semibold">{{ n.title }}</span>
+                {% if n.body %}<div class="small text-muted">{{ n.body|linebreaksbr }}</div>{% endif %}
+                <div class="small text-muted mt-1">{{ n.created_at }} — القناة: {{ n.get_channel_display }}</div>
+            </label>
+            {% empty %}
+            <div class="list-group-item text-muted">لا رسائل لم تُقَرَّ حتى هذا الحين.</div>
+            {% endfor %}
+        </div>
+    </div>
+</form>
+
+<div class="card card-shadow"><div class="card-header fw-semibold">محفوظة فقط للمراجعات التاريخ الأخيرة</div>
+<ul class="list-group list-group-flush">
+{% for n in read %}
+<li class="list-group-item"><span class="fw-semibold">{{ n.title }}</span><div class="small text-muted">{{ n.read_at }}</div></li>
+{% empty %}
+<li class="list-group-item text-muted">لم نُكمِّل هذا الجزء لأجل إبقِاء النظام بسيط الآن؛ يمكنك إعادة تسمية ذلك لاحقًا.</li>
+{% endfor %}
+</ul></div>
+<a href="{% url 'core:enterprise_hub' %}" class="btn btn-outline-secondary btn-sm mt-3">عودة</a>
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}مركز السوبر أدمن{% endblock %}
+{% block header_action %}{% url 'core:superadmin_orders_control' %}{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+    <div>
+        <h4 class="mb-1">مركز متابعة الأوردرات</h4>
+        <div class="text-muted small">
+            كل الأوردرات (الظاهرة + المحذوفة منطقيًا) مع أدوات استرجاع ونسخ احتياطي.
+        </div>
+    </div>
+    <div class="d-flex gap-2">
+        <a class="btn btn-outline-danger" href="{% url 'core:error_logs_center' %}">سجل الأخطاء</a>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="create_backup">
+            <button class="btn btn-success" type="submit">إنشاء نسخة احتياطية الآن</button>
+        </form>
+    </div>
+</div>
+
+<div class="row g-3 mb-3">
+    <div class="col-12 col-md-3"><div class="card card-shadow"><div class="card-body">إجمالي الأوردرات: <span class="fw-bold">{{ all_orders_count }}</span></div></div></div>
+    <div class="col-12 col-md-3"><div class="card card-shadow"><div class="card-body">الأوردرات الظاهرة: <span class="fw-bold text-success">{{ visible_orders_count }}</span></div></div></div>
+    <div class="col-12 col-md-3"><div class="card card-shadow"><div class="card-body">المحذوفة منطقيًا: <span class="fw-bold text-danger">{{ deleted_count }}</span></div></div></div>
+    <div class="col-12 col-md-3"><div class="card card-shadow"><div class="card-body">الأوردرات الساقطة: <span class="fw-bold text-warning">{{ orphaned_count }}</span></div></div></div>
+</div>
+
+<div class="card card-shadow mb-3">
+    <div class="card-body">
+        <div class="row g-2">
+            <div class="col-12 col-md-4">
+                <form method="get">
+                    <input class="form-control" type="search" name="q" value="{{ request.GET.q }}" placeholder="بحث: بوليصة / عميل / تاجر / مندوب">
+            </div>
+            <div class="col-12 col-md-3">
+                    <select class="form-select" name="show">
+                        <option value="all" {% if show == "all" %}selected{% endif %}>كل الأوردرات</option>
+                        <option value="deleted" {% if show == "deleted" %}selected{% endif %}>المحذوفة فقط</option>
+                        <option value="orphaned" {% if show == "orphaned" %}selected{% endif %}>الساقطة فقط</option>
+                    </select>
+            </div>
+            <div class="col-12 col-md-5 d-flex gap-2">
+                    <button class="btn btn-primary" type="submit">تطبيق</button>
+                </form>
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="restore_all_deleted">
+                    <button class="btn btn-outline-danger" type="submit">استرجاع كل المحذوف</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card card-shadow mb-3">
+    <div class="card-body">
+        <div class="fw-semibold mb-2">الأوردرات</div>
+        <div class="table-responsive">
+            <table class="table table-sm table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>البوليصة</th>
+                        <th>التاريخ</th>
+                        <th>العميل</th>
+                        <th>التاجر</th>
+                        <th>المندوب</th>
+                        <th>الحالة</th>
+                        <th>حذف</th>
+                        <th>إجراء</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for o in page_obj %}
+                    <tr>
+                        <td>{{ o.waybill_number }}</td>
+                        <td class="text-nowrap">{{ o.order_date|date:"Y-m-d" }}</td>
+                        <td>{{ o.customer_name }}</td>
+                        <td>{{ o.merchant.name|default:"ساقط" }}</td>
+                        <td>{{ o.delegate.name|default:"ساقط" }}</td>
+                        <td>{{ o.get_status_display }}</td>
+                        <td>
+                            {% if o.deleted_at %}
+                                <span class="badge text-bg-danger">محذوف</span>
+                            {% else %}
+                                <span class="badge text-bg-success">ظاهر</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if o.deleted_at %}
+                            <form method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="action" value="restore_order">
+                                <input type="hidden" name="order_id" value="{{ o.id }}">
+                                <button class="btn btn-sm btn-outline-primary" type="submit">استرجاع</button>
+                            </form>
+                            {% else %}
+                            <span class="text-muted small">—</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr><td colspan="8" class="text-center text-muted">لا توجد بيانات.</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="card card-shadow">
+    <div class="card-body">
+        <div class="fw-semibold mb-2">النسخ الاحتياطية الأخيرة</div>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead class="table-light"><tr><th>الملف</th><th>آخر تعديل</th><th>الحجم (بايت)</th><th>تحميل</th></tr></thead>
+                <tbody>
+                    {% for b in backup_rows %}
+                    <tr>
+                        <td class="text-nowrap">{{ b.name }}</td>
+                        <td class="text-nowrap">{{ b.modified_at|date:"Y-m-d H:i:s" }}</td>
+                        <td>{{ b.size }}</td>
+                        <td><a class="btn btn-sm btn-outline-secondary" href="{% url 'core:db_backup_download' b.name %}">تحميل</a></td>
+                    </tr>
+                    {% empty %}
+                    <tr><td colspan="4" class="text-center text-muted">لا توجد نسخ حتى الآن.</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}تلميحات مطابقة مبدئية{% endblock %}
+{% block header_action %}{% url 'core:enterprise_risk' %}{% endblock %}
+
+{% block content %}
+<h4 class="mb-3">جدول تجريبي مبكر لإظهار تكرارات محتملة</h4>
+<p class="text-muted small mb-4">يتطلب ذلك مراجعة بشرّية للتفسير قبل اتخاذ أي موقف حقيقية من التصحّح؛ الشظايا هنا تجمع نفس المرجّع المتعدَّد ظهورًا.</p>
+
+<h6 class="mt-4">مزدوج أو أكثر لتعريف واحد وبنفس السّبب في الطلب المرجَّع ضمن الخزنة</h6>
+<div class="table-responsive mb-4">
+<table class="table table-sm table-bordered">
+<thead><tr><th>الطلب</th><th>سبب المحاسبة</th><th>عدُّ السجلّات المتطابقة</th></tr></thead>
+<tbody>
+{% for row in dup_treas %}
+<tr><td>{{ row.order_id }}</td><td>{{ row.reason }}</td><td>{{ row.c }}</td></tr>
+{% empty %}
+<tr><td colspan="3" class="text-muted text-center py-3">لا شيء مريب هنا وفق ذلك البحث الآني.</td></tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+
+<h6 class="mt-4">مزدوج لمذكَّر واحد ومُتاح نفس المتن المرتبِّط بالمرجَّع المرقّمة «order: …» لتفاصيل تاجر مختلفة</h6>
+<table class="table table-sm table-bordered">
+<thead><tr><th>رقم المتجر الذي قام بتسديد المقطوعات</th><th>تلخَّص المتن الموحَّد الذي أعاد ظهُّوره أكثر من مرتَة واحدة ضمن ذلك السّياق الذي أعددناه الآن بحسب ذلك السّجلّ</th><th>عدَّ التكرَّار</th></tr></thead>
+<tbody>
+{% for row in dup_pay %}
+<tr><td>{{ row.merchant_id }}</td><td>{{ row.notes|truncatechars:220 }}</td><td>{{ row.c }}</td></tr>
+{% empty %}
+<tr><td colspan="3" class="text-muted text-center py-3">لا نتيجة وفق ذلك البناء التجّريبي الذي شغَّلنا الآن الآني.</td></tr>
+{% endfor %}
+</tbody>
+</table>
+
+<a href="{% url 'core:enterprise_hub' %}" class="btn btn-outline-secondary btn-sm mt-4">عودة المركز المتقدَّم الذي أعددته لك سابقًا</a>
+{% endblock %}

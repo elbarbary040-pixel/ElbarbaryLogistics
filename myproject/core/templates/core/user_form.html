@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block title %}{% if mode == 'add' %}إضافة مستخدم{% else %}تعديل مستخدم{% endif %}{% endblock %}
+{% block header_action %}{% url 'core:users' %}{% endblock %}
+
+{% block content %}
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+            <h4 class="mb-1">{% if mode == 'add' %}إضافة مستخدم{% else %}تعديل مستخدم{% endif %}</h4>
+            <div class="text-muted small">{% if mode == 'edit' %}{{ target_user.username }}{% else %}إنشاء حساب جديد{% endif %}</div>
+        </div>
+        <a class="btn btn-outline-secondary" href="{% url 'core:users' %}">
+            <i class="fa-solid fa-arrow-right"></i>
+            رجوع للقائمة
+        </a>
+    </div>
+
+    {% if mode == 'edit' %}
+    {% if linked_merchant or linked_delegate %}
+    <div class="card card-shadow mb-3 border-info">
+        <div class="card-body py-3">
+            <div class="fw-semibold mb-2 small text-muted">ارتباط الحساب بنظام الشحن</div>
+            {% if linked_merchant %}
+            <div class="small">تاجر مرتبط: <span class="fw-semibold">{{ linked_merchant.name }}</span>
+                <a href="{% url 'merchants:detail' merchant_id=linked_merchant.pk %}" class="ms-2">عرض الصفحة</a>
+            </div>
+            {% endif %}
+            {% if linked_delegate %}
+            <div class="small">مندوب مرتبط: <span class="fw-semibold">{{ linked_delegate.name }}</span>
+                <a href="{% url 'delegates:detail' delegate_id=linked_delegate.pk %}" class="ms-2">عرض الصفحة</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+    {% endif %}
+
+    <div class="row g-3">
+        <div class="col-12 {% if mode == 'edit' %}col-lg-7{% endif %}">
+            <div class="card card-shadow">
+                <div class="card-body">
+                    <div class="fw-semibold mb-3">بيانات الحساب</div>
+                    <form method="post" novalidate>
+                        {% csrf_token %}
+                        {% if mode == 'edit' %}
+                            <input type="hidden" name="edit_form" value="1">
+                        {% endif %}
+
+                        {% if form.non_field_errors %}
+                            <div class="alert alert-danger">{{ form.non_field_errors }}</div>
+                        {% endif %}
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">اسم المستخدم</label>
+                                {{ form.username }}
+                                <div class="text-danger small">{{ form.username.errors }}</div>
+                            </div>
+
+                            {% if mode == 'edit' %}
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">البريد الإلكتروني</label>
+                                    {{ form.email }}
+                                    <div class="text-danger small">{{ form.email.errors }}</div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">الاسم الأول</label>
+                                    {{ form.first_name }}
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">اسم العائلة</label>
+                                    {{ form.last_name }}
+                                </div>
+                            {% else %}
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">الاسم الأول</label>
+                                    {{ form.first_name }}
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">اسم العائلة</label>
+                                    {{ form.last_name }}
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">البريد الإلكتروني</label>
+                                    {{ form.email }}
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">كلمة المرور</label>
+                                    {{ form.password1 }}
+                                    <div class="text-danger small">{{ form.password1.errors }}</div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">تأكيد كلمة المرور</label>
+                                    {{ form.password2 }}
+                                    <div class="text-danger small">{{ form.password2.errors }}</div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">الدور الافتراضي</label>
+                                    {{ form.role }}
+                                    <div class="text-danger small">{{ form.role.errors }}</div>
+                                </div>
+                            {% endif %}
+
+                            {% if mode == 'edit' and profile_form %}
+                                <div class="col-12">
+                                    <hr class="text-muted opacity-25">
+                                    <div class="fw-semibold mb-2 small">ملف الصلاحيات</div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">الدور</label>
+                                    {{ profile_form.role }}
+                                    <div class="text-danger small">{{ profile_form.role.errors }}</div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label">هاتف الملف</label>
+                                    {{ profile_form.phone }}
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">ملاحظات داخلية</label>
+                                    {{ profile_form.notes }}
+                                </div>
+                            {% endif %}
+
+                            <div class="col-12">
+                                <div class="row g-2">
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            {{ form.is_staff }}
+                                            <label class="form-check-label">صلاحيات لوحة الإدارة (Staff)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-check">
+                                            {{ form.is_active }}
+                                            <label class="form-check-label">حساب نشط</label>
+                                        </div>
+                                    </div>
+                                    {% if mode == 'edit' and super_form %}
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-check border rounded px-2 py-2 bg-light">
+                                            {{ super_form.is_superuser }}
+                                            <label class="form-check-label text-danger fw-semibold">مدير عام Django (سوبر يوزر)</label>
+                                        </div>
+                                        <div class="text-danger small">{{ super_form.is_superuser.errors }}</div>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-4">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                حفظ البيانات
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        {% if mode == 'edit' %}
+            <div class="col-12 col-lg-5">
+                <div class="card card-shadow">
+                    <div class="card-body">
+                        <div class="fw-semibold mb-2">تعيين كلمة مرور جديدة</div>
+                        <p class="small text-muted">لا يُطلب إدخال كلمة المرور الحالية — للمسؤولين فقط.</p>
+                        <form method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="password_form" value="1">
+
+                            <div class="row g-2">
+                                <div class="col-12">
+                                    <label class="form-label small">كلمة المرور الجديدة</label>
+                                    {{ password_form.new_password1 }}
+                                    <div class="text-danger small">{{ password_form.new_password1.errors }}</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small">تأكيد كلمة المرور</label>
+                                    {{ password_form.new_password2 }}
+                                    <div class="text-danger small">{{ password_form.new_password2.errors }}</div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-end mt-3">
+                                <button type="submit" class="btn btn-warning">
+                                    <i class="fa-solid fa-key"></i>
+                                    تحديث كلمة المرور
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

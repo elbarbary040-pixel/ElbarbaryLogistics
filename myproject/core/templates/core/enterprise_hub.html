@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}مركز العمليات{% endblock %}
+{% block header_action %}{% url 'core:enterprise_hub' %}{% endblock %}
+{% block content %}
+<h4 class="mb-3">مركز العمليات الموسّعة</h4>
+<p class="text-muted small">كل البيانات المنشأة هنا جديدة ولا تمس الشحن أو الخزينة القائمتين؛ تُكمّل المنظومة دون تعطيل الميزات الأصلية.</p>
+<div class="row g-3">
+    <div class="col-6 col-md-4"><div class="card card-shadow"><div class="card-body py-3">
+        <div class="small text-muted">ديون لم تُغلق</div>
+        <div class="fs-4 fw-semibold">{{ debt_open }}</div>
+        <a class="btn btn-sm btn-outline-primary mt-2" href="{% url 'core:enterprise_debts' %}">الأسماء الكاملة للديون وإنشاء مستحقّة</a>
+    </div></div></div>
+    <div class="col-6 col-md-4"><div class="card card-shadow"><div class="card-body py-3">
+        <div class="small text-muted">أصناف مخزون</div>
+        <div class="fs-4 fw-semibold">{{ skus_count }}</div>
+        <a class="btn btn-sm btn-outline-primary mt-2" href="{% url 'core:enterprise_inventory' %}">سجل أو حركة</a>
+    </div></div></div>
+    <div class="col-6 col-md-4"><div class="card card-shadow"><div class="card-body py-3">
+        <div class="small text-muted">تلميحات مخاطرة (خوارزميات بسيطة)</div>
+        <div class="fs-4 fw-semibold">{{ risk_flags }}</div>
+        {% if request.user.is_superuser %}
+        <a class="btn btn-sm btn-outline-danger mt-2" href="{% url 'core:enterprise_risk' %}">تفاصيل المطابقة</a>
+        {% else %}
+        <div class="small text-muted mt-2">للمدير العام فقط</div>
+        {% endif %}
+    </div></div></div>
+    <div class="col-6 col-md-4"><div class="card card-shadow"><div class="card-body py-3">
+        <div class="small text-muted">موافقة إجراءات حساسّة غير المنفَّذ بعد</div>
+        <div class="fs-4 fw-semibold">{{ pending_approvals }}</div>
+        {% if request.user.is_superuser %}
+        <a class="btn btn-sm btn-outline-warning mt-2" href="{% url 'core:enterprise_approvals' %}">جدول الموافقة</a>
+        {% endif %}
+    </div></div></div>
+    <div class="col-6 col-md-4"><div class="card card-shadow"><div class="card-body py-3">
+        <div class="small text-muted">إشعاراتك غير المقروءة</div>
+        <div class="fs-4 fw-semibold">{{ notifications_unread }}</div>
+        <a class="btn btn-sm btn-outline-secondary mt-2" href="{% url 'core:notifications_center' %}">صندوق الرسائل</a>
+    </div></div></div>
+    <div class="col-6 col-md-4"><div class="card card-shadow"><div class="card-body py-3">
+        <div class="small text-muted">دليل مختصر للعمال في الميدان</div>
+        <a class="btn btn-sm btn-outline-info mt-2" href="{% url 'core:offline_help' %}">اعمل دون شبكة (تخطيط مستقبلي)</a>
+    </div></div></div>
+</div>
+{% endblock %}

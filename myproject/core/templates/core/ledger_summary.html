@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}دفتر المزامنة{% endblock %}
+{% block header_action %}{% url 'core:ledger_sync' %}{% endblock %}
+
+{% block content %}
+<h4 class="mb-3">مزامنة مبدئية بين الخزنة ودفتر الحركة الموحد</h4>
+<p class="text-muted small">
+    هذا العرض لا يمس السجلات التاريخية ولا يطبّق أي تسوية آلية؛ فقط مجموع لمقارنة تدقيق لاحق بين الأنظمة المتوازية.
+</p>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-4">
+        <div class="card card-shadow"><div class="card-body py-3">
+            <div class="text-muted small mb-1">مجموع وارد الخزنة الداخلية</div>
+            <div class="fs-5 fw-semibold">{{ treasury_internal_in }}</div>
+        </div></div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-shadow"><div class="card-body py-3">
+            <div class="text-muted small mb-1">عدد قيود الدفتر</div>
+            <div class="fs-5 fw-semibold">{{ ledger_count }}</div>
+        </div></div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-shadow"><div class="card-body py-3">
+            <div class="text-muted small mb-1">مجموع الدفتر (كل الأنواع)</div>
+            <div class="fs-5 fw-semibold">{{ ledger_sum }}</div>
+        </div></div>
+    </div>
+</div>
+
+<div class="card card-shadow">
+    <div class="card-body">
+        <div class="fw-semibold mb-2">مجموعات حسب نوع الدفتر</div>
+        <div class="table-responsive">
+            <table class="table table-sm table-bordered mb-0 text-center align-middle">
+                <thead><tr><th>النوع</th><th>عدد القيود</th><th>مجموع المبالغ</th></tr></thead>
+                <tbody>
+                {% for row in ledger_by_type %}
+                <tr>
+                    <td class="small">{{ row.entry_type }}</td>
+                    <td>{{ row.count }}</td>
+                    <td>{{ row.total }}</td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="3" class="text-muted">لا قيود دفتر بعد.</td></tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

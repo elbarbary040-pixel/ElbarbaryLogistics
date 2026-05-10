@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}سجل أخطاء النظام{% endblock %}
+{% block header_action %}{% url 'core:error_logs_center' %}{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+    <div>
+        <h4 class="mb-1">سجل الأخطاء المنطقية والتشغيلية</h4>
+        <div class="text-muted small">تُسجل تلقائيًا من Middleware عند حدوث أي Exception.</div>
+    </div>
+    <div class="d-flex gap-2">
+        <a class="btn btn-outline-secondary" href="{% url 'core:superadmin_orders_control' %}">مركز السوبر أدمن</a>
+        <button id="enable-alerts-btn" class="btn btn-outline-warning" type="button">تفعيل إشعارات المتصفح</button>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="action" value="clear">
+            <button class="btn btn-outline-danger" type="submit">مسح السجل</button>
+        </form>
+    </div>
+</div>
+
+<div class="card card-shadow">
+    <div class="card-body">
+        <form method="get" class="mb-3 d-flex gap-2">
+            <input class="form-control" type="search" name="q" value="{{ request.GET.q }}" placeholder="بحث بالمسار أو نوع الخطأ أو الرسالة">
+            <button class="btn btn-primary" type="submit">بحث</button>
+        </form>
+        <div class="rounded p-3" style="background:#0b0f14; color:#d7dee8; border:1px solid #1f2937;">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+                <div class="small text-secondary">Live Terminal Stream</div>
+                <span id="new-errors-badge" class="badge text-bg-danger d-none">0 أخطاء جديدة</span>
+            </div>
+            <div id="terminal-log" style="height:62vh; overflow:auto; font-family:Consolas, 'Courier New', monospace; font-size:13px; line-height:1.45;">
+                {% for row in entries %}
+                    {% if row.level == "error" %}
+                        <div style="color:#ff6b6b;">{{ row.line }}</div>
+                    {% elif row.level == "warn" %}
+                        <div style="color:#ffd166;">{{ row.line }}</div>
+                    {% else %}
+                        <div style="color:#9fb3c8;">{{ row.line }}</div>
+                    {% endif %}
+                {% empty %}
+                    <div style="color:#9fb3c8;">[startup] INFO no logs yet</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+(() => {
+    const terminal = document.getElementById("terminal-log");
+    const badge = document.getElementById("new-errors-badge");
+    const enableAlertsBtn = document.getElementById("enable-alerts-btn");
+    let latestErrorId = Number("{{ latest_error_id|default:0 }}") || 0;
+    const q = encodeURIComponent("{{ request.GET.q|default:''|escapejs }}");
+
+    function levelColor(level) {
+        if (level === "error") return "#ff6b6b";
+        if (level === "warn") return "#ffd166";
+        return "#9fb3c8";
+    }
+
+    function render(entries) {
+        terminal.innerHTML = "";
+        for (const row of entries) {
+            const line = document.createElement("div");
+            line.textContent = row.line || "";
+            line.style.color = levelColor(row.level);
+            terminal.appendChild(line);
+        }
+    }
+
+    async function poll() {
+        try {
+            const url = `{% url 'core:error_logs_feed' %}?q=${q}&last_error_id=${latestErrorId}`;
+            const res = await fetch(url, {headers: {"X-Requested-With": "XMLHttpRequest"}});
+            if (!res.ok) return;
+            const data = await res.json();
+            if (!data.ok) return;
+            render(data.entries || []);
+
+            const count = Number(data.new_errors_count || 0);
+            if (count > 0) {
+                badge.textContent = `${count} أخطاء جديدة`;
+                badge.classList.remove("d-none");
+                if (Notification && Notification.permission === "granted") {
+                    new Notification("تنبيه نظام", {body: `تم تسجيل ${count} خطأ/مشكلة جديدة`});
+                }
+            } else {
+                badge.classList.add("d-none");
+            }
+            latestErrorId = Number(data.latest_error_id || latestErrorId);
+        } catch (_) {}
+    }
+
+    enableAlertsBtn?.addEventListener("click", async () => {
+        if (!("Notification" in window)) return;
+        await Notification.requestPermission();
+    });
+
+    setInterval(poll, 5000);
+})();
+</script>
+{% endblock %}
