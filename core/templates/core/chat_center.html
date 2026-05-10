@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}مركز الشات{% endblock %}
+{% block header_action %}{% url 'core:chat' %}{% endblock %}
+{% block content %}
+<div class="row g-3">
+    <div class="col-12 col-lg-4">
+        <div class="card card-shadow">
+            <div class="card-body">
+                <div class="fw-semibold mb-2">المحادثات</div>
+                <div class="list-group">
+                    {% for t in threads %}
+                    <a class="list-group-item list-group-item-action {% if selected_thread and selected_thread.id == t.id %}active{% endif %}" href="{% url 'core:chat' %}?thread={{ t.id }}">
+                        {{ t.participant.username }}
+                    </a>
+                    {% empty %}
+                    <div class="text-muted small">لا توجد محادثات.</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-8">
+        <div class="card card-shadow">
+            <div class="card-body">
+                {% if selected_thread %}
+                <div class="fw-semibold mb-2">محادثة مع {{ selected_thread.participant.username }}</div>
+                <div class="border rounded p-2 mb-3" style="height: 380px; overflow:auto;">
+                    {% for m in chat_messages %}
+                    <div class="mb-2 {% if m.sender_id == request.user.id %}text-end{% endif %}">
+                        <div class="small text-muted">{{ m.sender.username }} • {{ m.created_at }}</div>
+                        <div class="d-inline-block p-2 rounded {% if m.sender_id == request.user.id %}bg-primary text-white{% else %}bg-light{% endif %}">
+                            {{ m.body|linebreaksbr }}
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="text-muted small">ابدأ أول رسالة.</div>
+                    {% endfor %}
+                </div>
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="thread_id" value="{{ selected_thread.id }}">
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="body" placeholder="اكتب رسالة..." required>
+                        <button class="btn btn-primary" type="submit">إرسال</button>
+                    </div>
+                </form>
+                {% else %}
+                <div class="text-muted">اختر محادثة من القائمة.</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

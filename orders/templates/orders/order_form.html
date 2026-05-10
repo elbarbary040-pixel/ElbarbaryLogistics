@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title|default:"شحنة" }}{% endblock %}
+{% block header_action %}{% url 'orders:list' %}{% endblock %}
+
+{% block content %}
+
+<div
+    id="order-form-config"
+    class="d-none"
+    data-stub="987654321"
+    data-api-merchants="{% url 'orders:api_merchants' %}"
+    data-api-delegates="{% url 'orders:api_delegates' %}"
+    data-merchant-edit-tpl="{{ merchant_edit_tpl }}"
+    data-delegate-edit-tpl="{{ delegate_edit_tpl }}"
+    data-ajax="{% if can_manage_staff_records %}1{% else %}0{% endif %}"
+></div>
+
+<h4 class="mb-3">{{ title|default:"شحنة" }}</h4>
+
+{% if settlement_preview %}
+<div class="alert alert-light border mb-3">
+    <div class="fw-semibold mb-2">عرض التسوية التقديري (محسوب — غير مخزَّن)</div>
+    <div class="row row-cols-1 row-cols-md-2 small g-2">
+        <div class="col"><span class="text-muted">حالة التصفية المقترحة:</span> {{ settlement_preview.state_label }}</div>
+        <div class="col"><span class="text-muted">التقدير المتبقي بعد المطالبة:</span> {{ settlement_preview.remaining_balance_hint }} ج.م</div>
+        <div class="col"><span class="text-muted">مبلغ المنتج المعروض تشغيلياً:</span> {{ settlement_preview.collected_amount }} ج.م</div>
+        <div class="col"><span class="text-muted">ربح شركة تقديري:</span> {{ settlement_preview.company_profit_estimate }} ج.م</div>
+        <div class="col"><span class="text-muted">شحن تشغيلي:</span> {{ settlement_preview.shipping_income_operational }} ج.م</div>
+        <div class="col"><span class="text-muted">عمولة وبنود مندوب تقديرية:</span> {{ settlement_preview.courier_commission_estimate }} ج.م</div>
+        <div class="col"><span class="text-muted">لمستحق التاجر تقديراً:</span> {{ settlement_preview.merchant_payable_estimate }} ج.م</div>
+        <div class="col"><span class="text-muted">قيمة مرتجعات عند وُجودها:</span> {{ settlement_preview.returned_value }} ج.م</div>
+    </div>
+    <div class="small text-muted mt-2">{{ settlement_preview.arabic_notes }}</div>
+</div>
+{% endif %}
+
+<form method="post" novalidate>
+    {% csrf_token %}
+
+    <div class="row">
+        {% for field in form %}
+            {% if field.name == "merchant" %}
+            <div class="col-md-6 mb-3">
+                <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                <div class="d-flex flex-wrap gap-2 align-items-start">
+                    <div class="flex-grow-1" style="min-width: 200px;">
+                        {{ field }}
+                    </div>
+                    {% if can_manage_staff_records %}
+                    <a id="order-edit-merchant" class="btn btn-outline-secondary btn-sm align-self-center" href="{{ merchant_edit_tpl }}" target="_blank" rel="noopener" title="تعديل التاجر">
+                        <i class="fa-solid fa-pen"></i>
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="text-danger small">{{ field.errors }}</div>
+            </div>
+            {% elif field.name == "delegate" %}
+            <div class="col-md-6 mb-3">
+                <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                <div class="d-flex flex-wrap gap-2 align-items-start">
+                    <div class="flex-grow-1" style="min-width: 200px;">
+                        {{ field }}
+                    </div>
+                    {% if can_manage_staff_records %}
+                    <a id="order-edit-delegate" class="btn btn-outline-secondary btn-sm align-self-center" href="{{ delegate_edit_tpl }}" target="_blank" rel="noopener" title="تعديل المندوب">
+                        <i class="fa-solid fa-pen"></i>
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="text-danger small">{{ field.errors }}</div>
+            </div>
+            {% else %}
+            <div class="col-md-6 mb-3">
+                <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                <div class="text-danger small">{{ field.errors }}</div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        <i class="fa-solid fa-floppy-disk"></i> حفظ
+    </button>
+</form>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+(function () {
+  function bindOrderFormSelects() {
+    var cfg = document.getElementById("order-form-config");
+    if (!cfg || !window.jQuery || !window.jQuery.fn.select2) return;
+    var $ = window.jQuery;
+    var stub = cfg.dataset.stub || "987654321";
+    var useAjax = cfg.dataset.ajax === "1";
+    var mEdit = document.getElementById("order-edit-merchant");
+    var dEdit = document.getElementById("order-edit-delegate");
+    var mTpl = cfg.dataset.merchantEditTpl || "";
+    var dTpl = cfg.dataset.delegateEditTpl || "";
+
+    function setEditUrl(anchor, tpl, idVal) {
+      if (!anchor || !tpl) return;
+      if (idVal) {
+        anchor.href = tpl.split(stub).join(String(idVal));
+        anchor.classList.remove("disabled", "pe-none", "opacity-50");
+        anchor.setAttribute("aria-disabled", "false");
+      } else {
+        anchor.href = tpl;
+        anchor.classList.add("disabled", "pe-none", "opacity-50");
+        anchor.setAttribute("aria-disabled", "true");
+      }
+    }
+
+    var $m = $("#id_merchant");
+    var $d = $("#id_delegate");
+    if (!$m.length && !$d.length) return;
+
+    var base = { width: "100%", dir: "rtl", placeholder: "ابحث بالاسم أو الرقم", allowClear: false };
+    if (useAjax) {
+      if ($m.length) {
+        $m.select2(Object.assign({}, base, {
+          minimumInputLength: 0,
+          ajax: {
+            url: cfg.dataset.apiMerchants,
+            dataType: "json",
+            delay: 250,
+            data: function (params) { return { q: params.term || "" }; },
+            processResults: function (data) { return { results: (data && data.results) ? data.results : [] }; }
+          }
+        }));
+        $m.on("select2:select change", function () { setEditUrl(mEdit, mTpl, $m.val()); });
+        setEditUrl(mEdit, mTpl, $m.val());
+      }
+      if ($d.length) {
+        $d.select2(Object.assign({}, base, {
+          minimumInputLength: 0,
+          ajax: {
+            url: cfg.dataset.apiDelegates,
+            dataType: "json",
+            delay: 250,
+            data: function (params) { return { q: params.term || "" }; },
+            processResults: function (data) { return { results: (data && data.results) ? data.results : [] }; }
+          }
+        }));
+        $d.on("select2:select change", function () { setEditUrl(dEdit, dTpl, $d.val()); });
+        setEditUrl(dEdit, dTpl, $d.val());
+      }
+    } else {
+      if ($m.length) {
+        $m.select2(base);
+      }
+      if ($d.length) {
+        $d.select2(base);
+      }
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bindOrderFormSelects);
+  } else {
+    bindOrderFormSelects();
+  }
+})();
+</script>
+{% endblock %}

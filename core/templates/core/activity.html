@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %}الأكثر نشاطًا{% endblock %}
+{% block header_action %}{% url 'core:activity' %}{% endblock %}
+{% block content %}
+<h4 class="mb-2">أفضل التجار والمندوبين</h4>
+<p class="text-muted small">تُحسب الأرقام حسب شريط التصفية أعلاه (نطاق التواريخ / الحالة / البحث).</p>
+<div class="row g-3">
+    <div class="col-12 col-md-6">
+        <div class="card card-shadow h-100">
+            <div class="card-body">
+                <div class="fw-semibold mb-2">أفضل المندوبين (حسب عدد الشحنات)</div>
+                <ul class="list-unstyled mb-0 ps-0">
+                    {% for r in top_delegates %}
+                    <li class="mb-2 d-flex justify-content-between align-items-center border-bottom border-light pb-2">
+                        <span class="fw-semibold">{{ r.name }}</span>
+                        <span class="badge text-bg-success">{{ r.c }}</span>
+                    </li>
+                    {% empty %}
+                    <li class="text-muted">لا بيانات في النطاق الحالي.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6">
+        <div class="card card-shadow h-100">
+            <div class="card-body">
+                <div class="fw-semibold mb-2">أفضل التجار (حسب عدد الشحنات)</div>
+                <ul class="list-unstyled mb-0 ps-0">
+                    {% for r in top_merchants %}
+                    <li class="mb-2 d-flex justify-content-between align-items-center border-bottom border-light pb-2">
+                        <span class="fw-semibold">{{ r.name }}</span>
+                        <span class="badge text-bg-primary">{{ r.c }}</span>
+                    </li>
+                    {% empty %}
+                    <li class="text-muted">لا بيانات في النطاق الحالي.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row g-3 mt-1">
+    <div class="col-12 col-lg-6">
+        <div class="card card-shadow">
+            <div class="card-body">
+                <div class="fw-semibold mb-2">رسم المندوبين</div>
+                <div class="chart-wrap">
+                    <canvas id="activityDelegatesChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6">
+        <div class="card card-shadow">
+            <div class="card-body">
+                <div class="fw-semibold mb-2">رسم التجار</div>
+                <div class="chart-wrap">
+                    <canvas id="activityMerchantsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script type="application/json" id="activity-json-delegate-labels">{{ delegate_chart_labels_json|default:"[]"|safe }}</script>
+<script type="application/json" id="activity-json-delegate-values">{{ delegate_chart_values_json|default:"[]"|safe }}</script>
+<script type="application/json" id="activity-json-merchant-labels">{{ merchant_chart_labels_json|default:"[]"|safe }}</script>
+<script type="application/json" id="activity-json-merchant-values">{{ merchant_chart_values_json|default:"[]"|safe }}</script>
+<script>
+(function () {
+  "use strict";
+  function readJsonArray(id) {
+    var el = document.getElementById(id);
+    if (!el) {
+      return [];
+    }
+    try {
+      var parsed = JSON.parse(el.textContent.trim() || "[]");
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (err) {
+      return [];
+    }
+  }
+  if (typeof Chart === "undefined") {
+    return;
+  }
+  var dl = readJsonArray("activity-json-delegate-labels");
+  var dv = readJsonArray("activity-json-delegate-values");
+  var ml = readJsonArray("activity-json-merchant-labels");
+  var mv = readJsonArray("activity-json-merchant-values");
+  var commonOpts = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { maxRotation: 45, minRotation: 0 } },
+      y: { beginAtZero: true, ticks: { stepSize: 1 } }
+    }
+  };
+  var elD = document.getElementById("activityDelegatesChart");
+  if (elD && dl.length > 0 && dv.length === dl.length) {
+    new Chart(elD, {
+      type: "bar",
+      data: {
+        labels: dl,
+        datasets: [{ label: "شحنات", data: dv, backgroundColor: "rgba(25, 135, 84, 0.75)" }]
+      },
+      options: commonOpts
+    });
+  }
+  var elM = document.getElementById("activityMerchantsChart");
+  if (elM && ml.length > 0 && mv.length === ml.length) {
+    new Chart(elM, {
+      type: "bar",
+      data: {
+        labels: ml,
+        datasets: [{ label: "شحنات", data: mv, backgroundColor: "rgba(13, 110, 253, 0.75)" }]
+      },
+      options: commonOpts
+    });
+  }
+})();
+</script>
+{% endblock %}

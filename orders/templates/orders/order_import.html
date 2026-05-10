@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block title %}استيراد Excel{% endblock %}
+{% block header_action %}{% url 'orders:import' %}{% endblock %}
+
+{% block content %}
+
+<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+    <div>
+        <h4 class="mb-1">استيراد الشحنات (داخلي / خارجي)</h4>
+        <div class="text-muted small">ارفع ملف Excel وحدد الأعمدة — سيتم إنشاء التاجر والمندوب تلقائيًا</div>
+    </div>
+
+    <a class="btn btn-outline-secondary" href="{% url 'orders:list' %}">
+        رجوع للشحنات
+    </a>
+</div>
+
+{% if step == "upload" %}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">ملف Excel</label>
+                {{ upload_form.file }}
+                <div class="text-danger small">{{ upload_form.file.errors }}</div>
+                <div class="text-muted small">
+                    لازم يكون .xlsx والصف الأول فيه أسماء الأعمدة
+                </div>
+            </div>
+
+            <button class="btn btn-primary w-100" type="submit">
+                رفع الملف والمتابعة
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+{% elif step == "map" %}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+
+        <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="token" value="{{ token }}">
+
+            <div class="row g-3">
+
+                <div class="col-md-4">
+                    <label class="fw-bold">اسم الشيت</label>
+                    {{ mapping_form.sheet_name }}
+                </div>
+
+                <hr>
+
+                <div class="col-md-4">
+                    <label>رقم البوليصة</label>
+                    {{ mapping_form.waybill_number_col }}
+                </div>
+
+                <div class="col-md-4">
+                    <label>تاريخ الشحنة</label>
+                    {{ mapping_form.order_date_col }}
+                </div>
+
+                <div class="col-md-6">
+                    <label>اسم التاجر</label>
+                    {{ mapping_form.merchant_name_col }}
+                </div>
+
+                <div class="col-md-6">
+                    <label>هاتف التاجر</label>
+                    {{ mapping_form.merchant_phone_col }}
+                </div>
+
+                <div class="col-md-6">
+                    <label>اسم المندوب</label>
+                    {{ mapping_form.delegate_name_col }}
+                </div>
+
+                <div class="col-md-6">
+                    <label>هاتف المندوب</label>
+                    {{ mapping_form.delegate_phone_col }}
+                </div>
+
+                <div class="col-md-4">
+                    <label>اسم العميل</label>
+                    {{ mapping_form.customer_name_col }}
+                </div>
+
+                <div class="col-md-4">
+                    <label>هاتف العميل</label>
+                    {{ mapping_form.customer_phone_col }}
+                </div>
+
+                <div class="col-md-4">
+                    <label>العنوان</label>
+                    {{ mapping_form.customer_address_col }}
+                </div>
+
+                <div class="col-md-4">
+                    <label>سعر الشحن</label>
+                    {{ mapping_form.shipping_price_col }}
+                </div>
+
+                <div class="col-md-4">
+                    <label>سعر المنتج</label>
+                    {{ mapping_form.product_price_col }}
+                </div>
+
+                <div class="col-md-4">
+                    <label>ملاحظات</label>
+                    {{ mapping_form.notes_col }}
+                </div>
+
+            </div>
+
+            <hr>
+
+            <button class="btn btn-success w-100" type="submit">
+                🚀 تنفيذ الاستيراد
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+{% elif step == "done" %}
+
+<div class="card shadow-sm">
+    <div class="card-body text-center">
+
+        <div class="alert alert-success">
+            ✅ تم الاستيراد بنجاح
+        </div>
+
+        <div class="row text-center">
+
+            <div class="col">
+                <h5>{{ created|default:0 }}</h5>
+                <small>تمت الإضافة</small>
+            </div>
+
+            <div class="col">
+                <h5>{{ updated|default:0 }}</h5>
+                <small>تم تحديثها (موجودة سابقًا)</small>
+            </div>
+
+        </div>
+
+        <div class="mt-4 d-flex gap-2 justify-content-center">
+            <a class="btn btn-primary" href="{% url 'orders:list' %}">
+                عرض الشحنات
+            </a>
+
+            <a class="btn btn-outline-secondary" href="{% url 'orders:import' %}">
+                استيراد جديد
+            </a>
+        </div>
+
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}

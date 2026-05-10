@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}ديون ومستحقات{% endblock %}
+{% block header_action %}{% url 'core:enterprise_debts' %}{% endblock %}
+
+{% block content %}
+<h4 class="mb-2">مسجّلات الدَّين والالتزام تجاه التاجر أو المندوب</h4>
+<p class="text-muted small mb-4">عبِّء أحد طرفي التاجر أو المندوب فقط (وليس كلاهما) مع عنوان وسبب مختصر لتبقَ أرشيفك واضحًا.</p>
+
+<div class="card card-shadow mb-4">
+    <div class="card-header fw-semibold">إضافة مستحقّة جديدة</div>
+    <div class="card-body">
+        <form method="post" class="row g-2">
+            {% csrf_token %}
+            <input type="hidden" name="create_debt" value="1">
+            <div class="col-md-6">
+                <label class="form-label small mb-0">التاجر — اختياري</label>
+                <select class="form-select form-select-sm" name="merchant_id">
+                    <option value="">بدون طلب لتاجر محدَّد</option>
+                    {% for m in merchants %}
+                    <option value="{{ m.pk }}">{{ m.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label small mb-0">المندوب — اختياري</label>
+                <select class="form-select form-select-sm" name="delegate_id">
+                    <option value="">بدون ربط مندوب محدَّد</option>
+                    {% for d in delegates %}
+                    <option value="{{ d.pk }}">{{ d.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-12"><hr class="my-2"></div>
+            <div class="col-md-4">
+                <label class="form-label small">عنوان مختصر للقضية</label>
+                <input class="form-control form-control-sm" name="title" maxlength="200" placeholder="سبب الموضوع الواضح بالعربية" required>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label small">مبلغ الموضوع (ج.م)</label>
+                <input type="number" step="0.01" min="0" class="form-control form-control-sm" name="amount_total" required>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label small">رقم الطلب — اختياري</label>
+                <input class="form-control form-control-sm" name="order_id" placeholder="التعريف في النظام">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label small mb-3 d-block">&nbsp;</label>
+                <button type="submit" class="btn btn-primary btn-sm w-100"><i class="fa-solid fa-floppy-disk"></i> تسجيل المستحقّة</button>
+            </div>
+            <div class="col-12">
+                <label class="form-label small">ملاحظة تفصيلية</label>
+                <textarea class="form-control form-control-sm" name="reason" rows="2" placeholder="صف السياق الذي أدخل إلى الموضوع — يظهر هذا في التقارير المستقبلية أيضًا لمنح الجميع المرجع"></textarea>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card card-shadow">
+    <div class="card-body p-0 table-responsive">
+        <table class="table table-striped table-hover mb-0 align-middle">
+            <thead class="table-light small">
+                <tr>
+                    <th>الطرف</th>
+                    <th>العنوان والملاحظة</th>
+                    <th>إجمالي المبلغ</th>
+                    <th>الحالة المحاسبية</th>
+                    <th>سداد جزئي</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for d in debts %}
+                <tr>
+                    <td>
+                        {% if d.merchant_id %}تاجر {{ d.merchant.name }} (رقم المرجع: {{ d.merchant.pk }}){% endif %}
+                        {% if d.delegate_id %}مندوب {{ d.delegate.name }}{% endif %}
+                    </td>
+                    <td>{{ d.title }}<div class="text-muted ultra-small">{{ d.reason|truncatewords:36 }}</div></td>
+                    <td>{{ d.amount_total }} ج</td>
+                    <td><span class="badge text-bg-secondary">{{ d.get_status_display }}</span></td>
+                    <td>
+                        <form method="post" action="{% url 'core:enterprise_debt_repay' d.pk %}" class="row gx-2 gy-1 align-items-center">
+                            {% csrf_token %}
+                            <div class="col-auto"><input required type="number" step="0.01" min="0" name="amount" class="form-control form-control-sm" style="width:120px;" placeholder="سدَّاد"></div>
+                            <div class="col"><input type="text" name="notes" class="form-control form-control-sm" placeholder="تلخّص المرحلة بحرف عربية"></div>
+                            <div class="col-auto"><button class="btn btn-sm btn-outline-success"><i class="fa-solid fa-coins"></i> تسديد</button></div>
+                        </form>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="5" class="text-center text-muted py-4">لا يوجد سجل منذ البداية — أضِف الموضوع باستخدام البطاقة أعلى ذلك.</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<a href="{% url 'core:enterprise_hub' %}" class="btn btn-outline-secondary btn-sm mt-3">عودة المركز المتقدَّم الكاملّ</a>
+{% endblock %}

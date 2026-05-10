@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}شحن خارجي{% endblock %}
+{% block header_action %}{% url 'core:external' %}{% endblock %}
+{% block content %}
+<h4 class="mb-2">استيراد شحنات خارجية</h4>
+<p class="text-muted small">ارفع ملف Excel (.xlsx): الصف الأول عناوين أعمدة، كل صف يُحفظ كـ JSON. يُقدَّر ربح رمزي من أكبر رقم في الصف.</p>
+<div class="d-flex gap-2 mb-3">
+    <a class="btn btn-outline-primary btn-sm" href="{% url 'merchants:external_list' %}">حسابات التجار الخارجي</a>
+    <a class="btn btn-outline-success btn-sm" href="{% url 'merchants:external_add' %}">إضافة تاجر خارجي</a>
+</div>
+<form method="post" enctype="multipart/form-data" class="mb-4">
+    {% csrf_token %}
+    <input type="file" name="file" accept=".xlsx" class="form-control" required>
+    <button type="submit" class="btn btn-success mt-2">رفع واستيراد</button>
+</form>
+<h5 class="mb-2">آخر الدفعات</h5>
+<ul class="list-group">
+    {% for b in batches %}
+    <li class="list-group-item d-flex justify-content-between">
+        <span>#{{ b.id }} {{ b.source_name|default:"دفعة" }}</span>
+        <span class="text-muted small">{{ b.imported_at }}</span>
+    </li>
+    {% empty %}
+    <li class="list-group-item text-muted">لا دفعات بعد.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

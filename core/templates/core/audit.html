@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}الفهرس{% endblock %}
+
+{% block header_action %}{% url 'core:audit' %}{% endblock %}
+
+{% block content %}
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+        <div>
+            <h4 class="mb-1">الفهرس (Audit)</h4>
+            <div class="text-muted small">آخر 200 حركة</div>
+        </div>
+    </div>
+
+    <div class="card card-shadow">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>الوقت</th>
+                            <th>المستخدم</th>
+                            <th>العملية</th>
+                            <th>النوع</th>
+                            <th>الكائن</th>
+                            <th>ملاحظة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for l in logs %}
+                            <tr>
+                                <td class="text-nowrap">{{ l.created_at|date:"Y-m-d H:i" }}</td>
+                                <td class="text-nowrap">{{ l.user.username|default:"—" }}</td>
+                                <td class="text-nowrap">{{ l.get_action_display }}</td>
+                                <td class="text-nowrap">{{ l.model_name }}</td>
+                                <td class="text-nowrap">{{ l.object_repr|default:l.object_id }}</td>
+                                <td>{{ l.message }}</td>
+                            </tr>
+                        {% empty %}
+                            <tr><td colspan="6" class="text-center text-muted py-4">لا يوجد.</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

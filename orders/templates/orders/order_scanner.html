@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}سكانر الشحنات{% endblock %}
+{% block header_action %}{% url 'orders:scanner' %}{% endblock %}
+{% block content %}
+<div class="card card-shadow">
+  <div class="card-body">
+    <h4 class="mb-3">سكانر / بحث QR</h4>
+    <div class="input-group mb-3">
+      <input id="scan-input" class="form-control" placeholder="امسح QR أو اكتب رقم البوليصة">
+      <button id="scan-btn" class="btn btn-primary">بحث</button>
+    </div>
+    <div id="scan-result" class="small text-muted">في انتظار المسح...</div>
+  </div>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script>
+document.getElementById("scan-btn").addEventListener("click", async function () {
+  const q = document.getElementById("scan-input").value.trim();
+  if (!q) return;
+  const el = document.getElementById("scan-result");
+  el.textContent = "جاري البحث...";
+  const res = await fetch("{% url 'orders:lookup' %}?q=" + encodeURIComponent(q));
+  const data = await res.json();
+  if (!data.found) {
+    el.innerHTML = "لا توجد شحنة. <a href='{% url 'orders:add' %}'>إضافة شحنة جديدة</a>";
+    return;
+  }
+  el.innerHTML = "تم العثور على: " + data.waybill_number + " - " + data.customer_name + " <a href='" + data.edit_url + "'>فتح</a>";
+});
+</script>
+{% endblock %}

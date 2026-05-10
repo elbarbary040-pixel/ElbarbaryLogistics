@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block title %}كافة الشحنات{% endblock %}
+
+{% block header_action %}{% url 'orders:list' %}{% endblock %}
+
+{% block content %}
+<h4 class="mb-3">📦 كافة الشحنات</h4>
+
+<form id="orders-bulk-form" method="post" action="{% url 'orders:bulk' %}">
+    {% csrf_token %}
+    <div class="table-scroll card card-shadow">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0 text-center align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th style="width:40px;">
+                            <input class="form-check-input" type="checkbox" id="select-all-orders" title="تحديد الكل">
+                        </th>
+                        <th>التاريخ</th>
+                        <th>البوليصة</th>
+                        <th>التاجر</th>
+                        <th>هاتف التاجر</th>
+                        <th>المندوب</th>
+                        <th>هاتف المندوب</th>
+                        <th>العميل</th>
+                        <th>الشحن</th>
+                        <th>المنتج</th>
+                        <th>الحالة</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for order in page_obj %}
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" name="order_ids" value="{{ order.pk }}"></td>
+                        <td>{{ order.order_date }}</td>
+                        <td class="fw-semibold text-brand">{{ order.waybill_number }}</td>
+                        <td>{{ order.merchant.name|default:"-" }}</td>
+                        <td class="small text-muted">{{ order.merchant.phone|default:"—" }}</td>
+                        <td>{{ order.delegate.name|default:"-" }}</td>
+                        <td class="small text-muted">{{ order.delegate.phone|default:"—" }}</td>
+                        <td>{{ order.customer_name }}</td>
+                        <td>{{ order.shipping_price }}</td>
+                        <td>{{ order.product_price }}</td>
+                        <td>
+                            {% if order.status == "delivered" %}
+                                <span class="badge bg-success">{{ order.get_status_display }}</span>
+                            {% elif order.status == "in_transit" %}
+                                <span class="badge bg-warning text-dark">{{ order.get_status_display }}</span>
+                            {% elif order.status == "accounted" %}
+                                <span class="badge bg-danger">{{ order.get_status_display }}</span>
+                            {% elif order.status == "partially_delivered" %}
+                                <span class="badge text-bg-info">{{ order.get_status_display }}</span>
+                            {% elif order.status == "partially_delivered_with_return" %}
+                                <span class="badge" style="background:#fd7e14;color:#fff;">{{ order.get_status_display }}</span>
+                            {% elif order.status == "returned" %}
+                                <span class="badge text-bg-secondary">{{ order.get_status_display }}</span>
+                            {% elif order.status == "postponed" %}
+                                <span class="badge bg-light text-dark border">{{ order.get_status_display }}</span>
+                            {% else %}
+                                <span class="badge bg-secondary">{{ order.get_status_display }}</span>
+                            {% endif %}
+                        </td>
+                        <td class="text-nowrap">
+                            <a class="btn btn-sm btn-outline-secondary" href="{% url 'orders:edit' order.pk %}">تعديل</a>
+                            {% if can_manage_staff_records %}
+                            <form method="post" action="{% url 'orders:delete' order.pk %}" class="d-inline" onsubmit="return confirm('إخفاء هذه الشحنة من القوائم؟ (حذف منطقي — البيانات المحاسبية محفوظة.)');">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-outline-danger">حذف</button>
+                            </form>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="12">لا يوجد بيانات</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {% if page_obj.has_other_pages %}
+    <nav class="mt-3 d-flex justify-content-center">
+        <ul class="pagination pagination-sm mb-0">
+            {% if page_obj.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}{% if filter_qs %}&{{ filter_qs }}{% endif %}">السابق</a></li>
+            {% endif %}
+            <li class="page-item disabled"><span class="page-link">صفحة {{ page_obj.number }} من {{ page_obj.paginator.num_pages }}</span></li>
+            {% if page_obj.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}{% if filter_qs %}&{{ filter_qs }}{% endif %}">التالي</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+
+    {% if is_admin_level %}
+    <div class="row g-2 align-items-end mt-3 p-3 bg-light rounded-3 border">
+        <div class="col-auto">
+            <label class="form-label small mb-0">تعديل جماعي للحالة</label>
+            <select name="new_status" class="form-select form-select-sm">
+                {% for code, label in ORDER_STATUS_CHOICES %}
+                <option value="{{ code }}">{{ label }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-auto">
+            <button type="submit" name="action" value="bulk_status" class="btn btn-sm btn-warning" data-requires-selection disabled>تطبيق على المحدد</button>
+        </div>
+    </div>
+    {% endif %}
+</form>
+{% endblock %}
+
+{% block bottom_toolbar %}
+<div class="d-flex flex-wrap align-items-center gap-2 justify-content-between">
+    <div class="d-flex flex-wrap gap-1">
+        <button type="submit" form="orders-bulk-form" name="action" value="excel" class="btn btn-sm btn-success" data-requires-selection disabled>تصدير Excel</button>
+        <a class="btn btn-sm btn-outline-secondary" href="{% url 'orders:import' %}">استيراد Excel</a>
+        <button type="submit" form="orders-bulk-form" name="action" value="whatsapp" class="btn btn-sm btn-success" data-requires-selection disabled style="background:#25D366;border-color:#25D366;color:#fff;">واتساب</button>
+        <button type="submit" form="orders-bulk-form" name="action" value="print" class="btn btn-sm btn-outline-dark" data-requires-selection disabled>طباعة</button>
+        <button type="submit" form="orders-bulk-form" name="action" value="qr" class="btn btn-sm btn-outline-primary" data-requires-selection disabled>QR</button>
+    </div>
+    <span class="badge text-bg-secondary">محدد: <span id="bulk-selection-count">0</span></span>
+</div>
+{% endblock %}
