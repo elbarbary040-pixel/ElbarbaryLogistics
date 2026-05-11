@@ -1,4 +1,5 @@
 import json
+import logging
 import re
 from datetime import timedelta
 from decimal import Decimal
@@ -25,7 +26,7 @@ from openpyxl.utils import get_column_letter
 import qrcode
 
 from core.audit import log_action
-from core.db_backups import create_sqlite_backup
+from core.db_backups import create_database_backup
 from core.http_utils import query_first_str, query_first_value
 from core.models import AuditAction
 from core.permissions import can_manage_staff_records, is_admin_level, is_super_admin, orders_queryset_for_user
@@ -37,6 +38,8 @@ from .models import Order, OrderStatus
 from .services.settlement import compute_order_settlement
 from .whatsapp_ar import build_bulk_whatsapp_text_ar
 from .qr_tokens import sign_order_pk, unsign_order_token
+
+logger = logging.getLogger(__name__)
 
 _ORDER_STATUS_CODES = tuple(c for c, _ in OrderStatus.choices)
 _ORDER_STATUS_LABELS = dict(OrderStatus.choices)
@@ -395,9 +398,12 @@ def order_soft_delete(request: HttpRequest, pk: int) -> HttpResponse:
     if request.method != "POST":
         return redirect("orders:list")
     try:
-        create_sqlite_backup("pre_order_delete")
-    except Exception:
-        pass
+        create_database_backup("pre_order_delete")
+    except Exception as exc:
+        logger.warning(
+            "pre_order_delete backup skipped: %s",
+            type(exc).__name__,
+        )
     wb = order.waybill_number
     order.soft_delete(request.user)
     log_action(request, AuditAction.DELETE, order, f"حذف منطقي للشحنة {wb}")
@@ -647,7 +653,17 @@ def order_import(request: HttpRequest) -> HttpResponse:
             for chunk in file.chunks():
                 f.write(chunk)
 
-        wb = load_workbook(path, data_only=True)
+        try:
+            wb = load_workbook(path, data_only=True)
+        except Exception as exc:
+            logger.warning("Order import: invalid workbook on upload: %s", exc)
+            path.unlink(missing_ok=True)
+            messages.error(request, "ملف Excel غير صالح أو تالف.")
+            return render(
+                request,
+                "orders/order_import.html",
+                {"step": "upload", "upload_form": OrderImportUploadForm()},
+            )
         sheet = wb.active
         if sheet is None and wb.sheetnames:
             sheet = wb[wb.sheetnames[0]]
@@ -694,10 +710,70 @@ def order_import(request: HttpRequest) -> HttpResponse:
                 },
             )
 
-        wb = load_workbook(path, data_only=True)
-        form = OrderImportMappingForm(request.POST)
+        try:
+            wb = load_workbook(path, data_only=True)
+        except Exception as exc:
+            logger.warning("Order import: cannot read workbook for mapping: %s", exc)
+            path.unlink(missing_ok=True)
+            messages.error(
+                request,
+                "تعذر قراءة ملف Excel. أعد رفع الملف.",
+            )
+            return render(
+                request,
+                "orders/order_import.html",
+                {"step": "upload", "upload_form": OrderImportUploadForm()},
+            )
+        sheet_names = wb.sheetnames
+        if not sheet_names:
+            messages.error(request, "ملف Excel بدون أوراق عمل.")
+            path.unlink(missing_ok=True)
+            return render(
+                request,
+                "orders/order_import.html",
+                {"step": "upload", "upload_form": OrderImportUploadForm()},
+            )
+
+        sheet_name_candidate = query_first_str(request.POST, "sheet_name")
+        if sheet_name_candidate not in sheet_names:
+            messages.error(
+                request,
+                "ورقة العمل المحددة غير موجودة في الملف. اختر الشيت من القائمة.",
+            )
+            sheet0 = wb[sheet_names[0]]
+            header0 = next(sheet0.iter_rows(min_row=1, max_row=1, values_only=True))
+            mapping_form = OrderImportMappingForm(
+                initial={"token": token},
+                sheet_choices=[(s, s) for s in sheet_names],
+                column_choices=[(str(i), str(h)) for i, h in enumerate(header0)],
+            )
+            return render(
+                request,
+                "orders/order_import.html",
+                {
+                    "step": "map",
+                    "mapping_form": mapping_form,
+                    "token": token,
+                },
+            )
+
+        hdr_sheet = wb[sheet_name_candidate]
+        header = next(hdr_sheet.iter_rows(min_row=1, max_row=1, values_only=True))
+        sheet_choices = [(s, s) for s in sheet_names]
+        column_choices = [(str(i), str(h)) for i, h in enumerate(header)]
+
+        form = OrderImportMappingForm(
+            request.POST,
+            sheet_choices=sheet_choices,
+            column_choices=column_choices,
+        )
 
         if not form.is_valid():
+            logger.warning("Order import mapping invalid: %s", form.errors)
+            messages.error(
+                request,
+                "تعذر التحقق من تعيين الأعمدة. راجع الاختيارات وحاول مرة أخرى.",
+            )
             return render(
                 request,
                 "orders/order_import.html",

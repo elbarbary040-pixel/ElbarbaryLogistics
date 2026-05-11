@@ -1,6 +1,7 @@
 from collections import defaultdict
 from decimal import Decimal
 import json
+import logging
 from io import BytesIO
 from pathlib import Path
 
@@ -25,7 +26,7 @@ from orders.models import Order, OrderStatus
 _ORDER_STATUS_CODES = tuple(c for c, _ in OrderStatus.choices)
 
 from .audit import log_action
-from .db_backups import backup_dir, create_sqlite_backup
+from .db_backups import backup_dir, create_database_backup
 from .http_utils import query_first_str
 from .forms import (
     AdminSetPasswordForm,
@@ -59,6 +60,8 @@ from .models import (
     AppErrorLog,
 )
 from .permissions import can_manage_staff_records, is_admin_level, is_super_admin, orders_queryset_for_user
+
+logger = logging.getLogger(__name__)
 
 
 def _decimal_from_post(val, default="0"):
@@ -817,7 +820,15 @@ def superadmin_orders_control(request):
         action = (request.POST.get("action") or "").strip()
 
         if action == "create_backup":
-            backup_path = create_sqlite_backup("superadmin")
+            try:
+                backup_path = create_database_backup("superadmin")
+            except Exception:
+                logger.error("superadmin create_backup failed", exc_info=False)
+                messages.error(
+                    request,
+                    "تعذر إنشاء النسخة الاحتياطية. تحقق من اتصال قاعدة البيانات والسجلات.",
+                )
+                return redirect("core:superadmin_orders_control")
             messages.success(request, f"تم إنشاء نسخة احتياطية: {backup_path.name}")
             return redirect("core:superadmin_orders_control")
 

@@ -1,0 +1,4053 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "orders",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "merchants",
+    "model": "merchant"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "delegates",
+    "model": "delegate"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "merchants",
+    "model": "merchantpayment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "delegates",
+    "model": "delegatetransaction"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "auditlog"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "orders",
+    "model": "orderstatushistory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "delegates",
+    "model": "delegatedailyclose"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "clientsession"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "externalshipmentbatch"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "externalshipmentrow"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "siteappearance"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "treasuryaccount"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "treasuryentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "userprofile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "orders",
+    "model": "delegatetransaction"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "orders",
+    "model": "merchanttransaction"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "chatmessage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "chatthread"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "orderrequest"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "delegates",
+    "model": "delegatesettlementitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "delegates",
+    "model": "delegatedailymetric"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "apperrorlog"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "branch"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "ledgerentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "commissionrule"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "debt"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "debtrepayment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "inventorymovement"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "merchantstockitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "notificationevent"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "sensitiveapprovalrequest"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1s8reuszf3a4f3idmimm9m1pz7kydmsf",
+  "fields": {
+    "session_data": ".eJxVjsEOgjAQRP-lZyF0u922Hr37DWTbXQQ1kIB4Mf67Ej3odd7MyzxMy-utb9dF53YQszdodr9Z5nLRcQNy5vE01WUab_OQ661Sf-lSHyfR6-Hb_RP0vPTvdWw6sZak-JDEipBaJQcZnSenMUvXJQ0hFXqTiAwASIC5AReEMG5S0ftQtF0_P8ljA9FXnSSuED1X3CBVnDIEl8A5i-b5AuUQRTU:1wK04L:whwa6SCopI6HMR2MP4N2szD05bWzngzm1cE_JmsCQKk",
+    "expire_date": "2026-05-18T20:39:09.034Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "diggmsavmc32ls3w8ydas5rjid8iqfkk",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP-FsyHQLY969N5vILuwlaqBpLQn478bkh70OjOZtwh47DkcjbewJnEVWlx-GWF8cukiPbDcq4y17NtKsifytE3ONfHrdrZ_g4wt9-2gSGli9hFIk0qJWTnHYAEnGuJoGGkh55XVUfkFDejRTs4BGAJ04vMF9WA35w:1wGQjy:_PJiI2y2Lkp0CMAU1TWtUCiXFZJcLtHEIF8--Ahbj8g",
+    "expire_date": "2026-05-09T00:19:22.362Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "djjh6960rv77lsyrg4fn2wj2p42zu2wa",
+  "fields": {
+    "session_data": ".eJxVjjsOwjAQRO_imlj-rO2Ykp4zWF6vlwRQIuVDg7g7CaKAdt7M0zxFyuvSpXWuU-pJHIUWh98Mc7nVYQd0zcNllGUclqlHuVfkl87yPFK9n77dP0GX525bs4egmcmWSIAQNZNqgYMyETCwwQA6Ol8QlM8uUojOZFTBGhcgtrhLqT76UtP6-emLYWsIGuW9aUBxbTZP28RclbVokQyJ1xviykYm:1wJ0Hx:HOSmymMT15htbOAuUuohbcU-J3UguIowivNxmsmSrzM",
+    "expire_date": "2026-05-16T02:41:05.553Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "iugi8lnwkrzqgd5ta6fg6wkyuv94g5yq",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9PcCoXi0j3fQO6rFjVtQmFl_HclYaHbMzPnZSbc1jRtVZdpFnMxZ3P63Qj5oXkHcsd8K5ZLXpeZ7K7Yg1Y7FtHn9XD_DhLW9K0BI7URohBI0IGD54gNeNCePDXitMGA3BFAh9IOvRI5IHBtGGIf2bw_GMc5Cg:1wFgMI:FKtQe1XZ-rf9KPf2nEvC0o7xTmtFeyzm4JCTeoWRsdQ",
+    "expire_date": "2026-05-06T22:47:50.407Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mpwpc74wmaicwx0b3t4397ody8d4qoe8",
+  "fields": {
+    "session_data": ".eJxVjjsOwjAQRO_imkS2s_4sJT1niLy7NgmgRMqHBnF3CEoB7byZp3mqNq1L165zntpe1FEZdfjNKPEtDxuQaxouY83jsEw91Vul3ulcn0fJ99Pe_RN0ae4-6-IhmFKkYRQgQFNERyhBWwQKxVIAg84zgfbJoQR0NpEOjXUBMNImlfzoObfr9ycwZWRHFXvmChBcRbqESpI2kcj7aLx6vQH21EZg:1wIp3L:KHrRMoN9yeMxZB7hfGcY6wqjsqWQOs4zN1Ak4IHVSwI",
+    "expire_date": "2026-05-15T14:41:15.391Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "oz98ht74ytzkdmd3mphe6djnq2yt0u44",
+  "fields": {
+    "session_data": ".eJxVjjsOwjAQRO_imli2s_5R0nMGy-v1kgBKpHxoEHeHiBTQzpt5mqdIeV26tM51Sj2Jo9Di8JthLrc6bICuebiMsozDMvUot4rc6SzPI9X7ae_-Cbo8d581O_CamdoSCRCiZlIB2CsTAT0b9KCjdQVBuWwj-WhNRuVbYz3EgJuU6qMvNa3fn7mY1gVqHGRuQGnXoCu6sYzI0SlCFcTrDeXHRiQ:1wHvl2:EkSmefgxaRDPNO0DUJ1TkM52j6qUMdeEzcm-Tvd4m_A",
+    "expire_date": "2026-05-13T03:38:40.225Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qlyher3vshwl578aiimdkrweba8uo2vj",
+  "fields": {
+    "session_data": ".eJxVjjsOwjAQRO_imliO_0tJzxmstXdNAiiR8qFB3J1EUEA7b-ZpniLhunRpnXlKPYmj0OLwm2UsNx52QFccLqMs47BMfZZ7RX7pLM8j8f307f4JOpy7bc0IJULr2Pq2uKBY5WjAZa4qMCGpnMEG33IuxEU7jcZYgFpDdRG13aXEj75wWj8_LUc2gE0gUI1VXBogb5vNhKBMqFl58XoDQxhHRg:1wKiCi:gl4tlssVSCxIZ669aRzV8uK_0k5oOCqrdjBr8BhV_8U",
+    "expire_date": "2026-05-20T19:46:44.169Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "t1udkhdcesyf8h42a4duqaz3gq0ysn17",
+  "fields": {
+    "session_data": ".eJxVjjsOwjAQRO_imkSxs_4sJT1nsLzeNQmgRMqHBnF3CEoB7byZp3mqmNali-ssU-xZHZVWh9-MUr7JsAG-puEy1nkclqmneqvUO53r88hyP-3dP0GX5u6zLg68LoXbjAwEqAs3AYpvDAL5YsiDRusyQeOSRfZoTaLGt8Z6wECblOXRZ4nr9ydr17ZOoCJJXIE1oSIvUjFiCBaNgUzq9QboUEYR:1wKMfV:R9XsUg9QAwKBXNmN97teT7eA6XuFII8QzWitdM-Vkbk",
+    "expire_date": "2026-05-19T20:47:01.971Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "t9d651ch5iifg8kdrh9rhws9noei44mo",
+  "fields": {
+    "session_data": ".eJxVjMsOgjAUBf-la9PcCoXi0j3fQO6rFjVtQmFl_HclYaHbMzPnZSbc1jRtVZdpFnMxZ3P63Qj5oXkHcsd8K5ZLXpeZ7K7Yg1Y7FtHn9XD_DhLW9K0BI7URohBI0IGD54gNeNCePDXitMGA3BFAh9IOvRI5IHBtGGIf2bw_GMc5Cg:1wFgMJ:fLcLnI0uC3Geo3CNtfnYAFafoUPDD6_oIurWYzO3As0",
+    "expire_date": "2026-05-06T22:47:51.548Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tlkoixsf1twsqdfqursvibs5pucen5sp",
+  "fields": {
+    "session_data": ".eJxVjjsOwkAMRO-yNYk2GzvGlPScIfKu1ySAEikfGsTdIYgC2nkzT_NwraxL165zntpe3cFVbvebRUnXPGxALzKcxzKNwzL1sdwq5ZfO5WnUfDt-u3-CTubuvbYGqDLTOrFCBK5M_R6MfGCIZCESVIxNiuAbQVZiDBI91QEJeB83qeZ7n3K7fn6aBGJLvsiMWAAiFULcFGqo6iVZDuaeL-u3RqI:1wIZPP:faM6AlOf1DwagPWKk_Mh-Bg7YloT1OFxP_gb9t8N5aw",
+    "expire_date": "2026-05-14T21:58:59.865Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u0l2wthxzlj6p02c1bkkg6lbn8wi857k",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP-FsyHQLY969N5vILuwlaqBpLQn478bkh70OjOZtwh47DkcjbewJnEVWlx-GWF8cukiPbDcq4y17NtKsifytE3ONfHrdrZ_g4wt9-2gSGli9hFIk0qJWTnHYAEnGuJoGGkh55XVUfkFDejRTs4BGAJ04vMF9WA35w:1wGQnz:2dtsp7yf0SOJWlyKGa6MAuxnulWlY97jWZrFiz_XDPY",
+    "expire_date": "2026-05-09T00:23:31.086Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vr24c06jdlo3p1zbwqssscsg8j2qh0uu",
+  "fields": {
+    "session_data": ".eJxVjs0OwiAQhN-FsyXAQgGP3n0GsguLrZo26Y8X47trTQ96nW_myzxFwnXp0jrzlPoijsKIw29GmG88bKBccbiMMo_DMvUkt4rc6SzPY-H7ae_-CTqcu8-aMeYQtWPb6uy8YkUBoiOuynPBooii9a1myoWzcQYBbIy1-uoCGrtJCz_6zGn9_gSDmAPoBrzBxgLUJlBoG0avAQgjayVebzzXRwM:1wK3iA:EGjx5cz8uHWhMx275o75SwBWLqKCKFn2yICoSdexaIk",
+    "expire_date": "2026-05-19T00:32:30.940Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "w4ihcjj5zmvn0jcmqpqlo5pf4cruss74",
+  "fields": {
+    "session_data": ".eJxVjs0OwiAQhN-FsxCgC1s8evcZCMuCrZo26Y8X47trTQ96nW_myzxFTOvSxXUuU-xZHIURh9-MUr6VYQN8TcNlVHkclqkntVXUTmd1HrncT3v3T9Clufusqwc0tXKTAwNBMJV1CxW1DUBYLSGY4Hwm0D65wBicTaSxsQ4htLRJuTz6XOL6_VkYCyKC1NZYCS6RJHIgybHnagzbDOL1BuX4RiQ:1wMCL6:lug26SyRH-yNZzYFiOFZ2s__EDUudzmY86haCPtx6gk",
+    "expire_date": "2026-05-24T22:09:32.857Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "w9iyetvag22vm0p408jtw4nooa9qc21s",
+  "fields": {
+    "session_data": ".eJxVjjsOwjAQRO_imlj-rO0sJT1nsLxemwRQIuVDg7g7BKWAdt7M0zxFTOvSxXUuU-xZHIUWh9-MUr6VYQN8TcNllHkclqknuVXkTmd5HrncT3v3T9Clufusq4ega2WbkYEAdWXVQg3KIFCohgJodD4TKJ8cckBnEqlgjQuALW1SLo8-l7h-fyJwxcy5AbTQgEXXtN5SE4CLyQo8qVa83uPLRbE:1wJM3y:LM1WTbCZKJ42eLGpgMx63_WHLtNUNX5H2I7xxaN3I-U",
+    "expire_date": "2026-05-17T01:56:06.063Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 1,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-04-24",
+    "direction": "out",
+    "amount": "4649.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:100:delivered",
+    "created_at": "2026-04-24T23:59:27.948Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 2,
+  "fields": {
+    "merchant": 2,
+    "payment_date": "2026-04-24",
+    "direction": "out",
+    "amount": "4445.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:99:delivered",
+    "created_at": "2026-04-25T23:30:55.346Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 3,
+  "fields": {
+    "merchant": 2,
+    "payment_date": "2026-04-24",
+    "direction": "out",
+    "amount": "50000.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:98:delivered",
+    "created_at": "2026-04-30T22:00:06.552Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 4,
+  "fields": {
+    "merchant": 5,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1900.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:103:delivered",
+    "created_at": "2026-05-02T21:32:45.985Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 5,
+  "fields": {
+    "merchant": 6,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "450.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:104:delivered",
+    "created_at": "2026-05-02T21:39:12.532Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 6,
+  "fields": {
+    "merchant": 6,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "595.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:105:delivered",
+    "created_at": "2026-05-02T21:40:18.056Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 7,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:111:delivered",
+    "created_at": "2026-05-02T22:09:30.192Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 8,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:112:delivered",
+    "created_at": "2026-05-02T22:11:25.639Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 9,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:113:delivered",
+    "created_at": "2026-05-02T22:12:14.998Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 10,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1100.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:114:delivered",
+    "created_at": "2026-05-02T22:13:27.975Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 11,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:115:delivered",
+    "created_at": "2026-05-02T22:14:38.371Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 12,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:116:delivered",
+    "created_at": "2026-05-02T22:15:47.981Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 13,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1600.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:118:delivered",
+    "created_at": "2026-05-02T22:17:32.101Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 14,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:119:delivered",
+    "created_at": "2026-05-02T22:18:29.760Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 15,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "800.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:120:delivered",
+    "created_at": "2026-05-02T22:20:15.307Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 16,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "400.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:121:delivered",
+    "created_at": "2026-05-02T22:21:08.039Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 17,
+  "fields": {
+    "merchant": 13,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "550.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:122:accounted",
+    "created_at": "2026-05-02T22:23:14.006Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 18,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "150.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:124:delivered",
+    "created_at": "2026-05-02T22:51:27.205Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 19,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "2700.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:125:delivered",
+    "created_at": "2026-05-02T22:52:04.857Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 20,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1350.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:126:delivered",
+    "created_at": "2026-05-02T22:52:30.210Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 21,
+  "fields": {
+    "merchant": 15,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "700.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:127:delivered",
+    "created_at": "2026-05-02T22:54:47.620Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 22,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "400.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:128:delivered",
+    "created_at": "2026-05-02T23:18:11.135Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 23,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "580.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:129:delivered",
+    "created_at": "2026-05-02T23:18:44.943Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 24,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "725.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:130:delivered",
+    "created_at": "2026-05-02T23:19:11.005Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 25,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "2090.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:131:delivered",
+    "created_at": "2026-05-02T23:20:13.170Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 26,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1150.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:132:delivered",
+    "created_at": "2026-05-02T23:20:45.730Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 27,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1290.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:133:delivered",
+    "created_at": "2026-05-02T23:21:06.779Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 28,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "690.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:134:accounted",
+    "created_at": "2026-05-02T23:24:36.376Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 29,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:136:delivered",
+    "created_at": "2026-05-02T23:26:49.414Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 30,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:137:accounted",
+    "created_at": "2026-05-02T23:27:28.890Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 31,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:138:delivered",
+    "created_at": "2026-05-02T23:27:46.527Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 32,
+  "fields": {
+    "merchant": 20,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:141:accounted",
+    "created_at": "2026-05-02T23:30:35.888Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 33,
+  "fields": {
+    "merchant": 23,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "9900.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:145:accounted",
+    "created_at": "2026-05-02T23:34:40.971Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 34,
+  "fields": {
+    "merchant": 23,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "100.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:146:accounted",
+    "created_at": "2026-05-02T23:35:13.113Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 35,
+  "fields": {
+    "merchant": 15,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "740.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:127:accounted",
+    "created_at": "2026-05-02T23:40:23.313Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 36,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:147:accounted",
+    "created_at": "2026-05-02T23:47:46.924Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 37,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "400.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:148:delivered",
+    "created_at": "2026-05-03T00:40:37.608Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 38,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:149:delivered",
+    "created_at": "2026-05-03T00:41:20.323Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 39,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "150.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:150:delivered",
+    "created_at": "2026-05-03T00:42:18.284Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 40,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "250.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:151:delivered",
+    "created_at": "2026-05-03T00:42:53.668Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 41,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:153:accounted",
+    "created_at": "2026-05-03T00:47:30.190Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 42,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:154:accounted",
+    "created_at": "2026-05-03T00:48:08.466Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 43,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:155:accounted",
+    "created_at": "2026-05-03T00:48:49.280Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 44,
+  "fields": {
+    "merchant": 25,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1700.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:156:delivered",
+    "created_at": "2026-05-03T00:51:20.052Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 45,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "1345.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:158:accounted",
+    "created_at": "2026-05-03T00:54:26.257Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 46,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "1870.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:159:accounted",
+    "created_at": "2026-05-03T00:57:40.535Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 47,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1500.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:160:delivered",
+    "created_at": "2026-05-03T01:05:26.010Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 48,
+  "fields": {
+    "merchant": 25,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1700.00",
+    "notes": "",
+    "created_at": "2026-05-03T01:16:11.631Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 49,
+  "fields": {
+    "merchant": 25,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "1700.00",
+    "notes": "",
+    "created_at": "2026-05-03T01:16:27.025Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 50,
+  "fields": {
+    "merchant": 25,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "1700.00",
+    "notes": "",
+    "created_at": "2026-05-03T01:16:46.592Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 51,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1400.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:163:delivered",
+    "created_at": "2026-05-03T19:49:08.270Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 52,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:164:delivered",
+    "created_at": "2026-05-03T19:49:54.095Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 53,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:165:delivered",
+    "created_at": "2026-05-03T19:51:08.875Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 54,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:166:delivered",
+    "created_at": "2026-05-03T19:51:51.711Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 55,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:167:delivered",
+    "created_at": "2026-05-03T19:52:22.200Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 56,
+  "fields": {
+    "merchant": 23,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "500.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:168:accounted",
+    "created_at": "2026-05-03T19:52:57.232Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 57,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:170:accounted",
+    "created_at": "2026-05-03T23:18:04.227Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 58,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:171:accounted",
+    "created_at": "2026-05-03T23:18:49.960Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 59,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:172:accounted",
+    "created_at": "2026-05-03T23:19:22.627Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 60,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "205.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:173:delivered",
+    "created_at": "2026-05-03T23:20:40.899Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 61,
+  "fields": {
+    "merchant": 27,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "4730.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:175:delivered",
+    "created_at": "2026-05-03T23:25:24.734Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 62,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:177:delivered",
+    "created_at": "2026-05-03T23:34:05.303Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 63,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:178:delivered",
+    "created_at": "2026-05-03T23:34:48.053Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 64,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1100.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:179:delivered",
+    "created_at": "2026-05-03T23:35:27.042Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 65,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "150.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:180:delivered",
+    "created_at": "2026-05-03T23:35:41.616Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 66,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "2400.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:181:delivered",
+    "created_at": "2026-05-03T23:36:26.635Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 67,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "150.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:182:delivered",
+    "created_at": "2026-05-03T23:42:01.362Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 68,
+  "fields": {
+    "merchant": 31,
+    "payment_date": "2026-05-04",
+    "direction": "in",
+    "amount": "60.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:185:accounted",
+    "created_at": "2026-05-04T01:51:14.658Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 69,
+  "fields": {
+    "merchant": 5,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "2500.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:187:accounted",
+    "created_at": "2026-05-04T01:52:23.536Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 70,
+  "fields": {
+    "merchant": 25,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "325.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:188:accounted",
+    "created_at": "2026-05-04T01:53:52.063Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 71,
+  "fields": {
+    "merchant": 35,
+    "payment_date": "2026-05-04",
+    "direction": "in",
+    "amount": "40.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:189:accounted",
+    "created_at": "2026-05-04T01:56:20.896Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 72,
+  "fields": {
+    "merchant": 34,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "1100.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:190:delivered",
+    "created_at": "2026-05-04T01:57:07.310Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 73,
+  "fields": {
+    "merchant": 5,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "250.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:194:delivered",
+    "created_at": "2026-05-04T02:03:20.144Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 74,
+  "fields": {
+    "merchant": 23,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:196:accounted",
+    "created_at": "2026-05-04T02:05:14.394Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 75,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "445.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:197:accounted",
+    "created_at": "2026-05-04T02:06:48.154Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 76,
+  "fields": {
+    "merchant": 20,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "30.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:198:delivered",
+    "created_at": "2026-05-04T20:47:02.775Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 77,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "750.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:202:delivered",
+    "created_at": "2026-05-04T20:52:53.103Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 78,
+  "fields": {
+    "merchant": 40,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "300.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:203:delivered",
+    "created_at": "2026-05-04T20:53:31.282Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 79,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "300.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:204:delivered",
+    "created_at": "2026-05-04T20:53:42.449Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 80,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-04",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:206:accounted",
+    "created_at": "2026-05-04T20:55:35.216Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 81,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:208:delivered",
+    "created_at": "2026-05-04T20:58:24.655Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 82,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-04",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:209:accounted",
+    "created_at": "2026-05-04T20:58:37.215Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 83,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-04",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:210:accounted",
+    "created_at": "2026-05-04T20:59:16.710Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 84,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:211:delivered",
+    "created_at": "2026-05-04T21:00:29.065Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 85,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-04",
+    "direction": "in",
+    "amount": "50.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:212:accounted",
+    "created_at": "2026-05-04T21:01:02.189Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 86,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "2400.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:213:delivered",
+    "created_at": "2026-05-04T21:03:03.431Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 87,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "1100.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:214:delivered",
+    "created_at": "2026-05-04T21:04:20.260Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 88,
+  "fields": {
+    "merchant": 41,
+    "payment_date": "2026-05-04",
+    "direction": "in",
+    "amount": "290.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:217:accounted",
+    "created_at": "2026-05-04T21:10:30.771Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 89,
+  "fields": {
+    "merchant": 5,
+    "payment_date": "2026-05-04",
+    "direction": "out",
+    "amount": "2155.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:220:delivered",
+    "created_at": "2026-05-04T22:05:09.038Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 90,
+  "fields": {
+    "merchant": 45,
+    "payment_date": "2026-05-04",
+    "direction": "in",
+    "amount": "255.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:225:accounted",
+    "created_at": "2026-05-04T22:55:41.480Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 91,
+  "fields": {
+    "merchant": 35,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "180.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:229:accounted",
+    "created_at": "2026-05-05T19:37:50.357Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 92,
+  "fields": {
+    "merchant": 35,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "1600.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:230:delivered",
+    "created_at": "2026-05-05T19:38:34.141Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 93,
+  "fields": {
+    "merchant": 47,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "60.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:231:accounted",
+    "created_at": "2026-05-05T19:44:12.232Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 94,
+  "fields": {
+    "merchant": 47,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "60.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:232:accounted",
+    "created_at": "2026-05-05T19:50:49.555Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 95,
+  "fields": {
+    "merchant": 5,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "130.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:234:delivered",
+    "created_at": "2026-05-05T19:53:04.821Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 96,
+  "fields": {
+    "merchant": 43,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "40.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:240:accounted",
+    "created_at": "2026-05-05T21:08:41.073Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 97,
+  "fields": {
+    "merchant": 51,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "90.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:242:accounted",
+    "created_at": "2026-05-05T21:10:52.967Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 98,
+  "fields": {
+    "merchant": 56,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "40.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:250:accounted",
+    "created_at": "2026-05-05T21:23:13.919Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 99,
+  "fields": {
+    "merchant": 6,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "280.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:251:delivered",
+    "created_at": "2026-05-05T21:26:45.794Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 100,
+  "fields": {
+    "merchant": 6,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "335.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:252:delivered",
+    "created_at": "2026-05-05T21:27:13.593Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 101,
+  "fields": {
+    "merchant": 6,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "185.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:253:delivered",
+    "created_at": "2026-05-05T21:27:49.452Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 102,
+  "fields": {
+    "merchant": 6,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "50.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:254:accounted",
+    "created_at": "2026-05-05T21:28:06.045Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 103,
+  "fields": {
+    "merchant": 6,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "270.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:255:delivered",
+    "created_at": "2026-05-05T21:29:12.212Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 104,
+  "fields": {
+    "merchant": 23,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "230.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:257:accounted",
+    "created_at": "2026-05-05T21:30:42.364Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 105,
+  "fields": {
+    "merchant": 43,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "60.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:258:accounted",
+    "created_at": "2026-05-05T21:31:13.059Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 106,
+  "fields": {
+    "merchant": 58,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:261:accounted",
+    "created_at": "2026-05-05T21:34:10.430Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 107,
+  "fields": {
+    "merchant": 59,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "915.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:262:delivered",
+    "created_at": "2026-05-05T21:35:18.835Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 108,
+  "fields": {
+    "merchant": 43,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:264:accounted",
+    "created_at": "2026-05-05T21:49:00.049Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 109,
+  "fields": {
+    "merchant": 62,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:265:accounted",
+    "created_at": "2026-05-05T21:49:46.243Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 110,
+  "fields": {
+    "merchant": 62,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:266:accounted",
+    "created_at": "2026-05-05T21:50:01.592Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 111,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:267:accounted",
+    "created_at": "2026-05-05T21:51:46.098Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 112,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:268:accounted",
+    "created_at": "2026-05-05T21:51:54.609Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 113,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:269:accounted",
+    "created_at": "2026-05-05T21:52:01.701Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 114,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:270:accounted",
+    "created_at": "2026-05-05T21:52:13.496Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 115,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:271:accounted",
+    "created_at": "2026-05-05T21:52:19.360Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 116,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:272:accounted",
+    "created_at": "2026-05-05T21:52:28.685Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 117,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:273:accounted",
+    "created_at": "2026-05-05T21:52:34.295Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 118,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:274:accounted",
+    "created_at": "2026-05-05T21:52:38.908Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 119,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:275:accounted",
+    "created_at": "2026-05-05T21:52:43.935Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 120,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:276:accounted",
+    "created_at": "2026-05-05T21:52:49.640Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 121,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "120.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:277:delivered",
+    "created_at": "2026-05-05T21:56:51.650Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 122,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "120.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:278:delivered",
+    "created_at": "2026-05-05T21:57:24.153Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 123,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "150.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:279:delivered",
+    "created_at": "2026-05-05T21:57:43.369Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 124,
+  "fields": {
+    "merchant": 12,
+    "payment_date": "2026-05-03",
+    "direction": "out",
+    "amount": "110.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:280:delivered",
+    "created_at": "2026-05-05T21:58:08.877Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 125,
+  "fields": {
+    "merchant": 23,
+    "payment_date": "2026-05-03",
+    "direction": "in",
+    "amount": "2700.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:281:accounted",
+    "created_at": "2026-05-05T21:58:34.146Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 126,
+  "fields": {
+    "merchant": 62,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:283:accounted",
+    "created_at": "2026-05-05T22:19:32.975Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 127,
+  "fields": {
+    "merchant": 62,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:284:accounted",
+    "created_at": "2026-05-05T22:19:45.396Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 128,
+  "fields": {
+    "merchant": 16,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "760.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:292:delivered",
+    "created_at": "2026-05-05T22:23:43.651Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 129,
+  "fields": {
+    "merchant": 64,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "300.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:294:accounted",
+    "created_at": "2026-05-05T22:24:31.655Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 130,
+  "fields": {
+    "merchant": 7,
+    "payment_date": "2026-05-05",
+    "direction": "out",
+    "amount": "1300.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:297:delivered",
+    "created_at": "2026-05-05T22:36:06.358Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 131,
+  "fields": {
+    "merchant": 23,
+    "payment_date": "2026-05-05",
+    "direction": "in",
+    "amount": "100.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:299:accounted",
+    "created_at": "2026-05-05T22:37:04.534Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 132,
+  "fields": {
+    "merchant": 11,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "100.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:300:accounted",
+    "created_at": "2026-05-06T17:50:17.229Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 133,
+  "fields": {
+    "merchant": 6,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "120.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:302:accounted",
+    "created_at": "2026-05-06T17:51:30.479Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 134,
+  "fields": {
+    "merchant": 68,
+    "payment_date": "2026-05-06",
+    "direction": "out",
+    "amount": "4000.00",
+    "notes": "„” Õﬁ  «Ã— »⁄œ  ”·Ì„ order:310:delivered",
+    "created_at": "2026-05-06T20:28:15.334Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 135,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:316:accounted",
+    "created_at": "2026-05-06T20:35:28.292Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 136,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:317:accounted",
+    "created_at": "2026-05-06T20:36:02.828Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 137,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:318:accounted",
+    "created_at": "2026-05-06T20:36:34.639Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 138,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:319:accounted",
+    "created_at": "2026-05-06T20:36:52.759Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 139,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:326:accounted",
+    "created_at": "2026-05-06T21:07:20.623Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 140,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:327:accounted",
+    "created_at": "2026-05-06T21:07:29.127Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 141,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:328:accounted",
+    "created_at": "2026-05-06T21:07:35.990Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 142,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:329:accounted",
+    "created_at": "2026-05-06T21:07:43.626Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 143,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:330:accounted",
+    "created_at": "2026-05-06T21:07:50.566Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 144,
+  "fields": {
+    "merchant": 1,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:331:accounted",
+    "created_at": "2026-05-06T21:07:57.596Z"
+  }
+},
+{
+  "model": "merchants.merchantpayment",
+  "pk": 145,
+  "fields": {
+    "merchant": 70,
+    "payment_date": "2026-05-06",
+    "direction": "in",
+    "amount": "35.00",
+    "notes": "⁄·Ï «· «Ã— (Õ«”» √‰ ) order:334:accounted",
+    "created_at": "2026-05-06T21:35:46.311Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 1,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-04-24",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "4649.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:100:delivered",
+    "created_at": "2026-04-24T23:59:27.937Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 2,
+  "fields": {
+    "delegate": 2,
+    "transaction_date": "2026-04-24",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "4445.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:99:delivered",
+    "created_at": "2026-04-25T23:30:55.333Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 3,
+  "fields": {
+    "delegate": 2,
+    "transaction_date": "2026-04-29",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "2000.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:101:delivered",
+    "created_at": "2026-04-29T01:31:27.683Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 4,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-04-24",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "50000.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:98:delivered",
+    "created_at": "2026-04-30T22:00:06.539Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 5,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1900.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:103:delivered",
+    "created_at": "2026-05-02T21:32:45.973Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 6,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "450.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:104:delivered",
+    "created_at": "2026-05-02T21:39:12.523Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 7,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "595.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:105:delivered",
+    "created_at": "2026-05-02T21:40:18.046Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 8,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:111:delivered",
+    "created_at": "2026-05-02T22:09:30.180Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 9,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:112:delivered",
+    "created_at": "2026-05-02T22:11:25.628Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 10,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:113:delivered",
+    "created_at": "2026-05-02T22:12:14.987Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 11,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1100.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:114:delivered",
+    "created_at": "2026-05-02T22:13:27.962Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 12,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:115:delivered",
+    "created_at": "2026-05-02T22:14:38.360Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 13,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:116:delivered",
+    "created_at": "2026-05-02T22:15:47.970Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 14,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1600.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:118:delivered",
+    "created_at": "2026-05-02T22:17:32.096Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 15,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:119:delivered",
+    "created_at": "2026-05-02T22:18:29.755Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 16,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "800.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:120:delivered",
+    "created_at": "2026-05-02T22:20:15.296Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 17,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "400.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:121:delivered",
+    "created_at": "2026-05-02T22:21:08.030Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 18,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "500.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:122:accounted",
+    "created_at": "2026-05-02T22:23:13.996Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 19,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "150.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:124:delivered",
+    "created_at": "2026-05-02T22:51:27.195Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 20,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "2700.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:125:delivered",
+    "created_at": "2026-05-02T22:52:04.846Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 21,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1350.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:126:delivered",
+    "created_at": "2026-05-02T22:52:30.200Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 22,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "700.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:127:delivered",
+    "created_at": "2026-05-02T22:54:47.609Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 23,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "400.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:128:delivered",
+    "created_at": "2026-05-02T23:18:11.129Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 24,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "580.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:129:delivered",
+    "created_at": "2026-05-02T23:18:44.937Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 25,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "725.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:130:delivered",
+    "created_at": "2026-05-02T23:19:10.999Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 26,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "2090.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:131:delivered",
+    "created_at": "2026-05-02T23:20:13.162Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 27,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1150.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:132:delivered",
+    "created_at": "2026-05-02T23:20:45.724Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 28,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1290.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:133:delivered",
+    "created_at": "2026-05-02T23:21:06.773Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 29,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "650.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:134:accounted",
+    "created_at": "2026-05-02T23:24:36.371Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 30,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:136:delivered",
+    "created_at": "2026-05-02T23:26:49.408Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 31,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:138:delivered",
+    "created_at": "2026-05-02T23:27:46.521Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 32,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "9900.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:145:accounted",
+    "created_at": "2026-05-02T23:34:40.965Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 33,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "100.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:146:accounted",
+    "created_at": "2026-05-02T23:35:13.108Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 34,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "700.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:127:accounted",
+    "created_at": "2026-05-02T23:40:23.307Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 35,
+  "fields": {
+    "delegate": 7,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "400.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:148:delivered",
+    "created_at": "2026-05-03T00:40:37.603Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 36,
+  "fields": {
+    "delegate": 7,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:149:delivered",
+    "created_at": "2026-05-03T00:41:20.317Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 37,
+  "fields": {
+    "delegate": 7,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "150.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:150:delivered",
+    "created_at": "2026-05-03T00:42:18.279Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 38,
+  "fields": {
+    "delegate": 7,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "250.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:151:delivered",
+    "created_at": "2026-05-03T00:42:53.662Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 39,
+  "fields": {
+    "delegate": 7,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1700.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:156:delivered",
+    "created_at": "2026-05-03T00:51:20.047Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 40,
+  "fields": {
+    "delegate": 7,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "1310.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:158:accounted",
+    "created_at": "2026-05-03T00:54:26.251Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 41,
+  "fields": {
+    "delegate": 7,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "1800.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:159:accounted",
+    "created_at": "2026-05-03T00:57:40.529Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 42,
+  "fields": {
+    "delegate": 7,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1500.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:160:delivered",
+    "created_at": "2026-05-03T01:05:26.004Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 43,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1400.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:163:delivered",
+    "created_at": "2026-05-03T19:49:08.262Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 44,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:164:delivered",
+    "created_at": "2026-05-03T19:49:54.089Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 45,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:165:delivered",
+    "created_at": "2026-05-03T19:51:08.869Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 46,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:166:delivered",
+    "created_at": "2026-05-03T19:51:51.706Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 47,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:167:delivered",
+    "created_at": "2026-05-03T19:52:22.193Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 48,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "500.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:168:accounted",
+    "created_at": "2026-05-03T19:52:57.224Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 49,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "205.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:173:delivered",
+    "created_at": "2026-05-03T23:20:40.888Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 50,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "4730.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:175:delivered",
+    "created_at": "2026-05-03T23:25:24.725Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 51,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:177:delivered",
+    "created_at": "2026-05-03T23:34:05.293Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 52,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:178:delivered",
+    "created_at": "2026-05-03T23:34:48.044Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 53,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1100.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:179:delivered",
+    "created_at": "2026-05-03T23:35:27.031Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 54,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "150.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:180:delivered",
+    "created_at": "2026-05-03T23:35:41.604Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 55,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "2400.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:181:delivered",
+    "created_at": "2026-05-03T23:36:26.627Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 56,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "150.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:182:delivered",
+    "created_at": "2026-05-03T23:42:01.356Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 57,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "2500.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:187:accounted",
+    "created_at": "2026-05-04T01:52:23.527Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 58,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "285.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:188:accounted",
+    "created_at": "2026-05-04T01:53:52.054Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 59,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1100.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:190:delivered",
+    "created_at": "2026-05-04T01:57:07.303Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 60,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "250.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:194:delivered",
+    "created_at": "2026-05-04T02:03:20.136Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 61,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "1200.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:196:accounted",
+    "created_at": "2026-05-04T02:05:14.387Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 62,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "410.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:197:accounted",
+    "created_at": "2026-05-04T02:06:48.148Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 63,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "30.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:198:delivered",
+    "created_at": "2026-05-04T20:47:02.769Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 64,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "750.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:202:delivered",
+    "created_at": "2026-05-04T20:52:53.096Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 65,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "300.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:203:delivered",
+    "created_at": "2026-05-04T20:53:31.276Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 66,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "300.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:204:delivered",
+    "created_at": "2026-05-04T20:53:42.442Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 67,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:208:delivered",
+    "created_at": "2026-05-04T20:58:24.650Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 68,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1200.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:211:delivered",
+    "created_at": "2026-05-04T21:00:29.059Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 69,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "2400.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:213:delivered",
+    "created_at": "2026-05-04T21:03:03.425Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 70,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1100.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:214:delivered",
+    "created_at": "2026-05-04T21:04:20.252Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 71,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-04",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "250.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:217:accounted",
+    "created_at": "2026-05-04T21:10:30.766Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 72,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-05-04",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "2155.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:220:delivered",
+    "created_at": "2026-05-04T22:05:09.031Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 73,
+  "fields": {
+    "delegate": 1,
+    "transaction_date": "2026-05-04",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "215.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:225:accounted",
+    "created_at": "2026-05-04T22:55:41.475Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 74,
+  "fields": {
+    "delegate": 2,
+    "transaction_date": "2026-05-05",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "140.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:229:accounted",
+    "created_at": "2026-05-05T19:37:50.354Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 75,
+  "fields": {
+    "delegate": 2,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1600.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:230:delivered",
+    "created_at": "2026-05-05T19:38:34.140Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 76,
+  "fields": {
+    "delegate": 2,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "130.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:234:delivered",
+    "created_at": "2026-05-05T19:53:04.820Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 77,
+  "fields": {
+    "delegate": 8,
+    "transaction_date": "2026-05-05",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "50.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:242:accounted",
+    "created_at": "2026-05-05T21:10:52.966Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 78,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "280.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:251:delivered",
+    "created_at": "2026-05-05T21:26:45.793Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 79,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "335.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:252:delivered",
+    "created_at": "2026-05-05T21:27:13.592Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 80,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "185.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:253:delivered",
+    "created_at": "2026-05-05T21:27:49.449Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 81,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "270.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:255:delivered",
+    "created_at": "2026-05-05T21:29:12.210Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 82,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-05-05",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "230.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:257:accounted",
+    "created_at": "2026-05-05T21:30:42.362Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 83,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "915.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:262:delivered",
+    "created_at": "2026-05-05T21:35:18.833Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 84,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "120.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:277:delivered",
+    "created_at": "2026-05-05T21:56:51.649Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 85,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "120.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:278:delivered",
+    "created_at": "2026-05-05T21:57:24.152Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 86,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "150.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:279:delivered",
+    "created_at": "2026-05-05T21:57:43.368Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 87,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "110.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:280:delivered",
+    "created_at": "2026-05-05T21:58:08.875Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 88,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-03",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "2700.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:281:accounted",
+    "created_at": "2026-05-05T21:58:34.144Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 89,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "760.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:292:delivered",
+    "created_at": "2026-05-05T22:23:43.650Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 90,
+  "fields": {
+    "delegate": 5,
+    "transaction_date": "2026-05-05",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "300.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:294:accounted",
+    "created_at": "2026-05-05T22:24:31.654Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 91,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-05",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "1300.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:297:delivered",
+    "created_at": "2026-05-05T22:36:06.357Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 92,
+  "fields": {
+    "delegate": 6,
+    "transaction_date": "2026-05-05",
+    "tx_type": "transfer",
+    "direction": "out",
+    "amount": "100.00",
+    "notes": "Œ’„ „‰œÊ» Õ«”» √‰  order:299:accounted",
+    "created_at": "2026-05-05T22:37:04.533Z"
+  }
+},
+{
+  "model": "delegates.delegatetransaction",
+  "pk": 93,
+  "fields": {
+    "delegate": 4,
+    "transaction_date": "2026-05-06",
+    "tx_type": "advance",
+    "direction": "in",
+    "amount": "4000.00",
+    "notes": "⁄Âœ…  Õ’Ì· √Ê—œ— order:310:delivered",
+    "created_at": "2026-05-06T20:28:15.332Z"
+  }
+},
+{
+  "model": "delegates.delegatesettlementitem",
+  "pk": 1,
+  "fields": {
+    "delegate": 1,
+    "item_date": "2026-05-03",
+    "title": "Œ«·œ",
+    "quantity": 1,
+    "unit_price": "100.00",
+    "kind": "other",
+    "created_at": "2026-05-02T22:38:11.146Z"
+  }
+},
+{
+  "model": "delegates.delegatesettlementitem",
+  "pk": 2,
+  "fields": {
+    "delegate": 1,
+    "item_date": "2026-05-03",
+    "title": "Œ«·œ",
+    "quantity": 1,
+    "unit_price": "200.00",
+    "kind": "accounted",
+    "created_at": "2026-05-02T22:42:38.163Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 1,
+  "fields": {
+    "delegate": 2,
+    "metric_date": "2026-04-29",
+    "advance_value": "2000.00",
+    "total_value": "6578.00",
+    "work_value": "133.00",
+    "cash_value": "100.00",
+    "net_value": "6478.00",
+    "updated_at": "2026-04-29T23:50:09.715Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 2,
+  "fields": {
+    "delegate": 2,
+    "metric_date": "2026-04-30",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-04-29T23:47:21.996Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 3,
+  "fields": {
+    "delegate": 2,
+    "metric_date": "2026-05-01",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-04-30T21:48:55.183Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 4,
+  "fields": {
+    "delegate": 4,
+    "metric_date": "2026-05-01",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-04-30T22:00:32.249Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 5,
+  "fields": {
+    "delegate": 2,
+    "metric_date": "2026-05-02",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-02T02:15:05.242Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 6,
+  "fields": {
+    "delegate": 5,
+    "metric_date": "2026-05-03",
+    "advance_value": "0.00",
+    "total_value": "10.00",
+    "work_value": "580.00",
+    "cash_value": "435.00",
+    "net_value": "-425.00",
+    "updated_at": "2026-05-05T22:17:26.345Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 7,
+  "fields": {
+    "delegate": 2,
+    "metric_date": "2026-05-03",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-02T21:49:11.419Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 8,
+  "fields": {
+    "delegate": 1,
+    "metric_date": "2026-05-03",
+    "advance_value": "2500.00",
+    "total_value": "230.00",
+    "work_value": "500.00",
+    "cash_value": "500.00",
+    "net_value": "-270.00",
+    "updated_at": "2026-05-04T02:14:06.888Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 9,
+  "fields": {
+    "delegate": 6,
+    "metric_date": "2026-05-03",
+    "advance_value": "0.00",
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-02T23:39:15.321Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 10,
+  "fields": {
+    "delegate": 7,
+    "metric_date": "2026-05-03",
+    "advance_value": "0.00",
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-03T00:58:34.591Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 11,
+  "fields": {
+    "delegate": 8,
+    "metric_date": "2026-05-03",
+    "advance_value": "0.00",
+    "total_value": "6015.00",
+    "work_value": "315.00",
+    "cash_value": "235.00",
+    "net_value": "5780.00",
+    "updated_at": "2026-05-03T19:58:34.521Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 12,
+  "fields": {
+    "delegate": 6,
+    "metric_date": "2026-05-04",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-03T23:16:28.413Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 13,
+  "fields": {
+    "delegate": 1,
+    "metric_date": "2026-05-04",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-04T02:06:56.914Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 14,
+  "fields": {
+    "delegate": 1,
+    "metric_date": "2026-04-03",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-04T02:11:13.423Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 15,
+  "fields": {
+    "delegate": 6,
+    "metric_date": "2026-05-05",
+    "advance_value": "1490.00",
+    "total_value": "2830.00",
+    "work_value": "140.00",
+    "cash_value": "100.00",
+    "net_value": "2730.00",
+    "updated_at": "2026-05-05T22:38:15.596Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 16,
+  "fields": {
+    "delegate": 8,
+    "metric_date": "2026-05-05",
+    "advance_value": "50.00",
+    "total_value": "250.00",
+    "work_value": "330.00",
+    "cash_value": "250.00",
+    "net_value": "0.00",
+    "updated_at": "2026-05-05T21:20:35.884Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 17,
+  "fields": {
+    "delegate": 8,
+    "metric_date": "2026-05-04",
+    "advance_value": "0.00",
+    "total_value": "6380.00",
+    "work_value": "470.00",
+    "cash_value": "355.00",
+    "net_value": "6025.00",
+    "updated_at": "2026-05-04T21:14:40.282Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 18,
+  "fields": {
+    "delegate": 4,
+    "metric_date": "2026-05-05",
+    "advance_value": "2000.00",
+    "total_value": "4295.00",
+    "work_value": "725.00",
+    "cash_value": "545.00",
+    "net_value": "3750.00",
+    "updated_at": "2026-05-05T21:44:37.465Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 19,
+  "fields": {
+    "delegate": 6,
+    "metric_date": "2026-05-02",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-04T23:39:27.405Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 20,
+  "fields": {
+    "delegate": 1,
+    "metric_date": "2026-05-05",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-04T23:39:42.741Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 21,
+  "fields": {
+    "delegate": 2,
+    "metric_date": "2026-05-05",
+    "advance_value": "1000.00",
+    "total_value": "3020.00",
+    "work_value": "575.00",
+    "cash_value": "430.00",
+    "net_value": "2590.00",
+    "updated_at": "2026-05-05T20:45:26.166Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 22,
+  "fields": {
+    "delegate": 8,
+    "metric_date": "2026-05-06",
+    "advance_value": "0.00",
+    "total_value": "210.00",
+    "work_value": "420.00",
+    "cash_value": "315.00",
+    "net_value": "-105.01",
+    "updated_at": "2026-05-06T21:12:16.784Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 23,
+  "fields": {
+    "delegate": 4,
+    "metric_date": "2026-05-06",
+    "advance_value": null,
+    "total_value": "320.00",
+    "work_value": "540.00",
+    "cash_value": "405.00",
+    "net_value": "-85.00",
+    "updated_at": "2026-05-06T19:56:19.867Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 24,
+  "fields": {
+    "delegate": 2,
+    "metric_date": "2026-05-06",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-05T21:47:09.550Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 25,
+  "fields": {
+    "delegate": 5,
+    "metric_date": "2026-05-06",
+    "advance_value": "0.00",
+    "total_value": "4190.00",
+    "work_value": "225.00",
+    "cash_value": "170.00",
+    "net_value": "4020.00",
+    "updated_at": "2026-05-06T20:34:07.968Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 26,
+  "fields": {
+    "delegate": 5,
+    "metric_date": "2026-05-02",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-05T22:01:45.070Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 27,
+  "fields": {
+    "delegate": 5,
+    "metric_date": "2026-05-05",
+    "advance_value": "0.00",
+    "total_value": "845.00",
+    "work_value": "455.00",
+    "cash_value": "340.00",
+    "net_value": "505.00",
+    "updated_at": "2026-05-05T22:27:49.038Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 28,
+  "fields": {
+    "delegate": 6,
+    "metric_date": "2026-05-06",
+    "advance_value": "850.00",
+    "total_value": "1385.00",
+    "work_value": "570.00",
+    "cash_value": "250.00",
+    "net_value": "1135.00",
+    "updated_at": "2026-05-06T21:47:03.964Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 29,
+  "fields": {
+    "delegate": 1,
+    "metric_date": "2026-05-06",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-06T15:43:41.333Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 30,
+  "fields": {
+    "delegate": 3,
+    "metric_date": "2026-05-06",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-06T20:38:12.741Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 31,
+  "fields": {
+    "delegate": 8,
+    "metric_date": "2026-05-07",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-06T21:10:01.585Z"
+  }
+},
+{
+  "model": "delegates.delegatedailymetric",
+  "pk": 32,
+  "fields": {
+    "delegate": 6,
+    "metric_date": "2026-05-07",
+    "advance_value": null,
+    "total_value": null,
+    "work_value": null,
+    "cash_value": null,
+    "net_value": null,
+    "updated_at": "2026-05-06T21:21:17.982Z"
+  }
+},
+{
+  "model": "core.siteappearance",
+  "pk": 1,
+  "fields": {
+    "logo": "branding/·ÊÃÊ_»—»—Ì.png",
+    "primary_color": "#080f72",
+    "accent_color": "#198754",
+    "sidebar_color": "#1c2b4a",
+    "updated_at": "2026-05-05T20:48:47.365Z"
+  }
+},
+{
+  "model": "core.treasuryaccount",
+  "pk": 1,
+  "fields": {
+    "kind": "internal",
+    "label": "«·Œ“‰… «·œ«Œ·Ì…",
+    "is_active": true
+  }
+},
+{
+  "model": "core.treasuryaccount",
+  "pk": 2,
+  "fields": {
+    "kind": "external",
+    "label": "«·Œ“‰… «·Œ«—ÃÌ…",
+    "is_active": true
+  }
+},
+{
+  "model": "core.externalshipmentrow",
+  "pk": 1,
+  "fields": {
+    "batch": 1,
+    "row_data": {
+      "«· «—ÌŒ": "2026-04-22 11:08 AM",
+      "—ﬁ„ «·»Ê·Ì’…": "’«›Ì «·„œ›Ê⁄« ",
+      " «—ÌŒ «·»Ìﬂ √»": null,
+      "—ﬁ„ «·ÿ·»": null,
+      "«·„—”· «·ÌÂ": null,
+      "„Ê»«Ì· 1": null,
+      "«·„œÌ‰…": null,
+      "«·„‰ÿﬁ…": null,
+      "«·»Ì«‰": null,
+      "«·Ê“‰": null,
+      "„»·€ «· Õ’Ì·": null,
+      " ﬂ·›… «·‘Õ‰": null,
+      " ﬂ·›… «·„— Ã⁄« ": null,
+      " ﬂ·›… «·«” »œ«·": null,
+      "«·Ê“‰ «·“«∆œ": null,
+      "‰”»… «· Õ’Ì·": null,
+      "’«›Ì «·ﬁÌ„…": 20986,
+      "«”„ «·„‰ Ã": null,
+      "Ê’› «·„‰ Ã": null,
+      "‰Ê⁄ «·Œœ„…": null,
+      "„·«ÕŸ«  «·‘Õ‰…": null,
+      "—ﬁ„ «·Â« › «·„—”· «·ÌÂ": null
+    },
+    "profit_amount": "209.86",
+    "created_at": "2026-04-25T00:25:04.895Z"
+  }
+},
+{
+  "model": "core.externalshipmentrow",
+  "pk": 2,
+  "fields": {
+    "batch": 1,
+    "row_data": {
+      "«· «—ÌŒ": "2026-04-21 07:08 PM",
+      "—ﬁ„ «·»Ê·Ì’…": "PTX01061458",
+      " «—ÌŒ «·»Ìﬂ √»": "2026-04-18 02:54 AM",
+      "—ﬁ„ «·ÿ·»": null,
+      "«·„—”· «·ÌÂ": "„Ì „Õ„œ",
+      "„Ê»«Ì· 1": 1002896428,
+      "«·„œÌ‰…": "«·„‰Ì«",
+      "«·„‰ÿﬁ…": "«·„‰Ì« «·ÃœÌœ…",
+      "«·»Ì«‰": " ”·Ì„ ‰«ÃÕ",
+      "«·Ê“‰": null,
+      "„»·€ «· Õ’Ì·": 700,
+      " ﬂ·›… «·‘Õ‰": 85,
+      " ﬂ·›… «·„— Ã⁄« ": 0,
+      " ﬂ·›… «·«” »œ«·": 0,
+      "«·Ê“‰ «·“«∆œ": 0,
+      "‰”»… «· Õ’Ì·": 0,
+      "’«›Ì «·ﬁÌ„…": 615,
+      "«”„ «·„‰ Ã": "ﬂÊ—Ì«‰ Â«ÊÌ” 570/17",
+      "Ê’› «·„‰ Ã": "ﬂÊ—Ì«‰ Â«ÊÌ” 570/17",
+      "‰Ê⁄ «·Œœ„…": " ”·Ì„ Ê  Õ’Ì·",
+      "„·«ÕŸ«  «·‘Õ‰…": null,
+      "—ﬁ„ «·Â« › «·„—”· «·ÌÂ": 1002896428
+    },
+    "profit_amount": "10028964.28",
+    "created_at": "2026-04-25T00:25:04.907Z"
+  }
+},
+{
+  "model": "core.externalshipmentrow",
+  "pk": 3,
+  "fields": {
+    "batch": 1,
+    "row_data": {
+      "«· «—ÌŒ": "2026-04-21 07:08 PM",
+      "—ﬁ„ «·»Ê·Ì’…": "PTX01061451",
+      " «—ÌŒ «·»Ìﬂ √»": "2026-04-18 02:54 AM",
+      "—ﬁ„ «·ÿ·»": null,
+      "«·„—”· «·ÌÂ": "«ÌÂ «·”œ «”Õ«ﬁ",
+      "„Ê»«Ì· 1": 1001131922,
+      "«·„œÌ‰…": "«·›ÌÊ„",
+      "«·„‰ÿﬁ…": "«»‘Ê«Ì",
+      "«·»Ì«‰": " ”·Ì„ ‰«ÃÕ",
+      "«·Ê“‰": null,
+      "„»·€ «· Õ’Ì·": 5430,
+      " ﬂ·›… «·‘Õ‰": 85,
+      " ﬂ·›… «·„— Ã⁄« ": 0,
+      " ﬂ·›… «·«” »œ«·": 0,
+      "«·Ê“‰ «·“«∆œ": 0,
+      "‰”»… «· Õ’Ì·": 0,
+      "’«›Ì «·ﬁÌ„…": 5345,
+      "«”„ «·„‰ Ã": "·„”… ⁄Êœ--16/4---5250",
+      "Ê’› «·„‰ Ã": null,
+      "‰Ê⁄ «·Œœ„…": " ”·Ì„ Ê  Õ’Ì·",
+      "„·«ÕŸ«  «·‘Õ‰…": "COD  „  €ÌÌ—Â« „‰: 5350 ≈·Ì 5430",
+      "—ﬁ„ «·Â« › «·„—”· «·ÌÂ": 1001131922
+    },
+    "profit_amount": "10011319.22",
+    "created_at": "2026-04-25T00:25:04.917Z"
+  }
+},
+{
+  "model": "core.externalshipmentrow",
+  "pk": 4,
+  "fields": {
+    "batch": 1,
+    "row_data": {
+      "«· «—ÌŒ": "2026-04-21 06:36 PM",
+      "—ﬁ„ «·»Ê·Ì’…": "PTX01061470",
+      " «—ÌŒ «·»Ìﬂ √»": "2026-04-18 11:21 PM",
+      "—ﬁ„ «·ÿ·»": null,
+      "«·„—”· «·ÌÂ": "„‰Ï",
+      "„Ê»«Ì· 1": 1100101470,
+      "«·„œÌ‰…": "√ÿ—«› «·ﬁ«Â—… Ê«·ÃÌ“…",
+      "«·„‰ÿﬁ…": "«· Ã„⁄ «·Œ«„”",
+      "«·»Ì«‰": " ”·Ì„ ‰«ÃÕ",
+      "«·Ê“‰": null,
+      "„»·€ «· Õ’Ì·": 340,
+      " ﬂ·›… «·‘Õ‰": 60,
+      " ﬂ·›… «·„— Ã⁄« ": 0,
+      " ﬂ·›… «·«” »œ«·": 0,
+      "«·Ê“‰ «·“«∆œ": 0,
+      "‰”»… «· Õ’Ì·": 0,
+      "’«›Ì «·ﬁÌ„…": 280,
+      "«”„ «·„‰ Ã": "Õ‰«‰ „Œ «— ----240",
+      "Ê’› «·„‰ Ã": null,
+      "‰Ê⁄ «·Œœ„…": " ”·Ì„ Ê  Õ’Ì·",
+      "„·«ÕŸ«  «·‘Õ‰…": null,
+      "—ﬁ„ «·Â« › «·„—”· «·ÌÂ": 1100101470
+    },
+    "profit_amount": "11001014.70",
+    "created_at": "2026-04-25T00:25:04.928Z"
+  }
+},
+{
+  "model": "core.externalshipmentrow",
+  "pk": 5,
+  "fields": {
+    "batch": 1,
+    "row_data": {
+      "«· «—ÌŒ": "2026-04-21 03:58 PM",
+      "—ﬁ„ «·»Ê·Ì’…": "PTX01061381",
+      " «—ÌŒ «·»Ìﬂ √»": "2026-04-11 01:26 AM",
+      "—ﬁ„ «·ÿ·»": null,
+      "«·„—”· «·ÌÂ": "«ÌÂ €‰Ì„",
+      "„Ê»«Ì· 1": 1026571777,
+      "«·„œÌ‰…": "√ÿ—«› «·ﬁ«Â—… Ê«·ÃÌ“…",
+      "«·„‰ÿﬁ…": "6 «ﬂ Ê»—",
+      "«·»Ì«‰": "›‘· «· ”·Ì„",
+      "«·Ê“‰": null,
+      "„»·€ «· Õ’Ì·": 0,
+      " ﬂ·›… «·‘Õ‰": 0,
+      " ﬂ·›… «·„— Ã⁄« ": 5,
+      " ﬂ·›… «·«” »œ«·": 0,
+      "«·Ê“‰ «·“«∆œ": 0,
+      "‰”»… «· Õ’Ì·": 0,
+      "’«›Ì «·ﬁÌ„…": -5,
+      "«”„ «·„‰ Ã": "”Ì‰ÌÂ --10/4---1990",
+      "Ê’› «·„‰ Ã": null,
+      "‰Ê⁄ «·Œœ„…": " ”·Ì„ Ê  Õ’Ì·",
+      "„·«ÕŸ«  «·‘Õ‰…": null,
+      "—ﬁ„ «·Â« › «·„—”· «·ÌÂ": 1026571777
+    },
+    "profit_amount": "10265717.77",
+    "created_at": "2026-04-25T00:25:04.937Z"
+  }
+},
+{
+  "model": "core.externalshipmentrow",
+  "pk": 6,
+  "fields": {
+    "batch": 1,
+    "row_data": {
+      "«· «—ÌŒ": "2026-04-21 01:39 PM",
+      "—ﬁ„ «·»Ê·Ì’…": "PTX01061479",
+      " «—ÌŒ «·»Ìﬂ √»": "2026-04-18 11:19 PM",
+      "—ﬁ„ «·ÿ·»": null,
+      "«·„—”· «·ÌÂ": "”«—Â ⁄»œ«·”·«„",
+      "„Ê»«Ì· 1": 1005096805,
+      "«·„œÌ‰…": "«·€—»Ì…",
+      "«·„‰ÿﬁ…": "«·”‰ÿ…",
+      "«·»Ì«‰": " ”·Ì„ ‰«ÃÕ",
+      "«·Ê“‰": null,
+      "„»·€ «· Õ’Ì·": 1320,
+      " ﬂ·›… «·‘Õ‰": 57,
+      " ﬂ·›… «·„— Ã⁄« ": 0,
+      " ﬂ·›… «·«” »œ«·": 0,
+      "«·Ê“‰ «·“«∆œ": 0,
+      "‰”»… «· Õ’Ì·": 0,
+      "’«›Ì «·ﬁÌ„…": 1263,
+      "«”„ «·„‰ Ã": "«„Ì—Â--18--1320 ‘«„·",
+      "Ê’› «·„‰ Ã": null,
+      "‰Ê⁄ «·Œœ„…": "«” »œ«·",
+      "„·«ÕŸ«  «·‘Õ‰…": "COD  „  €ÌÌ—Â« „‰: 320 ≈·Ì 1320 - «”„ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì «·»—»—Ì - —ﬁ„ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì 01033402876 - ⁄‰Ê«‰ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì «·„‰’Ê—ÂCOD  „  €ÌÌ—Â« „‰: 1355 ≈·Ì 0320 - «”„ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì «·»—»—Ì - —ﬁ„ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì 01033402876 - ⁄‰Ê«‰ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì «·„‰’Ê—ÂCOD  „  €ÌÌ—Â« „‰: 1320 ≈·Ì 1355 - ‰Ê⁄ «·Œœ„…  „  €ÌÌ—Â« „‰:  ”·Ì„ Ê  Õ’Ì· ≈·Ì «” »œ«· - «”„ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì «·»—»—Ì - —ﬁ„ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì 01033402876 - ⁄‰Ê«‰ «·—«”·  „  €ÌÌ—Â« „‰: ≈·Ì «·„‰’Ê—Â",
+      "—ﬁ„ «·Â« › «·„—”· «·ÌÂ": 1005096805
+    },
+    "profit_amount": "10050968.05",
+    "created_at": "2026-04-25T00:25:04.947Z"
+  }
+},
+{
+  "model": "core.externalshipmentrow",
+  "pk": 7,
+  "fields": {
+    "batch": 1,
+    "row_data": {
+      "«· «—ÌŒ": "2026-04-21 01:15 PM",
+      "—ﬁ„ «·»Ê·Ì’…": "PTX01061422",
+      " «—ÌŒ «·»Ìﬂ √»": "2026-04-13 10:34 PM",
+      "—ﬁ„ «·ÿ·»": null,
+      "«·„—”· «·ÌÂ": "√Õ„œ ÌÊ”› ⁄»œ«··Â ≈»—«ÂÌ„",
+      "„Ê»«Ì· 1": 1141824580,
+      "«·„œÌ‰…": "√ÿ—«› «·ﬁ«Â—… Ê«·ÃÌ“…",
+      "«·„‰ÿﬁ…": "«·’›",
+      "«·»Ì«‰": " ”·Ì„ ‰«ÃÕ",
+      "«·Ê“‰": null,
+      "„»·€ «· Õ’Ì·": 100,
+      " ﬂ·›… «·‘Õ‰": 60,
+      " ﬂ·›… «·„— Ã⁄« ": 0,
+      " ﬂ·›… «·«” »œ«·": 0,
+      "«·Ê“‰ «·“«∆œ": 0,
+      "‰”»… «· Õ’Ì·": 0,
+      "’«›Ì «·ﬁÌ„…": 40,
+      "«”„ «·„‰ Ã": 

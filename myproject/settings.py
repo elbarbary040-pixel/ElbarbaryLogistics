@@ -11,8 +11,11 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 import os
 from pathlib import Path
+
 import dj_database_url
+from django.core.exceptions import ImproperlyConfigured
 from dotenv import load_dotenv
+
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,8 +31,10 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "dev-insecure-change-me")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    ".up.railway.app",
-]
+    h.strip()
+    for h in (os.getenv("DJANGO_ALLOWED_HOSTS", "") or "").split(",")
+    if h.strip()
+] or [".up.railway.app"]
 # Application definition
 
 # settings.py
@@ -86,14 +91,43 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-
-DATABASES = {
-    "default": dj_database_url.config(
-        default=os.getenv("DATABASE_URL"),
-        conn_max_age=600,
-        ssl_require=True,
+# One-off export from legacy SQLite: DJANGO_USE_SQLITE_EXPORT=1 (see sqlite_to_postgresql command).
+if os.getenv("DJANGO_USE_SQLITE_EXPORT") == "1":
+    _sqlite_name = (os.getenv("SQLITE_SOURCE_PATH") or "").strip()
+    if _sqlite_name:
+        _sqlite_path = Path(_sqlite_name)
+    else:
+        _sqlite_path = BASE_DIR / "db.sqlite3"
+        if not _sqlite_path.is_file() and (BASE_DIR.parent / "db.sqlite3").is_file():
+            _sqlite_path = BASE_DIR.parent / "db.sqlite3"
+    if not _sqlite_path.is_file():
+        raise ImproperlyConfigured(
+            f"DJANGO_USE_SQLITE_EXPORT is set but SQLite file not found: {_sqlite_path}"
+        )
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": str(_sqlite_path.resolve()),
+        }
+    }
+else:
+    _database_url = os.getenv("DATABASE_URL")
+    if not _database_url:
+        raise ImproperlyConfigured(
+            "DATABASE_URL is required (PostgreSQL). Set it in Railway or in a local .env file."
+        )
+    _ssl_require = os.getenv("DATABASE_SSL_REQUIRE", "true").lower() in (
+        "1",
+        "true",
+        "yes",
     )
-}
+    DATABASES = {
+        "default": dj_database_url.config(
+            default=_database_url,
+            conn_max_age=600,
+            ssl_require=_ssl_require,
+        )
+    }
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
