@@ -111,16 +111,19 @@ if os.getenv("DJANGO_USE_SQLITE_EXPORT") == "1":
         }
     }
 else:
-    _database_url = os.getenv("DATABASE_URL")
+    _database_url = os.getenv("DATABASE_URL") or os.getenv("DATABASE_PUBLIC_URL")
+
     if not _database_url:
         raise ImproperlyConfigured(
-            "DATABASE_URL is required (PostgreSQL). Set it in Railway or in a local .env file."
+            "DATABASE_URL or DATABASE_PUBLIC_URL is required (PostgreSQL)"
         )
+
     _ssl_require = os.getenv("DATABASE_SSL_REQUIRE", "true").lower() in (
         "1",
         "true",
         "yes",
     )
+
     DATABASES = {
         "default": dj_database_url.config(
             default=_database_url,
