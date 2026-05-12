@@ -198,98 +198,193 @@ def _dashboard_day_annotations():
 
 @login_required
 def dashboard(request: HttpRequest) -> HttpResponse:
-    if not is_admin_level(request.user):
+    context = {}
+
+    try:
+        # =========================
+        # Redirect حسب الصلاحيات
+        # =========================
+        if not is_admin_level(request.user):
+            try:
+                merchant = getattr(request.user, "merchant_profile", None)
+                if merchant:
+                    return redirect("merchants:detail", merchant_id=merchant.pk)
+            except Exception:
+                merchant = None
+
+            try:
+                delegate = getattr(request.user, "delegate_profile", None)
+                if delegate:
+                    return redirect("delegates:detail", delegate_id=delegate.pk)
+            except Exception:
+                delegate = None
+
+        # =========================
+        # Query base (safe)
+        # =========================
         try:
-            merchant = request.user.merchant_profile
+            qs = orders_queryset_for_user(request.user)
+            qs = _apply_order_filters(qs, request)
         except Exception:
-            merchant = None
-        if merchant is not None:
-            return redirect("merchants:detail", merchant_id=merchant.pk)
+            logger.exception("Error building queryset for dashboard")
+            qs = Order.objects.none()
+
+        base = qs
+
+        # =========================
+        # Aggregate stats (safe)
+        # =========================
         try:
-            delegate = request.user.delegate_profile
-        except Exception:
-            delegate = None
-        if delegate is not None:
-            return redirect("delegates:detail", delegate_id=delegate.pk)
-
-    qs = orders_queryset_for_user(request.user)
-    qs = _apply_order_filters(qs, request)
-    base = qs
-    ag = base.aggregate(
-        total_orders=Count("id"),
-        total_shipping=Sum("shipping_price"),
-    )
-    agg_by_status_rows = (
-        base.values("status")
-        .annotate(c=Count("id"), amt=Sum("product_price"))
-    )
-    count_by_status = {r["status"]: r["c"] or 0 for r in agg_by_status_rows}
-    amt_by_status = {r["status"]: r["amt"] or 0 for r in agg_by_status_rows}
-
-    d = {"c": count_by_status.get(OrderStatus.DELIVERED, 0), "amt": amt_by_status.get(OrderStatus.DELIVERED, 0)}
-    t = {"c": count_by_status.get(OrderStatus.IN_TRANSIT, 0), "amt": amt_by_status.get(OrderStatus.IN_TRANSIT, 0)}
-    a = {"c": count_by_status.get(OrderStatus.ACCOUNTED, 0), "amt": amt_by_status.get(OrderStatus.ACCOUNTED, 0)}
-
-    status_cards = []
-    for sv in _ORDER_STATUS_CODES:
-        label = _ORDER_STATUS_LABELS.get(str(sv), str(sv))
-        status_cards.append(
-            {
-                "code": sv,
-                "label": label,
-                "count": count_by_status.get(str(sv), 0),
-                "product_amt": amt_by_status.get(str(sv), 0),
-                "hex_color": _CHART_HEX.get(sv, "#6c757d"),
-            }
-        )
-
-    secondary_status_cards = [row for row in status_cards if str(row["code"]) not in {str(k) for k in _DASH_LEGACY_THREE}]
-
-    agg_dates = base.aggregate(mn=Min("order_date"), mx=Max("order_date"))
-    ann_kw = _dashboard_day_annotations()
-    chart_labels = []
-    datasets = []
-    chart_has_data = False
-    if agg_dates["mx"] is None:
-        by_day_list = []
-    else:
-        chart_end = agg_dates["mx"]
-        mn = agg_dates["mn"] or chart_end
-        window_start = max(mn, chart_end - timedelta(days=13))
-        by_day_qs = base.filter(order_date__gte=window_start, order_date__lte=chart_end)
-        by_day_list = list(by_day_qs.values("order_date").annotate(**ann_kw).order_by("order_date"))
-        chart_labels = [str(row["order_date"]) for row in by_day_list]
-        for sv in _ORDER_STATUS_CODES:
-            key = f"n_{sv}"
-            datasets.append(
-                {
-                    "label": _ORDER_STATUS_LABELS.get(str(sv), str(sv)),
-                    "backgroundColor": _CHART_HEX.get(sv, "#6c757d"),
-                    "data": [row.get(key) or 0 for row in by_day_list],
-                }
+            ag = base.aggregate(
+                total_orders=Count("id"),
+                total_shipping=Sum("shipping_price"),
             )
-        chart_has_data = any((row.get(f"n_{sv}") or 0) > 0 for row in by_day_list for sv in _ORDER_STATUS_CODES)
+        except Exception:
+            logger.exception("Error in dashboard aggregation")
+            ag = {"total_orders": 0, "total_shipping": 0}
 
-    return render(
-        request,
-        "orders/dashboard.html",
-        {
-            "delivered_orders_count": d["c"] or 0,
-            "in_transit_orders_count": t["c"] or 0,
-            "accounted_orders_count": a["c"] or 0,
-            "total_delivered_amount": d["amt"] or 0,
-            "total_in_transit_amount": t["amt"] or 0,
-            "total_accounted_amount": a["amt"] or 0,
+        # =========================
+        # Status breakdown (safe)
+        # =========================
+        try:
+            agg_by_status_rows = (
+                base.values("status")
+                .annotate(c=Count("id"), amt=Sum("product_price"))
+            )
+
+            count_by_status = {r["status"]: r["c"] or 0 for r in agg_by_status_rows}
+            amt_by_status = {r["status"]: r["amt"] or 0 for r in agg_by_status_rows}
+
+        except Exception:
+            logger.exception("Error in status breakdown")
+            count_by_status = {}
+            amt_by_status = {}
+
+        # safe helper
+        def safe_get(status):
+            return {
+                "c": count_by_status.get(status, 0),
+                "amt": amt_by_status.get(status, 0),
+            }
+
+        d = safe_get(OrderStatus.DELIVERED)
+        t = safe_get(OrderStatus.IN_TRANSIT)
+        a = safe_get(OrderStatus.ACCOUNTED)
+
+        # =========================
+        # Status cards (safe)
+        # =========================
+        try:
+            status_cards = []
+            for sv in _ORDER_STATUS_CODES:
+                status_cards.append(
+                    {
+                        "code": sv,
+                        "label": _ORDER_STATUS_LABELS.get(str(sv), str(sv)),
+                        "count": count_by_status.get(str(sv), 0),
+                        "product_amt": amt_by_status.get(str(sv), 0),
+                        "hex_color": _CHART_HEX.get(sv, "#6c757d"),
+                    }
+                )
+        except Exception:
+            logger.exception("Error building status cards")
+            status_cards = []
+
+        # =========================
+        # Secondary cards (safe)
+        # =========================
+        try:
+            secondary_status_cards = [
+                row for row in status_cards
+                if str(row["code"]) not in {str(k) for k in _DASH_LEGACY_THREE}
+            ]
+        except Exception:
+            secondary_status_cards = []
+
+        # =========================
+        # Chart data (safe)
+        # =========================
+        chart_labels = []
+        datasets = []
+        chart_has_data = False
+
+        try:
+            agg_dates = base.aggregate(mn=Min("order_date"), mx=Max("order_date"))
+
+            if agg_dates["mx"]:
+                chart_end = agg_dates["mx"]
+                mn = agg_dates["mn"] or chart_end
+                window_start = max(mn, chart_end - timedelta(days=13))
+
+                by_day_qs = base.filter(
+                    order_date__gte=window_start,
+                    order_date__lte=chart_end
+                )
+
+                ann_kw = _dashboard_day_annotations()
+
+                by_day_list = list(
+                    by_day_qs.values("order_date")
+                    .annotate(**ann_kw)
+                    .order_by("order_date")
+                )
+
+                chart_labels = [str(r["order_date"]) for r in by_day_list]
+
+                for sv in _ORDER_STATUS_CODES:
+                    key = f"n_{sv}"
+                    datasets.append({
+                        "label": _ORDER_STATUS_LABELS.get(str(sv), str(sv)),
+                        "backgroundColor": _CHART_HEX.get(sv, "#6c757d"),
+                        "data": [r.get(key) or 0 for r in by_day_list],
+                    })
+
+                chart_has_data = any(
+                    (r.get(f"n_{sv}") or 0) > 0
+                    for r in by_day_list
+                    for sv in _ORDER_STATUS_CODES
+                )
+
+        except Exception:
+            logger.exception("Error building chart data")
+            chart_labels = []
+            datasets = []
+            chart_has_data = False
+
+        # =========================
+        # context final
+        # =========================
+        context = {
+            "delivered_orders_count": d["c"],
+            "in_transit_orders_count": t["c"],
+            "accounted_orders_count": a["c"],
+            "total_delivered_amount": d["amt"],
+            "total_in_transit_amount": t["amt"],
+            "total_accounted_amount": a["amt"],
+
             "total_orders": ag["total_orders"] or 0,
             "total_shipping": ag["total_shipping"] or 0,
+
             "secondary_status_cards": secondary_status_cards,
+
             "chart_labels_json": json.dumps(chart_labels, ensure_ascii=False),
             "chart_series_json": json.dumps(datasets, ensure_ascii=False),
             "chart_has_data": chart_has_data,
             "chart_ready_json": json.dumps(chart_has_data),
-        },
-    )
+        }
 
+    except Exception:
+        # fallback نهائي
+        logger.exception("Dashboard critical failure")
+        context = {
+            "total_orders": 0,
+            "total_shipping": 0,
+            "chart_labels_json": "[]",
+            "chart_series_json": "[]",
+            "chart_has_data": False,
+        }
+
+    return render(request, "orders/dashboard.html", context)
 
 @login_required
 def order_list(request: HttpRequest) -> HttpResponse:
