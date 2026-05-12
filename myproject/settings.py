@@ -117,12 +117,13 @@ else:
         "true",
         "yes",
     )
-    DATABASES = {
-    "default": dj_database_url.config(
-        default=os.environ.get("DATABASE_URL"),
-        conn_max_age=600,
-        ssl_require=True,
-    )
+    DATABASE_URL = os.environ.get("DATABASE_URL")
+
+if not DATABASE_URL:
+    raise Exception("DATABASE_URL is missing in environment variables")
+
+DATABASES = {
+    "default": dj_database_url.parse(DATABASE_URL, conn_max_age=600, ssl_require=True)
 }
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
