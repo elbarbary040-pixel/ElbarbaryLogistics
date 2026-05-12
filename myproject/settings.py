@@ -194,3 +194,4 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+print("DB URL:", os.getenv("DATABASE_URL"))
