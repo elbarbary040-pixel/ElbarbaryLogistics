@@ -67,6 +67,7 @@ def require_roles(*roles: str):
             if not request.user.is_authenticated:
                 return redirect_to_login(request.get_full_path(), "login", REDIRECT_FIELD_NAME)
             if get_user_role(request.user) not in roles:
+                
                 from django.contrib import messages
                 from django.shortcuts import redirect
 
