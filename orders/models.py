@@ -16,7 +16,7 @@ class OrderStatus(models.TextChoices):
     PARTIALLY_DELIVERED_WITH_RETURN = "partially_delivered_with_return", "تسليم جزئي مع مرتجع"
     RETURNED = "returned", "مرتجع"
     POSTPONED = "postponed", "مؤجل"
-
+    PAID_TO_COMPANY = "paid_to_company", "مدفوع للشركة شامل الشحن"
 
 def generate_waybill():
     # ضمان عدم تكرار رقم البوليصة حتى مع الضغط العالي.

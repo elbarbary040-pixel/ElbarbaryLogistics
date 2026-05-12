@@ -1,105 +1,28 @@
-{% extends "base.html" %}
-
-{% block title %}الأرباح{% endblock %}
-
-{% block header_action %}{% url 'core:profits' %}{% endblock %}
-
-{% block content %}
-    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
-        <div>
-            <h4 class="mb-1">الأرباح</h4>
-            <div class="text-muted small">مبدئيًا: ربح الشركة = الشغل - العمولة - الثابت</div>
-        </div>
-    </div>
-
-    <div class="row g-3">
-        <div class="col-12 col-lg-4">
-            <div class="card card-shadow">
-                <div class="card-body">
-                    <div class="text-muted small">عدد الأوردرات</div>
-                    <div class="fs-3 fw-bold">{{ totals.orders_count }}</div>
-                    <hr>
-                    <div class="d-flex justify-content-between text-muted small">
-                        <span>الشغل (إجمالي الشحن)</span>
-                        <span class="fw-semibold">{{ totals.shipping_total }}</span>
-                    </div>
-                    <div class="d-flex justify-content-between text-muted small">
-                        <span>العمولة</span>
-                        <span class="fw-semibold">{{ totals.commission_total }}</span>
-                    </div>
-                    <div class="d-flex justify-content-between text-muted small">
-                        <span>الثابت</span>
-                        <span class="fw-semibold">{{ totals.fixed_total }}</span>
-                    </div>
-                    <hr class="my-2">
-                    <div class="d-flex justify-content-between">
-                        <span class="fw-bold">صافي الربح</span>
-                        <span class="fw-bold">{{ totals.profit_total }}</span>
-                    </div>
-                    <hr class="my-3">
-                    <div class="fw-semibold small mb-2">داخلي / خارجي</div>
-                    <div class="d-flex justify-content-between text-muted small">
-                        <span>وارد خزنة داخلية</span>
-                        <span class="fw-semibold">{{ totals.treasury_internal_in }}</span>
-                    </div>
-                    <div class="d-flex justify-content-between text-muted small">
-                        <span>وارد خزنة خارجية</span>
-                        <span class="fw-semibold">{{ totals.treasury_external_in }}</span>
-                    </div>
-                    <div class="d-flex justify-content-between text-muted small">
-                        <span>أرباح شحن خارجي (مجمّع)</span>
-                        <span class="fw-semibold">{{ totals.external_shipments_profit }}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-lg-8">
-            <div class="card card-shadow">
-                <div class="card-body">
-                    <div class="fw-semibold mb-2">تفصيل حسب المندوب</div>
-                    <canvas id="profitChart" height="110" class="mb-3"></canvas>
-
-                    <div class="table-responsive">
-                        <table class="table table-sm mb-0">
-                            <thead class="table-light">
-                                <tr>
-                                    <th>المندوب</th>
-                                    <th>الشغل</th>
-                                    <th>العمولة</th>
-                                    <th>الثابت</th>
-                                    <th>ربح الشركة</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for r in per_delegate_rows %}
-                                    <tr>
-                                        <td>{{ r.delegate_name }}</td>
-                                        <td class="text-nowrap">{{ r.shipping }}</td>
-                                        <td class="text-nowrap">{{ r.commission }}</td>
-                                        <td class="text-nowrap">{{ r.fixed }}</td>
-                                        <td class="text-nowrap fw-semibold">{{ r.profit }}</td>
-                                    </tr>
-                                {% empty %}
-                                    <tr><td colspan="5" class="text-center text-muted">لا يوجد بيانات.</td></tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-{% endblock %}
 {% block extra_js %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+{{ profit_chart_labels_json|json_script:"profit-labels" }}
+{{ profit_chart_values_json|json_script:"profit-values" }}
+
 <script>
+const profitLabels = JSON.parse(
+    document.getElementById('profit-labels').textContent
+);
+
+const profitValues = JSON.parse(
+    document.getElementById('profit-values').textContent
+);
+
 new Chart(document.getElementById("profitChart"), {
-  type: "bar",
-  data: {
-    labels: {{ profit_chart_labels_json|safe }},
-    datasets: [{ label: "صافي الربح", data: {{ profit_chart_values_json|safe }}, backgroundColor: "#0d6efd" }]
-  }
+    type: "bar",
+    data: {
+        labels: profitLabels,
+        datasets: [{
+            label: "صافي الربح",
+            data: profitValues,
+            backgroundColor: "#0d6efd"
+        }]
+    }
 });
 </script>
 {% endblock %}

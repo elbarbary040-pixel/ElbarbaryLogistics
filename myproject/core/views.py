@@ -145,24 +145,41 @@ def profits(request):
             "profit": Decimal("0"),
         }
     )
-
     for g in groups:
         delegate = delegates.get(g["delegate_id"])
+
         shipping_total = g["shipping_total"] or Decimal("0")
-        commission_rate = getattr(delegate, "commission_rate", None) or Decimal("0")
-        fixed = getattr(delegate, "fixed_deduction", None) or Decimal("0")
-        commission = (shipping_total * commission_rate).quantize(Decimal("0.01"))
-        profit = (shipping_total - commission - fixed).quantize(Decimal("0.01"))
+
+        commission_rate = (
+            getattr(delegate, "commission_rate", None)
+            or Decimal("0")
+        )
+
+        fixed = (
+            getattr(delegate, "fixed_deduction", None)
+            or Decimal("0")
+        )
+
+        commission = (
+            shipping_total * (commission_rate / Decimal("100"))
+        ).quantize(Decimal("0.01"))
+
+        profit = (
+            shipping_total - commission - fixed
+        ).quantize(Decimal("0.01"))
+
         total_shipping += shipping_total
         total_commission += commission
         total_fixed += fixed
         total_profit += profit
+
         key = delegate.name if delegate else "غير محدد"
+
         per_delegate[key]["shipping"] += shipping_total
         per_delegate[key]["commission"] += commission
         per_delegate[key]["fixed"] += fixed
         per_delegate[key]["profit"] += profit
-
+        
     internal_treasury = TreasuryEntry.objects.filter(account__kind=TreasuryKind.INTERNAL)
     external_treasury = TreasuryEntry.objects.filter(account__kind=TreasuryKind.EXTERNAL)
     ext_ship_profit = ExternalShipmentRow.objects.aggregate(s=Sum("profit_amount"))["s"] or Decimal("0")

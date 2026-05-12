@@ -35,6 +35,10 @@ ALLOWED_HOSTS = [
     for h in (os.getenv("DJANGO_ALLOWED_HOSTS", "") or "").split(",")
     if h.strip()
 ] or [".up.railway.app"]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.up.railway.app",
+]
 # Application definition
 
 # settings.py
@@ -180,9 +184,15 @@ LOGOUT_REDIRECT_URL = "login"
 if not DEBUG:
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
-    SECURE_BROWSER_XSS_FILTER = True
     SECURE_CONTENT_TYPE_NOSNIFF = True
     X_FRAME_OPTIONS = "DENY"
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}

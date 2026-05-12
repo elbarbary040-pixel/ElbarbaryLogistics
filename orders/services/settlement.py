@@ -72,6 +72,7 @@ def compute_order_settlement(order: Order) -> SettlementView:
     collected_amount = ledger_collected
     if status in (
         OrderStatus.DELIVERED,
+        OrderStatus.PAID_TO_COMPANY,
         OrderStatus.PARTIALLY_DELIVERED,
         OrderStatus.PARTIALLY_DELIVERED_WITH_RETURN,
     ):
@@ -79,6 +80,7 @@ def compute_order_settlement(order: Order) -> SettlementView:
 
     shipping_income = ship if status in (
         OrderStatus.DELIVERED,
+        OrderStatus.PAID_TO_COMPANY,
         OrderStatus.PARTIALLY_DELIVERED,
         OrderStatus.PARTIALLY_DELIVERED_WITH_RETURN,
         OrderStatus.ACCOUNTED,
@@ -88,6 +90,7 @@ def compute_order_settlement(order: Order) -> SettlementView:
         if status
         in (
             OrderStatus.DELIVERED,
+            OrderStatus.PAID_TO_COMPANY,
             OrderStatus.PARTIALLY_DELIVERED,
             OrderStatus.PARTIALLY_DELIVERED_WITH_RETURN,
             OrderStatus.ACCOUNTED,
