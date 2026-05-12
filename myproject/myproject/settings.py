@@ -31,13 +31,10 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "dev-insecure-change-me")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    h.strip()
-    for h in (os.getenv("DJANGO_ALLOWED_HOSTS", "") or "").split(",")
-    if h.strip()
-] or [".up.railway.app"]
-
+    "proud-creation-production-3d68.up.railway.app",
+]
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.up.railway.app",
+    "https://proud-creation-production-3d68.up.railway.app",
 ]
 # Application definition
 
