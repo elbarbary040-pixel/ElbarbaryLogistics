@@ -31,10 +31,15 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "dev-insecure-change-me")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    h.strip()
-    for h in (os.getenv("DJANGO_ALLOWED_HOSTS", "") or "").split(",")
-    if h.strip()
-] or [".up.railway.app"]
+    '127.0.0.1',
+    'localhost',
+    '.railway.app',
+    '.up.railway.app',
+]
+CSRF_TRUSTED_ORIGINS = [
+    "http://127.0.0.1:8000",
+    "http://localhost:8000",
+]
 # Application definition
 
 # settings.py
@@ -105,11 +110,11 @@ if os.getenv("DJANGO_USE_SQLITE_EXPORT") == "1":
             f"DJANGO_USE_SQLITE_EXPORT is set but SQLite file not found: {_sqlite_path}"
         )
     DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": str(_sqlite_path.resolve()),
-        }
-    }
+    "default": dj_database_url.config(
+        default=os.environ.get("DATABASE_URL"),
+        conn_max_age=600
+    )
+}
 else:
     _database_url = os.getenv("DATABASE_URL")
     if not _database_url:
