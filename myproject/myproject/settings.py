@@ -32,6 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "proud-creation-production-3d68.up.railway.app",
+    ".railway.app",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://proud-creation-production-3d68.up.railway.app",
@@ -111,7 +112,10 @@ if os.getenv("DJANGO_USE_SQLITE_EXPORT") == "1":
         }
     }
 else:
-    _database_url = os.getenv("DATABASE_URL") or os.getenv("DATABASE_PUBLIC_URL")
+    _database_url = (
+    os.getenv("DATABASE_URL")
+    or os.getenv("DATABASE_PUBLIC_URL")
+    )
 
     if not _database_url:
         raise ImproperlyConfigured(
