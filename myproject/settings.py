@@ -30,16 +30,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "dev-insecure-change-me")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    '.railway.app',
-    '.up.railway.app',
-]
-CSRF_TRUSTED_ORIGINS = [
-    "http://127.0.0.1:8000",
-    "http://localhost:8000",
-]
+ALLOWED_HOSTS = ["*"]
 # Application definition
 
 # settings.py
@@ -127,12 +118,12 @@ else:
         "yes",
     )
     DATABASES = {
-        "default": dj_database_url.config(
-            default=_database_url,
-            conn_max_age=600,
-            ssl_require=_ssl_require,
-        )
-    }
+    "default": dj_database_url.config(
+        default=os.environ.get("DATABASE_URL"),
+        conn_max_age=600,
+        ssl_require=True,
+    )
+}
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
